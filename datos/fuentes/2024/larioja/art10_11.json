@@ -1,0 +1,28 @@
+{
+  "nota": "Extraído el 18/10/2026 del Tomo 19 del Proyecto de Ley de Presupuestos 2024 (detalle de partidas de gastos, CSV): suma de las partidas de los artículos 10 (altos cargos) y 11 (personal eventual) por sección.",
+  "urls": [
+    "https://www.larioja.org/hacienda/es/presupuestos/proyecto-ley-presupuestos-generales-car-2024/tomo-19-detalle-partidas-formato-xls-csv",
+    "https://www.larioja.org/larioja-client/cm/hacienda/images?idMmedia=1513966"
+  ],
+  "filas": [
+    {"seccion": "AGRICULTURA, GANADERÍA, MUNDO RURAL Y MEDIO AMBIENTE", "articulo": "10", "importe": 424132},
+    {"seccion": "AGRICULTURA, GANADERÍA, MUNDO RURAL Y MEDIO AMBIENTE", "articulo": "11", "importe": 69711},
+    {"seccion": "CULTURA, TURISMO, DEPORTE Y JUVENTUD", "articulo": "10", "importe": 417461},
+    {"seccion": "CULTURA, TURISMO, DEPORTE Y JUVENTUD", "articulo": "11", "importe": 69711},
+    {"seccion": "DEFENSOR DEL PUEBLO", "articulo": "10", "importe": 69000},
+    {"seccion": "DEFENSOR DEL PUEBLO", "articulo": "11", "importe": 40000},
+    {"seccion": "ECONOMÍA, INNOVACIÓN, EMPRESA Y TRABAJO AUTÓNOMO", "articulo": "10", "importe": 281373},
+    {"seccion": "ECONOMÍA, INNOVACIÓN, EMPRESA Y TRABAJO AUTÓNOMO", "articulo": "11", "importe": 69711},
+    {"seccion": "EDUCACIÓN Y EMPLEO", "articulo": "10", "importe": 497874},
+    {"seccion": "EDUCACIÓN Y EMPLEO", "articulo": "11", "importe": 99167},
+    {"seccion": "HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO", "articulo": "10", "importe": 783161},
+    {"seccion": "HACIENDA, GOBERNANZA PÚBLICA, SOCIEDAD DIGITAL Y PORTAVOCÍA DEL GOBIERNO", "articulo": "11", "importe": 1117645},
+    {"seccion": "INSTITUTO DE ESTUDIOS RIOJANOS", "articulo": "10", "importe": 66208},
+    {"seccion": "PARLAMENTO", "articulo": "10", "importe": 1698513},
+    {"seccion": "PARLAMENTO", "articulo": "11", "importe": 601922},
+    {"seccion": "POLÍTICA LOCAL, INFRAESTRUCTURAS Y LUCHA CONTRA LA DESPOBLACIÓN", "articulo": "10", "importe": 354200},
+    {"seccion": "POLÍTICA LOCAL, INFRAESTRUCTURAS Y LUCHA CONTRA LA DESPOBLACIÓN", "articulo": "11", "importe": 69711},
+    {"seccion": "SALUD Y POLÍTICAS SOCIALES", "articulo": "10", "importe": 835771},
+    {"seccion": "SALUD Y POLÍTICAS SOCIALES", "articulo": "11", "importe": 98562}
+  ]
+}

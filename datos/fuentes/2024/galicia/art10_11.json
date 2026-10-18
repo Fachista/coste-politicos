@@ -1,0 +1,41 @@
+{
+  "nota": "Extraído el 18/10/2026 de PROGR_I_2024.PDF y PROGR_II_2024.PDF (Proxecto de orzamentos 2024, estado de gastos por programas, Parlamento de Galicia): suma de subconceptos de los artículos 10 (altos cargos e delegados) y 11 (persoal eventual de gabinete) de cada sección.",
+  "urls": [
+    "https://www.parlamentodegalicia.gal/sitios/web/DocsOrzamentos/PROGR_I_2024.PDF",
+    "https://www.parlamentodegalicia.gal/sitios/web/DocsOrzamentos/PROGR_II_2024.PDF"
+  ],
+  "filas": [
+    {"seccion": "01 PARLAMENTO", "articulo": "10", "importe": 2475834},
+    {"seccion": "01 PARLAMENTO", "articulo": "11", "importe": 1007074},
+    {"seccion": "02 CONSELLO DE CONTAS", "articulo": "10", "importe": 442324},
+    {"seccion": "02 CONSELLO DE CONTAS", "articulo": "11", "importe": 198207},
+    {"seccion": "03 CONSELLO DA CULTURA GALEGA", "articulo": "10", "importe": 77647},
+    {"seccion": "03 CONSELLO DA CULTURA GALEGA", "articulo": "11", "importe": 34719},
+    {"seccion": "04 PRESIDENCIA DA XUNTA DE GALICIA", "articulo": "10", "importe": 654468},
+    {"seccion": "04 PRESIDENCIA DA XUNTA DE GALICIA", "articulo": "11", "importe": 1919230},
+    {"seccion": "05 VICEPRESIDENCIA 1ª E CONSELLERÍA DE PRESIDENCIA, XUSTIZA E DEPORTES", "articulo": "10", "importe": 912017},
+    {"seccion": "05 VICEPRESIDENCIA 1ª E CONSELLERÍA DE PRESIDENCIA, XUSTIZA E DEPORTES", "articulo": "11", "importe": 1239129},
+    {"seccion": "06 VICEPRESIDENCIA 2ª E CONSELLERÍA DE MEDIO AMBIENTE, TERRITORIO E VIVENDA", "articulo": "10", "importe": 453225},
+    {"seccion": "06 VICEPRESIDENCIA 2ª E CONSELLERÍA DE MEDIO AMBIENTE, TERRITORIO E VIVENDA", "articulo": "11", "importe": 329048},
+    {"seccion": "07 CONSELLERÍA DE FACENDA E ADMINISTRACIÓN PÚBLICA", "articulo": "10", "importe": 994496},
+    {"seccion": "07 CONSELLERÍA DE FACENDA E ADMINISTRACIÓN PÚBLICA", "articulo": "11", "importe": 329048},
+    {"seccion": "08 CONSELLERÍA DE INFRAESTRUTURAS E MOBILIDADE", "articulo": "10", "importe": 324199},
+    {"seccion": "08 CONSELLERÍA DE INFRAESTRUTURAS E MOBILIDADE", "articulo": "11", "importe": 329048},
+    {"seccion": "09 CONSELLERÍA DE ECONOMÍA, INDUSTRIA E INNOVACIÓN", "articulo": "10", "importe": 532664},
+    {"seccion": "09 CONSELLERÍA DE ECONOMÍA, INDUSTRIA E INNOVACIÓN", "articulo": "11", "importe": 590501},
+    {"seccion": "10 CONSELLERÍA DE CULTURA, EDUCACIÓN, FORMACION PROFESIONAL E UNIVERSIDADES", "articulo": "10", "importe": 653549},
+    {"seccion": "10 CONSELLERÍA DE CULTURA, EDUCACIÓN, FORMACION PROFESIONAL E UNIVERSIDADES", "articulo": "11", "importe": 414739},
+    {"seccion": "11 CONSELLERÍA DE POLÍTICA SOCIAL E XUVENTUDE", "articulo": "10", "importe": 460008},
+    {"seccion": "11 CONSELLERÍA DE POLÍTICA SOCIAL E XUVENTUDE", "articulo": "11", "importe": 329048},
+    {"seccion": "12 CONSELLERÍA DE SANIDADE", "articulo": "10", "importe": 524641},
+    {"seccion": "12 CONSELLERÍA DE SANIDADE", "articulo": "11", "importe": 347702},
+    {"seccion": "13 CONSELLERÍA DE PROMOCION DO EMPREGO E IGUALDADE", "articulo": "10", "importe": 524521},
+    {"seccion": "13 CONSELLERÍA DE PROMOCION DO EMPREGO E IGUALDADE", "articulo": "11", "importe": 329049},
+    {"seccion": "14 CONSELLERÍA DO MEDIO RURAL", "articulo": "10", "importe": 524521},
+    {"seccion": "14 CONSELLERÍA DO MEDIO RURAL", "articulo": "11", "importe": 329048},
+    {"seccion": "15 CONSELLERÍA DO MAR", "articulo": "10", "importe": 330984},
+    {"seccion": "15 CONSELLERÍA DO MAR", "articulo": "11", "importe": 329048},
+    {"seccion": "20 CONSELLO CONSULTIVO DE GALICIA", "articulo": "10", "importe": 553614},
+    {"seccion": "20 CONSELLO CONSULTIVO DE GALICIA", "articulo": "11", "importe": 40765}
+  ]
+}

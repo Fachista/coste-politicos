@@ -1,0 +1,63 @@
+[{"secci_codi":"51","secci":"Servei Català de la Salut","article_codi":"10","imp":"125351.32"}
+,{"secci_codi":"60","secci":"Biblioteca de Catalunya","article_codi":"10","imp":"91897.52"}
+,{"secci_codi":"60","secci":"Escola d'Administració Pública Catalunya","article_codi":"10","imp":"91210.17"}
+,{"secci_codi":"60","secci":"Institució de les Lletres Catalanes","article_codi":"10","imp":"80499.74"}
+,{"secci_codi":"60","secci":"Institut Català de les Dones","article_codi":"10","imp":"177299.13"}
+,{"secci_codi":"60","secci":"Institut d'Estadística de Catalunya","article_codi":"10","imp":"102252.56"}
+,{"secci_codi":"60","secci":"Inst. Nac. d'Educació Física Catalunya","article_codi":"10","imp":"93116.92"}
+,{"secci_codi":"61","secci":"Agència Catalana del Consum","article_codi":"10","imp":"102835.23"}
+,{"secci_codi":"61","secci":"Ag.Publ.Form.Qualificació Profession.Cat","article_codi":"10","imp":"99485.27"}
+,{"secci_codi":"61","secci":"C.Estudis Jurídics i Formació Espec.","article_codi":"10","imp":"100734.02"}
+,{"secci_codi":"61","secci":"Consell Català de l'Esport","article_codi":"10","imp":"99658.17"}
+,{"secci_codi":"61","secci":"I.Català de l'Acolliment i l'Adopció","article_codi":"10","imp":"103130.20"}
+,{"secci_codi":"61","secci":"Institut Català de la Vinya i el Vi","article_codi":"10","imp":"92109.78"}
+,{"secci_codi":"62","secci":"Autoritat Catalana de Competència","article_codi":"10","imp":"209282.43"}
+,{"secci_codi":"62","secci":"Centre d'Estudis d'Opinió","article_codi":"10","imp":"98170.00"}
+,{"secci_codi":"62","secci":"Entitat Autònoma del Diari Oficial i de Publicacions","article_codi":"10","imp":"101226.28"}
+,{"secci_codi":"62","secci":"I. Desenvol. i Prom. Alt Pirineu i Aran","article_codi":"10","imp":"88930.69"}
+,{"secci_codi":"62","secci":"Institut Seguretat Pública de Catalunya","article_codi":"10","imp":"103519.37"}
+,{"secci_codi":"62","secci":"Servei Català de Trànsit","article_codi":"10","imp":"95474.36"}
+,{"secci_codi":"62","secci":"Servei Públic d'Ocupació de Catalunya","article_codi":"10","imp":"95436.44"}
+,{"secci_codi":"70","secci":"Autoritat Catalana de Protecció de Dades","article_codi":"10","imp":"99606.89"}
+,{"secci_codi":"70","secci":"Autoritat Catalana de Protecció de Dades","article_codi":"11","imp":"46492.12"}
+,{"secci_codi":"75","secci":"Consell Treball, Econòmic i Social Cat.","article_codi":"10","imp":"135219.64"}
+,{"secci_codi":"77","secci":"Consell de l'Audiovisual de Catalunya","article_codi":"10","imp":"683464.99"}
+,{"secci_codi":"77","secci":"Consell de l'Audiovisual de Catalunya","article_codi":"11","imp":"348880.39"}
+,{"secci_codi":"92","secci":"Consorci per a la Protecció i la Gestió de l'Espai d'Interès Natural de l'Alta Garrotxa","article_codi":"10","imp":"37852.79"}
+,{"secci_codi":"AG","secci":"Acció Climàtica, Alimentació i Ag. Rural","article_codi":"10","imp":"1449270.25"}
+,{"secci_codi":"AG","secci":"Acció Climàtica, Alimentació i Ag. Rural","article_codi":"11","imp":"515046.41"}
+,{"secci_codi":"BE","secci":"Drets Socials","article_codi":"10","imp":"1239235.82"}
+,{"secci_codi":"BE","secci":"Drets Socials","article_codi":"11","imp":"566226.13"}
+,{"secci_codi":"CC","secci":"Consell de Garanties Estatutàries","article_codi":"10","imp":"1237175.58"}
+,{"secci_codi":"CC","secci":"Consell de Garanties Estatutàries","article_codi":"11","imp":"0"}
+,{"secci_codi":"CJ","secci":"Comissió Jurídica Assessora","article_codi":"10","imp":"132732.37"}
+,{"secci_codi":"CU","secci":"Cultura","article_codi":"10","imp":"886140.25"}
+,{"secci_codi":"CU","secci":"Cultura","article_codi":"11","imp":"685724.04"}
+,{"secci_codi":"EC","secci":"Economia i Hisenda","article_codi":"10","imp":"1469877.52"}
+,{"secci_codi":"EC","secci":"Economia i Hisenda","article_codi":"11","imp":"546413.73"}
+,{"secci_codi":"EN","secci":"Educació","article_codi":"10","imp":"1244262.71"}
+,{"secci_codi":"EN","secci":"Educació","article_codi":"11","imp":"589495.10"}
+,{"secci_codi":"EX","secci":"Acció Exterior i Unió Europea","article_codi":"10","imp":"831814.74"}
+,{"secci_codi":"EX","secci":"Acció Exterior i Unió Europea","article_codi":"11","imp":"643718.37"}
+,{"secci_codi":"IF","secci":"Igualtat i Feminismes","article_codi":"10","imp":"1135052.52"}
+,{"secci_codi":"IF","secci":"Igualtat i Feminismes","article_codi":"11","imp":"542946.37"}
+,{"secci_codi":"IT","secci":"Interior","article_codi":"10","imp":"947538.00"}
+,{"secci_codi":"IT","secci":"Interior","article_codi":"11","imp":"486750.78"}
+,{"secci_codi":"IU","secci":"Empresa i Treball","article_codi":"10","imp":"1407716.98"}
+,{"secci_codi":"IU","secci":"Empresa i Treball","article_codi":"11","imp":"609648.39"}
+,{"secci_codi":"JU","secci":"Justícia, Drets i Memòria","article_codi":"10","imp":"1058493.17"}
+,{"secci_codi":"JU","secci":"Justícia, Drets i Memòria","article_codi":"11","imp":"608017.81"}
+,{"secci_codi":"OA","secci":"Oficina Antifrau de Catalunya","article_codi":"10","imp":"544973.52"}
+,{"secci_codi":"OA","secci":"Oficina Antifrau de Catalunya","article_codi":"11","imp":"101550.66"}
+,{"secci_codi":"PA","secci":"Parlament de Catalunya","article_codi":"10","imp":"9302888.26"}
+,{"secci_codi":"PA","secci":"Parlament de Catalunya","article_codi":"11","imp":"6278337.42"}
+,{"secci_codi":"PO","secci":"Territori","article_codi":"10","imp":"1450358.26"}
+,{"secci_codi":"PO","secci":"Territori","article_codi":"11","imp":"676291.21"}
+,{"secci_codi":"PR","secci":"Presidència","article_codi":"10","imp":"4660610.26"}
+,{"secci_codi":"PR","secci":"Presidència","article_codi":"11","imp":"4722098.58"}
+,{"secci_codi":"SA","secci":"Salut","article_codi":"10","imp":"853872.39"}
+,{"secci_codi":"SA","secci":"Salut","article_codi":"11","imp":"585575.55"}
+,{"secci_codi":"SC","secci":"Sindicatura de Comptes","article_codi":"10","imp":"1062720.66"}
+,{"secci_codi":"SC","secci":"Sindicatura de Comptes","article_codi":"11","imp":"72026.92"}
+,{"secci_codi":"UR","secci":"Recerca i Universitats","article_codi":"10","imp":"750108.79"}
+,{"secci_codi":"UR","secci":"Recerca i Universitats","article_codi":"11","imp":"442141.13"}]

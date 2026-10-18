@@ -1,0 +1,41 @@
+{
+ "autonomico": {
+  "Andalucía": {"base": "presupuestado", "texto": "Junta de Andalucía, presupuesto 2024 (datos abiertos)", "url": "https://www.juntadeandalucia.es/datosabiertos/portal/dataset/presupuesto-de-la-comunidad-autonoma-de-andalucia-2024"},
+  "Aragón": {"base": "ejecutado", "texto": "Gobierno de Aragón, ejecución presupuestaria 2024 (Aragón Open Data)", "url": "https://opendata.aragon.es/datos/catalogo/dataset/ejecucion-presupuestaria-2024"},
+  "Canarias": {"base": "presupuestado", "texto": "Gobierno de Canarias, presupuesto consolidado 2024 (datos abiertos)", "url": "https://datos.canarias.es/catalogos/general/dataset/presupuestos-de-la-comunidad-autonoma-de-canarias-2024"},
+  "Castilla y León": {"base": "ejecutado", "texto": "Junta de Castilla y León, ejecución del presupuesto 2024 (datos abiertos)", "url": "https://analisis.datosabiertos.jcyl.es/explore/dataset/ejecucion-del-presupuesto-de-la-administracion-de-la-comunidad-gastos/"},
+  "Cataluña": {"base": "ejecutado", "texto": "Generalitat de Catalunya, ejecución mensual del presupuesto 2024", "url": "https://analisi.transparenciacatalunya.cat/d/ajns-4mi7"},
+  "Navarra": {"base": "ejecutado", "texto": "Gobierno de Navarra, ejecución del presupuesto de gastos 2024 (datos abiertos) y Cámara de Comptos (Parlamento)", "url": "https://datosabiertos.navarra.es/es/dataset/ejecucion-anual-del-presupuesto-de-gastos-para-2024"},
+  "Comunitat Valenciana": {"base": "ejecutado", "texto": "Generalitat Valenciana, ejecución presupuestaria 2024 (datos abiertos)", "url": "https://dadesobertes.gva.es/es/dataset/sec-nefis-visor-2024"},
+  "Región de Murcia": {"base": "presupuestado", "texto": "CARM, Ley de Presupuestos 2024, tomo I (estado de gastos por secciones)", "url": "https://www.carm.es/chac/leypresup2024/web/pdfs/presupuestos_I.pdf"},
+  "Comunidad de Madrid": {"base": "presupuestado", "texto": "Comunidad de Madrid, Presupuestos Generales 2024, libros 02 y 03", "url": "https://www.comunidad.madrid/docs/assets/2023/12/29/2024-presupuesto-libro-03-ingresos-gastos.pdf"},
+  "Galicia": {"base": "presupuestado", "texto": "Xunta de Galicia, proyecto de presupuestos 2024, estado de gastos por programas (Parlamento de Galicia)", "url": "https://www.parlamentodegalicia.gal/sitios/web/DocsOrzamentos/PROGR_I_2024.PDF"},
+  "Asturias": {"base": "presupuestado", "texto": "Principado de Asturias, proyecto de presupuestos 2024, tomo 2 (estado de gastos de la Administración)", "url": "https://transparencia.asturias.es/economica/presupuestos-cuentas/leyes-presupuestos/proyecto-2024"},
+  "La Rioja": {"base": "presupuestado", "texto": "Gobierno de La Rioja, proyecto de presupuestos 2024, tomo 19 (detalle de partidas)", "url": "https://www.larioja.org/hacienda/es/presupuestos/proyecto-ley-presupuestos-generales-car-2024/tomo-19-detalle-partidas-formato-xls-csv"},
+  "Cantabria": {"base": "presupuestado", "texto": "Gobierno de Cantabria, Ley de Presupuestos 2024, estado de ingresos y gastos", "url": "https://www.cantabria.es/web/direccion-general-tesoreria-presupuestos-y-politica-financiera/detalle/-/journal_content/56_INSTANCE_DETALLE/16870/32653404"},
+  "Extremadura": {"base": "presupuestado", "texto": "Junta de Extremadura, Ley 1/2024 de Presupuestos, estado de ingresos y gastos (resumen por artículos y secciones)", "url": "https://www.juntaex.es/w/normativa-ley-1-2024"},
+  "Castilla-La Mancha": {"base": "presupuestado", "texto": "Junta de Comunidades de Castilla-La Mancha, Ley de Presupuestos 2024, tomo 1 (resumen de subconceptos por sección)", "url": "https://transparencia.castillalamancha.es/actuacion/ley-de-presupuestos-generales-de-castilla-la-mancha-2024"},
+  "Illes Balears": {"base": "ejecutado", "texto": "Govern de les Illes Balears, partidas de presupuestos liquidados de gastos 2024 (datos abiertos CAIB)", "url": "https://intranet.caib.es/opendatacataleg/dataset/partides-pressuposts-liquidats-despeses-comunitat-autonoma-de-les-illes-balears"},
+  "Ceuta": {"base": "ejecutado", "texto": "Ministerio de Hacienda, CONPREL, liquidación 2024 de la Ciudad Autónoma de Ceuta (conceptos 100, 101 y 110)", "url": "https://serviciostelematicosext.hacienda.gob.es/SGFAL/CONPREL"},
+  "Melilla": {"base": "ejecutado", "texto": "Ministerio de Hacienda, CONPREL, liquidación 2024 de la Ciudad Autónoma de Melilla (conceptos 100, 101 y 110)", "url": "https://serviciostelematicosext.hacienda.gob.es/SGFAL/CONPREL"},
+  "País Vasco": {"base": "presupuestado", "texto": "Gobierno Vasco, Presupuestos Generales 2024 (Open Data Euskadi)", "url": "https://datos.gob.es/catalogo/a16003011-presupuestos-generales-del-2024-de-la-comunidad-autonoma-de-euskadi"}
+ },
+ "faltan": {
+  "País Vasco": ["Parlamento Vasco: no publica el desglose de las retribuciones de sus parlamentarios."],
+  "Castilla-La Mancha": ["Cortes de Castilla-La Mancha: su presupuesto propio no está desglosado en el de la Junta."]
+ },
+ "notas": {
+  "Ceuta": ["Ciudad autónoma: los miembros de la Asamblea son a la vez el gobierno de la ciudad."],
+  "Melilla": ["Ciudad autónoma: los miembros de la Asamblea son a la vez el gobierno de la ciudad."]
+ },
+ "local": [
+  {"texto": "ISPA 2024", "url": "https://digital.gob.es/funcion-publica/dgfp/espacio-ispa/estadisticas/informac_estad_2024"},
+  {"texto": "CONPREL 2024", "url": "https://serviciostelematicosext.hacienda.gob.es/SGFAL/CONPREL"}
+ ],
+ "estado": [
+  {"texto": "Presupuestos Generales del Estado 2023, prorrogados en 2024: resumen por artículos y secciones", "url": "https://www.sepg.pap.hacienda.gob.es/Presup/PGE2023Ley/MaestroTomos/PGE-ROM/doc/L_23_E_R1.PDF"},
+  {"texto": "Congreso de los Diputados, informe de cumplimiento del presupuesto 2024", "url": "https://www.congreso.es/docu/transp/ejecucion_presupuesto/Informe_cumplimiento_CD_2024.pdf"},
+  {"texto": "Senado, estado de ejecución del presupuesto 2024", "url": "https://www.senado.es/web/relacionesciudadanos/transparencia/informacioneconomicacontractual/presupuestosenado/detalle/index.html?id=EJECUCION_ESTADO_2024"}
+ ],
+ "estado_base": "Gobierno: presupuesto · Cortes: gasto real"
+}

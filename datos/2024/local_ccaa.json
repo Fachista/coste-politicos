@@ -1,0 +1,1502 @@
+{
+ "Andalucía": {
+  "electos_aytos": 116901016,
+  "electos_aytos_conprel": 10052076,
+  "diputaciones": 12102004,
+  "otras_entidades": 2255601,
+  "eventual": 43269941,
+  "directivos": 16805410,
+  "pob_sin_datos": 162226,
+  "pob_imputada": 573223,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Málaga",
+    "electos": 3249429,
+    "eventual": 2272502
+   },
+   {
+    "nombre": "Sevilla",
+    "electos": 2026610,
+    "eventual": 2941574
+   },
+   {
+    "nombre": "Almería",
+    "electos": 1761991,
+    "eventual": 1353714
+   },
+   {
+    "nombre": "Marbella",
+    "electos": 1462864,
+    "eventual": 1333641
+   },
+   {
+    "nombre": "Granada",
+    "electos": 1435030,
+    "eventual": 1041650
+   },
+   {
+    "nombre": "Roquetas de Mar",
+    "electos": 1094559,
+    "eventual": 1078194
+   },
+   {
+    "nombre": "Huelva",
+    "electos": 1240556,
+    "eventual": 917743
+   },
+   {
+    "nombre": "Córdoba",
+    "electos": 1091107,
+    "eventual": 1033957
+   },
+   {
+    "nombre": "Fuengirola",
+    "electos": 1178080,
+    "eventual": 862763
+   },
+   {
+    "nombre": "Mijas",
+    "electos": 1021215,
+    "eventual": 797637
+   },
+   {
+    "nombre": "Jaén",
+    "electos": 874015,
+    "eventual": 686924
+   },
+   {
+    "nombre": "Jerez de la Frontera",
+    "electos": 980167,
+    "eventual": 563568
+   },
+   {
+    "nombre": "Cádiz",
+    "electos": 836350,
+    "eventual": 702162
+   },
+   {
+    "nombre": "Chiclana de la Frontera",
+    "electos": 785179,
+    "eventual": 644408
+   },
+   {
+    "nombre": "Alcalá de Guadaíra",
+    "electos": 704650,
+    "eventual": 665404
+   }
+  ]
+ },
+ "Aragón": {
+  "electos_aytos": 10118167,
+  "electos_aytos_conprel": 271172,
+  "diputaciones": 3672015,
+  "otras_entidades": 2293236,
+  "eventual": 5112154,
+  "directivos": 1987046,
+  "pob_sin_datos": 30613,
+  "pob_imputada": 14193,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Zaragoza",
+    "electos": 2423958,
+    "eventual": 2159323
+   },
+   {
+    "nombre": "Huesca",
+    "electos": 559334,
+    "eventual": 253579
+   },
+   {
+    "nombre": "Teruel",
+    "electos": 440294,
+    "eventual": 99131
+   },
+   {
+    "nombre": "Cuarte de Huerva",
+    "electos": 318128,
+    "eventual": 22547
+   },
+   {
+    "nombre": "Calatayud",
+    "electos": 227161,
+    "eventual": 85374
+   },
+   {
+    "nombre": "Jaca",
+    "electos": 228932,
+    "eventual": 48865
+   },
+   {
+    "nombre": "Benasque",
+    "electos": 251644,
+    "eventual": 0
+   },
+   {
+    "nombre": "Barbastro",
+    "electos": 185288,
+    "eventual": 63497
+   },
+   {
+    "nombre": "Zuera",
+    "electos": 215801,
+    "eventual": 17431
+   },
+   {
+    "nombre": "Ejea de los Caballeros",
+    "electos": 134975,
+    "eventual": 82351
+   },
+   {
+    "nombre": "Alcañiz",
+    "electos": 143804,
+    "eventual": 73009
+   },
+   {
+    "nombre": "Utebo",
+    "electos": 205392,
+    "eventual": 0
+   },
+   {
+    "nombre": "Fraga",
+    "electos": 171638,
+    "eventual": 30425
+   },
+   {
+    "nombre": "Tarazona",
+    "electos": 132950,
+    "eventual": 63181
+   },
+   {
+    "nombre": "Almunia de Doña Godina, La",
+    "electos": 167290,
+    "eventual": 0
+   }
+  ]
+ },
+ "Asturias": {
+  "electos_aytos": 9620290,
+  "electos_aytos_conprel": 260407,
+  "diputaciones": 0,
+  "otras_entidades": 0,
+  "eventual": 2461000,
+  "directivos": 2365354,
+  "pob_sin_datos": 3817,
+  "pob_imputada": 26157,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Oviedo",
+    "electos": 1281317,
+    "eventual": 1058221
+   },
+   {
+    "nombre": "Gijón ",
+    "electos": 1475457,
+    "eventual": 329380
+   },
+   {
+    "nombre": "Avilés",
+    "electos": 814678,
+    "eventual": 436748
+   },
+   {
+    "nombre": "Siero",
+    "electos": 627866,
+    "eventual": 201722
+   },
+   {
+    "nombre": "Mieres (Asturias)",
+    "electos": 312474,
+    "eventual": 0
+   },
+   {
+    "nombre": "Llanes",
+    "electos": 246680,
+    "eventual": 63947
+   },
+   {
+    "nombre": "Corvera de Asturias",
+    "electos": 263249,
+    "eventual": 0
+   },
+   {
+    "nombre": "Langreo",
+    "electos": 227369,
+    "eventual": 28895
+   },
+   {
+    "nombre": "Llanera",
+    "electos": 198050,
+    "eventual": 0
+   },
+   {
+    "nombre": "Castrillón",
+    "electos": 187661,
+    "eventual": 0
+   },
+   {
+    "nombre": "Aller",
+    "electos": 176834,
+    "eventual": 0
+   },
+   {
+    "nombre": "Ribadesella",
+    "electos": 147635,
+    "eventual": 27486
+   },
+   {
+    "nombre": "Mieres",
+    "electos": 0,
+    "eventual": 175019
+   },
+   {
+    "nombre": "Cangas de Onís",
+    "electos": 172753,
+    "eventual": 0
+   },
+   {
+    "nombre": "Valdés",
+    "electos": 170442,
+    "eventual": 0
+   }
+  ]
+ },
+ "Illes Balears": {
+  "electos_aytos": 15681797,
+  "electos_aytos_conprel": 1822509,
+  "diputaciones": 3002854,
+  "otras_entidades": 74466,
+  "eventual": 6191395,
+  "directivos": 5987886,
+  "pob_sin_datos": 21557,
+  "pob_imputada": 99498,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Palma",
+    "electos": 1308814,
+    "eventual": 663098
+   },
+   {
+    "nombre": "Calvià",
+    "electos": 786349,
+    "eventual": 796797
+   },
+   {
+    "nombre": "Eivissa",
+    "electos": 933043,
+    "eventual": 382327
+   },
+   {
+    "nombre": "Sant Josep de SA Talaia",
+    "electos": 655650,
+    "eventual": 261932
+   },
+   {
+    "nombre": "Alcúdia",
+    "electos": 544113,
+    "eventual": 245870
+   },
+   {
+    "nombre": "Marratxí",
+    "electos": 545824,
+    "eventual": 230687
+   },
+   {
+    "nombre": "Sant Antoni de Portmany",
+    "electos": 573032,
+    "eventual": 186150
+   },
+   {
+    "nombre": "Inca",
+    "electos": 544953,
+    "eventual": 117271
+   },
+   {
+    "nombre": "Binissalem",
+    "electos": 206637,
+    "eventual": 451808
+   },
+   {
+    "nombre": "Santa Eulària des Riu",
+    "electos": 473682,
+    "eventual": 148898
+   },
+   {
+    "nombre": "Manacor",
+    "electos": 469789,
+    "eventual": 152686
+   },
+   {
+    "nombre": "Santanyí",
+    "electos": 524853,
+    "eventual": 94270
+   },
+   {
+    "nombre": "Llucmajor",
+    "electos": 613478,
+    "eventual": 0
+   },
+   {
+    "nombre": "Andratx",
+    "electos": 408840,
+    "eventual": 77000
+   },
+   {
+    "nombre": "Felanitx",
+    "electos": 424958,
+    "eventual": 41699
+   }
+  ]
+ },
+ "Canarias": {
+  "electos_aytos": 32796282,
+  "electos_aytos_conprel": 2993159,
+  "diputaciones": 6486521,
+  "otras_entidades": 0,
+  "eventual": 15800600,
+  "directivos": 8923448,
+  "pob_sin_datos": 24778,
+  "pob_imputada": 194271,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Las Palmas de Gran Canaria",
+    "electos": 1446374,
+    "eventual": 1259426
+   },
+   {
+    "nombre": "San Cristóbal de La Laguna",
+    "electos": 1348586,
+    "eventual": 1014805
+   },
+   {
+    "nombre": "Santa Cruz de Tenerife",
+    "electos": 1164306,
+    "eventual": 1042735
+   },
+   {
+    "nombre": "Telde",
+    "electos": 712359,
+    "eventual": 994228
+   },
+   {
+    "nombre": "Arona",
+    "electos": 756695,
+    "eventual": 658041
+   },
+   {
+    "nombre": "San Bartolomé de Tirajana",
+    "electos": 884044,
+    "eventual": 499463
+   },
+   {
+    "nombre": "Arrecife",
+    "electos": 809286,
+    "eventual": 544617
+   },
+   {
+    "nombre": "Adeje",
+    "electos": 864617,
+    "eventual": 476140
+   },
+   {
+    "nombre": "Santa Lucía de Tirajana",
+    "electos": 583857,
+    "eventual": 494093
+   },
+   {
+    "nombre": "Pájara",
+    "electos": 613439,
+    "eventual": 312655
+   },
+   {
+    "nombre": "Granadilla de Abona",
+    "electos": 575507,
+    "eventual": 343368
+   },
+   {
+    "nombre": "Mogán",
+    "electos": 836710,
+    "eventual": 45597
+   },
+   {
+    "nombre": "Gáldar",
+    "electos": 654360,
+    "eventual": 196723
+   },
+   {
+    "nombre": "Teguise",
+    "electos": 557965,
+    "eventual": 270624
+   },
+   {
+    "nombre": "Candelaria",
+    "electos": 553366,
+    "eventual": 256502
+   }
+  ]
+ },
+ "Cantabria": {
+  "electos_aytos": 8112656,
+  "electos_aytos_conprel": 1299952,
+  "diputaciones": 0,
+  "otras_entidades": 0,
+  "eventual": 1783072,
+  "directivos": 724958,
+  "pob_sin_datos": 38986,
+  "pob_imputada": 57066,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Santander",
+    "electos": 963056,
+    "eventual": 651866
+   },
+   {
+    "nombre": "Torrelavega",
+    "electos": 589742,
+    "eventual": 366127
+   },
+   {
+    "nombre": "Castro-Urdiales",
+    "electos": 608162,
+    "eventual": 172754
+   },
+   {
+    "nombre": "Camargo",
+    "electos": 394665,
+    "eventual": 208498
+   },
+   {
+    "nombre": "Piélagos",
+    "electos": 325839,
+    "eventual": 123932
+   },
+   {
+    "nombre": "Laredo",
+    "electos": 259359,
+    "eventual": 56911
+   },
+   {
+    "nombre": "Santa María de Cayón",
+    "electos": 225733,
+    "eventual": 0
+   },
+   {
+    "nombre": "Santa Cruz de Bezana",
+    "electos": 191290,
+    "eventual": 19514
+   },
+   {
+    "nombre": "Reinosa",
+    "electos": 162329,
+    "eventual": 30571
+   },
+   {
+    "nombre": "Colindres",
+    "electos": 180802,
+    "eventual": 0
+   },
+   {
+    "nombre": "Guriezo",
+    "electos": 171224,
+    "eventual": 0
+   },
+   {
+    "nombre": "Noja",
+    "electos": 164037,
+    "eventual": 0
+   },
+   {
+    "nombre": "Marina de Cudeyo",
+    "electos": 150953,
+    "eventual": 0
+   },
+   {
+    "nombre": "Polanco",
+    "electos": 109966,
+    "eventual": 20537
+   },
+   {
+    "nombre": "Santillana del Mar",
+    "electos": 127383,
+    "eventual": 0
+   }
+  ]
+ },
+ "Castilla y León": {
+  "electos_aytos": 25678006,
+  "electos_aytos_conprel": 1545223,
+  "diputaciones": 8303528,
+  "otras_entidades": 313712,
+  "eventual": 9790839,
+  "directivos": 76742,
+  "pob_sin_datos": 94133,
+  "pob_imputada": 102653,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Valladolid",
+    "electos": 1490981,
+    "eventual": 882696
+   },
+   {
+    "nombre": "León",
+    "electos": 838849,
+    "eventual": 879780
+   },
+   {
+    "nombre": "Salamanca",
+    "electos": 935765,
+    "eventual": 669502
+   },
+   {
+    "nombre": "Burgos",
+    "electos": 838547,
+    "eventual": 397985
+   },
+   {
+    "nombre": "Palencia",
+    "electos": 777284,
+    "eventual": 360668
+   },
+   {
+    "nombre": "Segovia",
+    "electos": 750349,
+    "eventual": 383471
+   },
+   {
+    "nombre": "Ávila",
+    "electos": 642105,
+    "eventual": 426563
+   },
+   {
+    "nombre": "Zamora",
+    "electos": 430792,
+    "eventual": 299439
+   },
+   {
+    "nombre": "Arroyo de la Encomienda",
+    "electos": 471534,
+    "eventual": 167324
+   },
+   {
+    "nombre": "Soria",
+    "electos": 632062,
+    "eventual": 0
+   },
+   {
+    "nombre": "Laguna de Duero",
+    "electos": 396527,
+    "eventual": 139643
+   },
+   {
+    "nombre": "Ponferrada",
+    "electos": 521205,
+    "eventual": 0
+   },
+   {
+    "nombre": "Miranda de Ebro",
+    "electos": 447091,
+    "eventual": 44094
+   },
+   {
+    "nombre": "Villaquilambre",
+    "electos": 335620,
+    "eventual": 59183
+   },
+   {
+    "nombre": "Medina del Campo",
+    "electos": 338495,
+    "eventual": 45967
+   }
+  ]
+ },
+ "Castilla-La Mancha": {
+  "electos_aytos": 26032628,
+  "electos_aytos_conprel": 2077611,
+  "diputaciones": 5221055,
+  "otras_entidades": 236954,
+  "eventual": 8360308,
+  "directivos": 1483208,
+  "pob_sin_datos": 162097,
+  "pob_imputada": 128128,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Albacete",
+    "electos": 929719,
+    "eventual": 1280182
+   },
+   {
+    "nombre": "Guadalajara",
+    "electos": 1086076,
+    "eventual": 447342
+   },
+   {
+    "nombre": "Toledo",
+    "electos": 827394,
+    "eventual": 662908
+   },
+   {
+    "nombre": "Cuenca ",
+    "electos": 722851,
+    "eventual": 280914
+   },
+   {
+    "nombre": "Ciudad Real",
+    "electos": 689921,
+    "eventual": 270862
+   },
+   {
+    "nombre": "Talavera de la Reina",
+    "electos": 596308,
+    "eventual": 221611
+   },
+   {
+    "nombre": "Azuqueca de Henares",
+    "electos": 556839,
+    "eventual": 208553
+   },
+   {
+    "nombre": "Puertollano",
+    "electos": 476318,
+    "eventual": 137976
+   },
+   {
+    "nombre": "Tarancón",
+    "electos": 424072,
+    "eventual": 94000
+   },
+   {
+    "nombre": "Valdepeñas",
+    "electos": 370980,
+    "eventual": 75061
+   },
+   {
+    "nombre": "Hellín",
+    "electos": 298661,
+    "eventual": 81290
+   },
+   {
+    "nombre": "Villarrobledo",
+    "electos": 370140,
+    "eventual": 123
+   },
+   {
+    "nombre": "Alcázar de San Juan",
+    "electos": 311218,
+    "eventual": 56821
+   },
+   {
+    "nombre": "Yuncos",
+    "electos": 300224,
+    "eventual": 49025
+   },
+   {
+    "nombre": "Cabanillas del Campo",
+    "electos": 298339,
+    "eventual": 40892
+   }
+  ]
+ },
+ "Cataluña": {
+  "electos_aytos": 104993713,
+  "electos_aytos_conprel": 3536890,
+  "diputaciones": 7998571,
+  "otras_entidades": 3701944,
+  "eventual": 43570487,
+  "directivos": 29769891,
+  "pob_sin_datos": 37730,
+  "pob_imputada": 199133,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Barcelona",
+    "electos": 3046497,
+    "eventual": 6798751
+   },
+   {
+    "nombre": "Badalona",
+    "electos": 1449090,
+    "eventual": 1183046
+   },
+   {
+    "nombre": "Reus",
+    "electos": 1112565,
+    "eventual": 969923
+   },
+   {
+    "nombre": "Sant Cugat del Vallès",
+    "electos": 1119034,
+    "eventual": 870562
+   },
+   {
+    "nombre": "Sabadell",
+    "electos": 1221153,
+    "eventual": 698447
+   },
+   {
+    "nombre": "Santa Coloma de Gramenet",
+    "electos": 1043483,
+    "eventual": 759605
+   },
+   {
+    "nombre": "Tarragona",
+    "electos": 1032172,
+    "eventual": 660499
+   },
+   {
+    "nombre": "Terrassa",
+    "electos": 1080519,
+    "eventual": 558979
+   },
+   {
+    "nombre": "Lleida",
+    "electos": 1158617,
+    "eventual": 466852
+   },
+   {
+    "nombre": "Girona",
+    "electos": 948296,
+    "eventual": 658835
+   },
+   {
+    "nombre": "Castelldefels",
+    "electos": 1083962,
+    "eventual": 342035
+   },
+   {
+    "nombre": "Hospitalet de Llobregat, L'",
+    "electos": 1346679,
+    "eventual": 0
+   },
+   {
+    "nombre": "Granollers",
+    "electos": 769058,
+    "eventual": 565806
+   },
+   {
+    "nombre": "Gavà",
+    "electos": 785892,
+    "eventual": 462162
+   },
+   {
+    "nombre": "Sant Boi de Llobregat",
+    "electos": 1065789,
+    "eventual": 176813
+   }
+  ]
+ },
+ "Extremadura": {
+  "electos_aytos": 18434256,
+  "electos_aytos_conprel": 2582161,
+  "diputaciones": 1937744,
+  "otras_entidades": 873793,
+  "eventual": 4721188,
+  "directivos": 1281483,
+  "pob_sin_datos": 38676,
+  "pob_imputada": 133657,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Badajoz",
+    "electos": 880015,
+    "eventual": 678574
+   },
+   {
+    "nombre": "Mérida",
+    "electos": 681197,
+    "eventual": 340183
+   },
+   {
+    "nombre": "Cáceres",
+    "electos": 504219,
+    "eventual": 456699
+   },
+   {
+    "nombre": "Plasencia",
+    "electos": 419737,
+    "eventual": 220498
+   },
+   {
+    "nombre": "Villanueva de la Serena",
+    "electos": 332896,
+    "eventual": 196826
+   },
+   {
+    "nombre": "Almendralejo",
+    "electos": 286936,
+    "eventual": 202365
+   },
+   {
+    "nombre": "Don Benito",
+    "electos": 288433,
+    "eventual": 85326
+   },
+   {
+    "nombre": "Villafranca de los Barros",
+    "electos": 221482,
+    "eventual": 68101
+   },
+   {
+    "nombre": "Coria",
+    "electos": 182347,
+    "eventual": 51427
+   },
+   {
+    "nombre": "Montijo",
+    "electos": 193950,
+    "eventual": 25071
+   },
+   {
+    "nombre": "Navalmoral de la Mata",
+    "electos": 168012,
+    "eventual": 50546
+   },
+   {
+    "nombre": "San Vicente de Alcántara",
+    "electos": 165126,
+    "eventual": 29616
+   },
+   {
+    "nombre": "Talavera la Real",
+    "electos": 165442,
+    "eventual": 26615
+   },
+   {
+    "nombre": "Zafra",
+    "electos": 68430,
+    "eventual": 119134
+   },
+   {
+    "nombre": "Santos de Maimona, Los",
+    "electos": 184767,
+    "eventual": 0
+   }
+  ]
+ },
+ "Galicia": {
+  "electos_aytos": 36303736,
+  "electos_aytos_conprel": 2353224,
+  "diputaciones": 4425663,
+  "otras_entidades": 42286,
+  "eventual": 12523300,
+  "directivos": 3180978,
+  "pob_sin_datos": 23967,
+  "pob_imputada": 142213,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Vigo",
+    "electos": 1105836,
+    "eventual": 633219
+   },
+   {
+    "nombre": "Ourense",
+    "electos": 828749,
+    "eventual": 860525
+   },
+   {
+    "nombre": "Santiago de Compostela",
+    "electos": 500275,
+    "eventual": 1064105
+   },
+   {
+    "nombre": "Lugo",
+    "electos": 853080,
+    "eventual": 668856
+   },
+   {
+    "nombre": "Coruña, A",
+    "electos": 1335781,
+    "eventual": 0
+   },
+   {
+    "nombre": "Pontevedra",
+    "electos": 825853,
+    "eventual": 400014
+   },
+   {
+    "nombre": "Coruña (A)",
+    "electos": 0,
+    "eventual": 1133334
+   },
+   {
+    "nombre": "Arteixo",
+    "electos": 679016,
+    "eventual": 318470
+   },
+   {
+    "nombre": "Ferrol",
+    "electos": 649508,
+    "eventual": 347160
+   },
+   {
+    "nombre": "Oleiros",
+    "electos": 517630,
+    "eventual": 162205
+   },
+   {
+    "nombre": "Lalín",
+    "electos": 439931,
+    "eventual": 209279
+   },
+   {
+    "nombre": "Ames",
+    "electos": 466566,
+    "eventual": 174312
+   },
+   {
+    "nombre": "Culleredo",
+    "electos": 529490,
+    "eventual": 103745
+   },
+   {
+    "nombre": "Narón",
+    "electos": 431734,
+    "eventual": 177273
+   },
+   {
+    "nombre": "Vilagarcía de Arousa",
+    "electos": 332082,
+    "eventual": 139958
+   }
+  ]
+ },
+ "Comunidad de Madrid": {
+  "electos_aytos": 52442616,
+  "electos_aytos_conprel": 6720851,
+  "diputaciones": 0,
+  "otras_entidades": 60118,
+  "eventual": 32372762,
+  "directivos": 16175123,
+  "pob_sin_datos": 73565,
+  "pob_imputada": 487952,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Madrid",
+    "electos": 4686968,
+    "eventual": 12843507
+   },
+   {
+    "nombre": "Alcorcón",
+    "electos": 1528787,
+    "eventual": 1460591
+   },
+   {
+    "nombre": "Fuenlabrada",
+    "electos": 1541202,
+    "eventual": 1289465
+   },
+   {
+    "nombre": "Móstoles",
+    "electos": 1505254,
+    "eventual": 1208164
+   },
+   {
+    "nombre": "Torrejón de Ardoz",
+    "electos": 1487356,
+    "eventual": 1137539
+   },
+   {
+    "nombre": "Getafe",
+    "electos": 1385307,
+    "eventual": 1235176
+   },
+   {
+    "nombre": "Pozuelo de Alarcón",
+    "electos": 1539399,
+    "eventual": 1011095
+   },
+   {
+    "nombre": "Alcalá de Henares",
+    "electos": 1670521,
+    "eventual": 829618
+   },
+   {
+    "nombre": "Rivas-Vaciamadrid",
+    "electos": 982348,
+    "eventual": 1336066
+   },
+   {
+    "nombre": "Alcobendas",
+    "electos": 1423646,
+    "eventual": 704436
+   },
+   {
+    "nombre": "Boadilla del Monte",
+    "electos": 1375869,
+    "eventual": 667940
+   },
+   {
+    "nombre": "Leganés ",
+    "electos": 1058333,
+    "eventual": 874101
+   },
+   {
+    "nombre": "Majadahonda",
+    "electos": 1332151,
+    "eventual": 595306
+   },
+   {
+    "nombre": "San Sebastián de los Reyes",
+    "electos": 1100705,
+    "eventual": 698446
+   },
+   {
+    "nombre": "Coslada",
+    "electos": 896221,
+    "eventual": 764832
+   }
+  ]
+ },
+ "Región de Murcia": {
+  "electos_aytos": 13482835,
+  "electos_aytos_conprel": 651788,
+  "diputaciones": 0,
+  "otras_entidades": 13700,
+  "eventual": 3989624,
+  "directivos": 1064492,
+  "pob_sin_datos": 49499,
+  "pob_imputada": 50518,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Murcia",
+    "electos": 1607280,
+    "eventual": 999670
+   },
+   {
+    "nombre": "Cartagena",
+    "electos": 1349178,
+    "eventual": 997798
+   },
+   {
+    "nombre": "Lorca",
+    "electos": 1135393,
+    "eventual": 504566
+   },
+   {
+    "nombre": "Molina de Segura",
+    "electos": 849094,
+    "eventual": 243852
+   },
+   {
+    "nombre": "San Javier",
+    "electos": 502411,
+    "eventual": 96463
+   },
+   {
+    "nombre": "Águilas",
+    "electos": 371076,
+    "eventual": 216714
+   },
+   {
+    "nombre": "Yecla",
+    "electos": 413683,
+    "eventual": 133126
+   },
+   {
+    "nombre": "Alcázares, Los",
+    "electos": 506190,
+    "eventual": 0
+   },
+   {
+    "nombre": "Cieza",
+    "electos": 370636,
+    "eventual": 97079
+   },
+   {
+    "nombre": "Torre-Pacheco",
+    "electos": 443628,
+    "eventual": 8604
+   },
+   {
+    "nombre": "San Pedro del Pinatar",
+    "electos": 400330,
+    "eventual": 43127
+   },
+   {
+    "nombre": "Jumilla",
+    "electos": 286659,
+    "eventual": 153142
+   },
+   {
+    "nombre": "Caravaca de la Cruz",
+    "electos": 328846,
+    "eventual": 69025
+   },
+   {
+    "nombre": "Alcantarilla",
+    "electos": 333000,
+    "eventual": 62000
+   },
+   {
+    "nombre": "Unión, La",
+    "electos": 347121,
+    "eventual": 0
+   }
+  ]
+ },
+ "Navarra": {
+  "electos_aytos": 9371730,
+  "electos_aytos_conprel": 0,
+  "diputaciones": 0,
+  "otras_entidades": 91889,
+  "eventual": 4060513,
+  "directivos": 0,
+  "pob_sin_datos": 127,
+  "pob_imputada": 0,
+  "avisos": [
+   "Asesores municipales: Hacienda solo publica la liquidación de 38 ayuntamientos navarros (Pamplona incluida)."
+  ],
+  "municipios": [
+   {
+    "nombre": "Pamplona/Iruña",
+    "electos": 1081849,
+    "eventual": 3051679
+   },
+   {
+    "nombre": "Tudela",
+    "electos": 395996,
+    "eventual": 436658
+   },
+   {
+    "nombre": "Barañáin/Barañain",
+    "electos": 179736,
+    "eventual": 248520
+   },
+   {
+    "nombre": "Zizur Mayor/Zizur Nagusia",
+    "electos": 230988,
+    "eventual": 123114
+   },
+   {
+    "nombre": "Valle de Egüés/Eguesibar",
+    "electos": 223179,
+    "eventual": 56522
+   },
+   {
+    "nombre": "Estella-Lizarra",
+    "electos": 142156,
+    "eventual": 65176
+   },
+   {
+    "nombre": "Burlada/Burlata",
+    "electos": 200158,
+    "eventual": 0
+   },
+   {
+    "nombre": "Villava/Atarrabia",
+    "electos": 166371,
+    "eventual": 0
+   },
+   {
+    "nombre": "Ansoáin/Antsoain",
+    "electos": 153719,
+    "eventual": 0
+   },
+   {
+    "nombre": "Baztan",
+    "electos": 152685,
+    "eventual": 0
+   },
+   {
+    "nombre": "Aranguren",
+    "electos": 138216,
+    "eventual": 0
+   },
+   {
+    "nombre": "Tafalla",
+    "electos": 118367,
+    "eventual": 0
+   },
+   {
+    "nombre": "Berriozar",
+    "electos": 109808,
+    "eventual": 0
+   },
+   {
+    "nombre": "Orkoien",
+    "electos": 107320,
+    "eventual": 0
+   },
+   {
+    "nombre": "Berrioplano/Berriobeiti",
+    "electos": 97666,
+    "eventual": 0
+   }
+  ]
+ },
+ "País Vasco": {
+  "electos_aytos": 34221049,
+  "electos_aytos_conprel": 2214073,
+  "diputaciones": 3056434,
+  "otras_entidades": 452075,
+  "eventual": 14997412,
+  "directivos": 2143361,
+  "pob_sin_datos": 62229,
+  "pob_imputada": 102311,
+  "avisos": [
+   "Asesores municipales: Hacienda no incluye los ayuntamientos de Álava, tampoco Vitoria-Gasteiz."
+  ],
+  "municipios": [
+   {
+    "nombre": "Bilbao",
+    "electos": 2529660,
+    "eventual": 3994598
+   },
+   {
+    "nombre": "Donostia/San Sebastián",
+    "electos": 1753155,
+    "eventual": 1761336
+   },
+   {
+    "nombre": "Vitoria-Gasteiz",
+    "electos": 1922834,
+    "eventual": 0
+   },
+   {
+    "nombre": "Barakaldo",
+    "electos": 1231859,
+    "eventual": 658993
+   },
+   {
+    "nombre": "Getxo",
+    "electos": 1237717,
+    "eventual": 0
+   },
+   {
+    "nombre": "Basauri",
+    "electos": 688590,
+    "eventual": 95220
+   },
+   {
+    "nombre": "Portugalete",
+    "electos": 776431,
+    "eventual": 0
+   },
+   {
+    "nombre": "Irun",
+    "electos": 757895,
+    "eventual": 0
+   },
+   {
+    "nombre": "Errenteria",
+    "electos": 650919,
+    "eventual": 86508
+   },
+   {
+    "nombre": "Zarautz",
+    "electos": 565586,
+    "eventual": 122473
+   },
+   {
+    "nombre": "Erandio",
+    "electos": 586643,
+    "eventual": 0
+   },
+   {
+    "nombre": "Leioa",
+    "electos": 509673,
+    "eventual": 73255
+   },
+   {
+    "nombre": "Amorebieta-Etxano",
+    "electos": 537892,
+    "eventual": 39304
+   },
+   {
+    "nombre": "Santurtzi",
+    "electos": 569634,
+    "eventual": 0
+   },
+   {
+    "nombre": "Tolosa",
+    "electos": 457769,
+    "eventual": 87784
+   }
+  ]
+ },
+ "La Rioja": {
+  "electos_aytos": 3165225,
+  "electos_aytos_conprel": 95827,
+  "diputaciones": 0,
+  "otras_entidades": 0,
+  "eventual": 944301,
+  "directivos": 50418,
+  "pob_sin_datos": 8788,
+  "pob_imputada": 8079,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Logroño",
+    "electos": 1148467,
+    "eventual": 517694
+   },
+   {
+    "nombre": "Calahorra",
+    "electos": 280750,
+    "eventual": 153440
+   },
+   {
+    "nombre": "Arnedo",
+    "electos": 146568,
+    "eventual": 27567
+   },
+   {
+    "nombre": "Haro",
+    "electos": 150881,
+    "eventual": 0
+   },
+   {
+    "nombre": "Villamediana de Iregua",
+    "electos": 112016,
+    "eventual": 25787
+   },
+   {
+    "nombre": "Santo Domingo de la Calzada",
+    "electos": 129575,
+    "eventual": 0
+   },
+   {
+    "nombre": "Alfaro",
+    "electos": 111734,
+    "eventual": 0
+   },
+   {
+    "nombre": "Autol",
+    "electos": 110099,
+    "eventual": 0
+   },
+   {
+    "nombre": "Lardero",
+    "electos": 106974,
+    "eventual": 0
+   },
+   {
+    "nombre": "Pradejón",
+    "electos": 98889,
+    "eventual": 0
+   },
+   {
+    "nombre": "Albelda de Iregua",
+    "electos": 72126,
+    "eventual": 0
+   },
+   {
+    "nombre": "Nájera",
+    "electos": 66229,
+    "eventual": 0
+   },
+   {
+    "nombre": "Bañares",
+    "electos": 3000,
+    "eventual": 43319
+   },
+   {
+    "nombre": "Arrúbal",
+    "electos": 41235,
+    "eventual": 0
+   },
+   {
+    "nombre": "Arnedillo",
+    "electos": 37875,
+    "eventual": 0
+   }
+  ]
+ },
+ "Comunitat Valenciana": {
+  "electos_aytos": 69346698,
+  "electos_aytos_conprel": 3883722,
+  "diputaciones": 5431077,
+  "otras_entidades": 579126,
+  "eventual": 26157595,
+  "directivos": 3297988,
+  "pob_sin_datos": 50249,
+  "pob_imputada": 226915,
+  "avisos": [],
+  "municipios": [
+   {
+    "nombre": "Valencia",
+    "electos": 2563100,
+    "eventual": 3790561
+   },
+   {
+    "nombre": "Alicante/Alacant",
+    "electos": 1729920,
+    "eventual": 1035883
+   },
+   {
+    "nombre": "Elche/Elx",
+    "electos": 1097023,
+    "eventual": 1020995
+   },
+   {
+    "nombre": "Castelló de la Plana",
+    "electos": 1140853,
+    "eventual": 932362
+   },
+   {
+    "nombre": "Gandia",
+    "electos": 939133,
+    "eventual": 1000203
+   },
+   {
+    "nombre": "Orihuela",
+    "electos": 911286,
+    "eventual": 766379
+   },
+   {
+    "nombre": "Torrevieja",
+    "electos": 958036,
+    "eventual": 683604
+   },
+   {
+    "nombre": "Torrent",
+    "electos": 978673,
+    "eventual": 507303
+   },
+   {
+    "nombre": "Alcoy/Alcoi",
+    "electos": 1041173,
+    "eventual": 431830
+   },
+   {
+    "nombre": "Elda",
+    "electos": 982489,
+    "eventual": 433355
+   },
+   {
+    "nombre": "Benidorm",
+    "electos": 1005831,
+    "eventual": 399992
+   },
+   {
+    "nombre": "Paterna",
+    "electos": 943298,
+    "eventual": 344515
+   },
+   {
+    "nombre": "Vila-real",
+    "electos": 860414,
+    "eventual": 378735
+   },
+   {
+    "nombre": "Sagunto/Sagunt",
+    "electos": 818864,
+    "eventual": 395507
+   },
+   {
+    "nombre": "San Vicente del Raspeig/Sant Vicent del Raspeig",
+    "electos": 729455,
+    "eventual": 301114
+   }
+  ]
+ }
+}

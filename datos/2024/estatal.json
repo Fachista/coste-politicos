@@ -1,0 +1,281 @@
+{
+ "partes": {
+  "estatutario": {
+   "altos": 7904440,
+   "eventual": 6892170
+  },
+  "gobierno": {
+   "altos": 38629430,
+   "eventual": 46762340
+  },
+  "organismo": {
+   "altos": 7186790,
+   "eventual": 3577440
+  },
+  "congreso": {
+   "altos": 22906651,
+   "eventual": 13266805
+  },
+  "senado": {
+   "altos": 17801648,
+   "eventual": 4695674
+  }
+ },
+ "unidades": [
+  {
+   "nombre": "Presidencia, Relaciones con las Cortes y Memoria Democrática",
+   "tipo": "gobierno",
+   "altos": 2467120,
+   "eventual": 21534990
+  },
+  {
+   "nombre": "Justicia",
+   "tipo": "gobierno",
+   "altos": 17988380,
+   "eventual": 813130
+  },
+  {
+   "nombre": "Organismos y entes del Estado",
+   "tipo": "organismo",
+   "altos": 7186790,
+   "eventual": 3577440
+  },
+  {
+   "nombre": "Política Territorial",
+   "tipo": "gobierno",
+   "altos": 1956330,
+   "eventual": 6657790
+  },
+  {
+   "nombre": "Consejo General del Poder Judicial",
+   "tipo": "estatutario",
+   "altos": 3027170,
+   "eventual": 3568760
+  },
+  {
+   "nombre": "Asuntos Exteriores, Unión Europea y Cooperación",
+   "tipo": "gobierno",
+   "altos": 1638380,
+   "eventual": 1847180
+  },
+  {
+   "nombre": "Tribunal Constitucional",
+   "tipo": "estatutario",
+   "altos": 2232230,
+   "eventual": 1218480
+  },
+  {
+   "nombre": "Tribunal de Cuentas",
+   "tipo": "estatutario",
+   "altos": 1617040,
+   "eventual": 1631940
+  },
+  {
+   "nombre": "Asuntos Económicos y Transformación Digital",
+   "tipo": "gobierno",
+   "altos": 1227410,
+   "eventual": 1467050
+  },
+  {
+   "nombre": "Hacienda y Función Pública",
+   "tipo": "gobierno",
+   "altos": 1578670,
+   "eventual": 1099370
+  },
+  {
+   "nombre": "Transición Ecológica y Reto Demográfico",
+   "tipo": "gobierno",
+   "altos": 1136940,
+   "eventual": 1288130
+  },
+  {
+   "nombre": "Defensa",
+   "tipo": "gobierno",
+   "altos": 1141900,
+   "eventual": 1101770
+  },
+  {
+   "nombre": "Transportes, Movilidad y Agenda Urbana",
+   "tipo": "gobierno",
+   "altos": 1173780,
+   "eventual": 821370
+  },
+  {
+   "nombre": "Interior",
+   "tipo": "gobierno",
+   "altos": 972090,
+   "eventual": 935000
+  },
+  {
+   "nombre": "Inclusión, Seguridad Social y Migraciones",
+   "tipo": "gobierno",
+   "altos": 806440,
+   "eventual": 1038280
+  },
+  {
+   "nombre": "Derechos Sociales y Agenda 2030",
+   "tipo": "gobierno",
+   "altos": 735400,
+   "eventual": 1024150
+  },
+  {
+   "nombre": "Industria, Comercio y Turismo",
+   "tipo": "gobierno",
+   "altos": 684480,
+   "eventual": 985400
+  },
+  {
+   "nombre": "Trabajo y Economía Social",
+   "tipo": "gobierno",
+   "altos": 548060,
+   "eventual": 1051580
+  },
+  {
+   "nombre": "Sanidad",
+   "tipo": "gobierno",
+   "altos": 726260,
+   "eventual": 782570
+  },
+  {
+   "nombre": "Consejo de Estado",
+   "tipo": "estatutario",
+   "altos": 1028000,
+   "eventual": 472990
+  },
+  {
+   "nombre": "Educación y Formación Profesional",
+   "tipo": "gobierno",
+   "altos": 604180,
+   "eventual": 764040
+  },
+  {
+   "nombre": "Agricultura, Pesca y Alimentación",
+   "tipo": "gobierno",
+   "altos": 838990,
+   "eventual": 519820
+  },
+  {
+   "nombre": "Igualdad",
+   "tipo": "gobierno",
+   "altos": 533020,
+   "eventual": 771300
+  },
+  {
+   "nombre": "Ciencia e Innovación",
+   "tipo": "gobierno",
+   "altos": 544120,
+   "eventual": 685560
+  },
+  {
+   "nombre": "Cultura y Deporte",
+   "tipo": "gobierno",
+   "altos": 523880,
+   "eventual": 533770
+  },
+  {
+   "nombre": "Gastos de diversos ministerios",
+   "tipo": "gobierno",
+   "altos": 462840,
+   "eventual": 518370
+  },
+  {
+   "nombre": "Universidades",
+   "tipo": "gobierno",
+   "altos": 340760,
+   "eventual": 521720
+  }
+ ],
+ "escanos": {
+  "Andalucía": {
+   "congreso": 61,
+   "senado": 41
+  },
+  "Aragón": {
+   "congreso": 13,
+   "senado": 14
+  },
+  "Asturias": {
+   "congreso": 7,
+   "senado": 6
+  },
+  "Illes Balears": {
+   "congreso": 8,
+   "senado": 7
+  },
+  "Canarias": {
+   "congreso": 15,
+   "senado": 14
+  },
+  "Cantabria": {
+   "congreso": 5,
+   "senado": 5
+  },
+  "Castilla y León": {
+   "congreso": 31,
+   "senado": 39
+  },
+  "Castilla-La Mancha": {
+   "congreso": 21,
+   "senado": 23
+  },
+  "Cataluña": {
+   "congreso": 48,
+   "senado": 24
+  },
+  "Comunitat Valenciana": {
+   "congreso": 33,
+   "senado": 18
+  },
+  "Extremadura": {
+   "congreso": 9,
+   "senado": 10
+  },
+  "Galicia": {
+   "congreso": 23,
+   "senado": 19
+  },
+  "Comunidad de Madrid": {
+   "congreso": 37,
+   "senado": 11
+  },
+  "Región de Murcia": {
+   "congreso": 10,
+   "senado": 6
+  },
+  "Navarra": {
+   "congreso": 5,
+   "senado": 5
+  },
+  "País Vasco": {
+   "congreso": 18,
+   "senado": 15
+  },
+  "La Rioja": {
+   "congreso": 4,
+   "senado": 5
+  },
+  "Ceuta": {
+   "congreso": 1,
+   "senado": 2
+  },
+  "Melilla": {
+   "congreso": 1,
+   "senado": 2
+  }
+ },
+ "fuentes": [
+  {
+   "texto": "Presupuestos Generales del Estado 2023, prorrogados en 2024: resumen por artículos y secciones",
+   "url": "https://www.sepg.pap.hacienda.gob.es/Presup/PGE2023Ley/MaestroTomos/PGE-ROM/doc/L_23_E_R1.PDF"
+  },
+  {
+   "texto": "Congreso de los Diputados, informe de cumplimiento del presupuesto 2024",
+   "url": "https://www.congreso.es/docu/transp/ejecucion_presupuesto/Informe_cumplimiento_CD_2024.pdf"
+  },
+  {
+   "texto": "Senado, estado de ejecución del presupuesto 2024",
+   "url": "https://www.senado.es/web/relacionesciudadanos/transparencia/informacioneconomicacontractual/presupuestosenado/detalle/index.html?id=EJECUCION_ESTADO_2024"
+  }
+ ],
+ "base": "Gobierno: presupuesto · Cortes: gasto real"
+}

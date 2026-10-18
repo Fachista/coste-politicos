@@ -1,0 +1,8 @@
+{
+  "nota": "Parlamento de Navarra, gasto ejecutado en 2024 según la Cámara de Comptos (informe 2025/13, 'Cuentas anuales del Parlamento de Navarra, 2024', pág. 25). Artículo 10 = retribuciones de Presidencia (81.284) + parlamentarios (2.936.612). Artículo 11 = personal eventual del gabinete de Presidencia (108.834) + otros cargos (527.199). No se incluyen dietas (38.347) ni retribuciones a exparlamentarios (71.681), igual que en el resto de comunidades.",
+  "urls": ["https://camaradecomptos.navarra.es/sites/default/files/assets/files/informes/InformeComptos2513_fdo.pdf"],
+  "filas": [
+    {"seccion": "Parlamento de Navarra", "articulo": "10", "importe": 3017896, "tipo": "parlamento"},
+    {"seccion": "Parlamento de Navarra", "articulo": "11", "importe": 636033, "tipo": "parlamento"}
+  ]
+}

@@ -1,0 +1,11 @@
+# Descargas originales: pesadas (CONPREL ocupa 445 MB) y se vuelven a bajar con scripts/actualizar.py
+datos/fuentes/**
+!datos/fuentes/**/
+# ...salvo lo que no se puede volver a descargar automáticamente
+!datos/fuentes/**/fuentes.json
+!datos/fuentes/**/art10_11.json
+!datos/fuentes/**/parlamento.json
+!datos/fuentes/**/api_art10_11.json
+
+__pycache__/
+*.pyc

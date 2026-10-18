@@ -1,0 +1,13 @@
+{
+  "nota": "Extraído el 18/10/2026 de 24L_02_estado_ing_gasto.pdf (Ley 1/2024 de Presupuestos de Extremadura), tablas 'Resumen general por capítulos, artículos y secciones' (columna TOTAL): artículo 10 'Cargos públicos y asimilados' y artículo 11 'Personal eventual (no cargo público)'. Páginas 33 (instituciones estatutarias: Asamblea), 537 (Administración General), 594 (organismos autónomos) y 647 (consorcios).",
+  "urls": ["https://www.juntaex.es/w/normativa-ley-1-2024"],
+  "filas": [
+    {"seccion": "Asamblea de Extremadura", "articulo": "10", "importe": 3750133, "tipo": "parlamento"},
+    {"seccion": "Asamblea de Extremadura", "articulo": "11", "importe": 1644456, "tipo": "parlamento"},
+    {"seccion": "Administración General (consejerías)", "articulo": "10", "importe": 6796520, "tipo": "gobierno"},
+    {"seccion": "Administración General (consejerías)", "articulo": "11", "importe": 3460373, "tipo": "gobierno"},
+    {"seccion": "Organismos autónomos", "articulo": "10", "importe": 5470752, "tipo": "organismo"},
+    {"seccion": "Organismos autónomos", "articulo": "11", "importe": 199475, "tipo": "organismo"},
+    {"seccion": "Consorcios y otros entes", "articulo": "10", "importe": 324166, "tipo": "organismo"}
+  ]
+}
