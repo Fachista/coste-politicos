@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coste por comunidad</title>
+<meta name="description" content="Cuánto cuestan por habitante los altos cargos, asesores, parlamentarios, alcaldes y concejales de cada comunidad autónoma.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<nav class="menu" id="menu" aria-label="Secciones"></nav>
+<div class="app">
+  <header class="cab">
+    <h1>¿Cuánto cuestan los políticos de tu comunidad?</h1>
+    <p class="entradilla">Lo que paga cada habitante al año en sueldos de su gobierno autonómico, su parlamento y sus ayuntamientos (<span class="anyo">2024</span>). Toca tu comunidad en el mapa: verás de dónde sale la cifra y por qué es más alta o más baja que la media.</p>
+  </header>
+
+  <div class="filtros" role="group" aria-label="Qué se incluye">
+    <label class="chip fijo"><input type="checkbox" checked disabled> Gobierno y asesores</label>
+    <label class="chip"><input type="checkbox" id="f-parlamento" checked> Parlamento</label>
+    <label class="chip"><input type="checkbox" id="f-local" checked> Ayuntamientos y diputaciones</label>
+    <label class="chip"><input type="checkbox" id="f-estado"> Estado</label>
+    <label class="chip"><input type="checkbox" id="f-otros"> Organismos y otros órganos</label>
+  </div>
+
+  <section class="kpis" id="kpis" aria-live="polite"></section>
+
+  <main class="rejilla">
+    <section class="tarjeta">
+      <svg id="mapa" role="img" aria-label="Mapa de España coloreado por coste por habitante"></svg>
+      <div class="leyenda" id="leyenda"></div>
+    </section>
+    <section class="tarjeta" id="ficha" aria-live="polite"></section>
+  </main>
+
+  <section class="tarjeta">
+    <h2 class="titulo">Ranking</h2>
+    <div id="ranking" class="ranking"></div>
+  </section>
+
+  <footer class="pie">
+    <p>Sueldos brutos de <span class="anyo">2024</span> de altos cargos, asesores (personal eventual), parlamentarios, alcaldes, concejales, diputados provinciales, diputados y senadores. Sin dietas, cotizaciones sociales ni funcionarios. Ayuntamientos: ISPA y CONPREL. Estado: Presupuestos Generales del Estado y cuentas del Congreso y del Senado.</p>
+    <p id="pie-fuentes"></p>
+  </footer>
+</div>
+<div id="tip" class="tip" role="tooltip" hidden></div>
+
+<script src="vendor/d3.min.js"></script>
+<script src="vendor/topojson-client.min.js"></script>
+<script src="vendor/d3-composite-projections.min.js"></script>
+<script src="comun.js"></script>
+<script src="comunidades.js"></script>
+</body>
+</html>

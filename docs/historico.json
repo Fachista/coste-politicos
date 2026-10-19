@@ -1,0 +1,2468 @@
+{
+ "generado": "2026-10-19",
+ "base_ipc": 2024,
+ "categorias": [
+  {
+   "id": "gobierno_altos",
+   "nombre": "Altos cargos de los ministerios"
+  },
+  {
+   "id": "gobierno_asesores",
+   "nombre": "Asesores de los ministerios"
+  },
+  {
+   "id": "congreso",
+   "nombre": "Congreso de los Diputados"
+  },
+  {
+   "id": "senado",
+   "nombre": "Senado"
+  },
+  {
+   "id": "justicia",
+   "nombre": "Cúpula judicial y fiscal (Ministerio de Justicia)"
+  },
+  {
+   "id": "organos",
+   "nombre": "Órganos constitucionales y otros"
+  },
+  {
+   "id": "organismos",
+   "nombre": "Organismos públicos"
+  }
+ ],
+ "estado": [
+  {
+   "anyo": 2007,
+   "prorrogado": null,
+   "autor": "José Luis Rodríguez Zapatero",
+   "gobierna": "José Luis Rodríguez Zapatero",
+   "gobierno_altos": 17168690,
+   "gobierno_asesores": 21309350,
+   "congreso": 27469440,
+   "senado": 18871770,
+   "justicia": 12831020,
+   "organos": 14654690,
+   "organismos": 8450100,
+   "total": 120755060,
+   "poblacion": 45226803,
+   "factor_ipc": 1.3893,
+   "ministerios": 16,
+   "secretarias_estado": 12,
+   "por_ministerio": [
+    {
+     "nombre": "Administraciones Públicas",
+     "altos": 2158680,
+     "asesores": 6005320
+    },
+    {
+     "nombre": "Presidencia",
+     "altos": 2087600,
+     "asesores": 5956040
+    },
+    {
+     "nombre": "Trabajo y Asuntos Sociales",
+     "altos": 1313970,
+     "asesores": 1132870
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1494770,
+     "asesores": 903880
+    },
+    {
+     "nombre": "Economía y Hacienda",
+     "altos": 1616000,
+     "asesores": 767160
+    },
+    {
+     "nombre": "Industria, Turismo y Comercio",
+     "altos": 1085580,
+     "asesores": 838330
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1200270,
+     "asesores": 575170
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 930810,
+     "asesores": 667510
+    },
+    {
+     "nombre": "Interior",
+     "altos": 805510,
+     "asesores": 780330
+    },
+    {
+     "nombre": "Educación y Ciencia",
+     "altos": 872380,
+     "asesores": 659240
+    },
+    {
+     "nombre": "Sanidad y Consumo",
+     "altos": 728770,
+     "asesores": 542100
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 578940,
+     "asesores": 676840
+    },
+    {
+     "nombre": "Agricultura, Pesca y Alimentación",
+     "altos": 738400,
+     "asesores": 481210
+    },
+    {
+     "nombre": "Medio Ambiente",
+     "altos": 681990,
+     "asesores": 446610
+    },
+    {
+     "nombre": "Vivienda",
+     "altos": 442990,
+     "asesores": 450500
+    },
+    {
+     "nombre": "Cultura",
+     "altos": 432030,
+     "asesores": 426240
+    }
+   ]
+  },
+  {
+   "anyo": 2008,
+   "prorrogado": null,
+   "autor": "José Luis Rodríguez Zapatero",
+   "gobierna": "José Luis Rodríguez Zapatero",
+   "gobierno_altos": 17794830,
+   "gobierno_asesores": 22273310,
+   "congreso": 29435990,
+   "senado": 18078250,
+   "justicia": 14975080,
+   "organos": 15409610,
+   "organismos": 9453030,
+   "total": 127420100,
+   "poblacion": 45954106,
+   "factor_ipc": 1.3349,
+   "ministerios": 16,
+   "secretarias_estado": 12,
+   "por_ministerio": [
+    {
+     "nombre": "Administraciones Públicas",
+     "altos": 2172880,
+     "asesores": 6165260
+    },
+    {
+     "nombre": "Presidencia",
+     "altos": 2110410,
+     "asesores": 6082070
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1616760,
+     "asesores": 956480
+    },
+    {
+     "nombre": "Trabajo y Asuntos Sociales",
+     "altos": 1365990,
+     "asesores": 1178280
+    },
+    {
+     "nombre": "Economía y Hacienda",
+     "altos": 1625100,
+     "asesores": 798150
+    },
+    {
+     "nombre": "Industria, Turismo y Comercio",
+     "altos": 1129850,
+     "asesores": 1078410
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1245260,
+     "asesores": 653700
+    },
+    {
+     "nombre": "Interior",
+     "altos": 837820,
+     "asesores": 822020
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 967710,
+     "asesores": 689730
+    },
+    {
+     "nombre": "Educación y Ciencia",
+     "altos": 907630,
+     "asesores": 676250
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 605830,
+     "asesores": 730150
+    },
+    {
+     "nombre": "Sanidad y Consumo",
+     "altos": 757870,
+     "asesores": 558650
+    },
+    {
+     "nombre": "Agricultura, Pesca y Alimentación",
+     "altos": 767760,
+     "asesores": 507510
+    },
+    {
+     "nombre": "Medio Ambiente",
+     "altos": 769820,
+     "asesores": 473370
+    },
+    {
+     "nombre": "Vivienda",
+     "altos": 460180,
+     "asesores": 464170
+    },
+    {
+     "nombre": "Cultura",
+     "altos": 453960,
+     "asesores": 439110
+    }
+   ]
+  },
+  {
+   "anyo": 2009,
+   "prorrogado": null,
+   "autor": "José Luis Rodríguez Zapatero",
+   "gobierna": "José Luis Rodríguez Zapatero",
+   "gobierno_altos": 19026020,
+   "gobierno_asesores": 25243110,
+   "congreso": 30017370,
+   "senado": 20216860,
+   "justicia": 15506420,
+   "organos": 14750900,
+   "organismos": 9955500,
+   "total": 134716180,
+   "poblacion": 46362946,
+   "factor_ipc": 1.3387,
+   "ministerios": 17,
+   "secretarias_estado": 18,
+   "por_ministerio": [
+    {
+     "nombre": "Administraciones Públicas",
+     "altos": 2181570,
+     "asesores": 6908310
+    },
+    {
+     "nombre": "Presidencia",
+     "altos": 1992230,
+     "asesores": 6155060
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1746230,
+     "asesores": 1001000
+    },
+    {
+     "nombre": "Economía y Hacienda",
+     "altos": 1751030,
+     "asesores": 814110
+    },
+    {
+     "nombre": "Industria, Turismo y Comercio",
+     "altos": 1141940,
+     "asesores": 1148740
+    },
+    {
+     "nombre": "Medio Ambiente, y Medio Rural y Marino",
+     "altos": 1225800,
+     "asesores": 1011220
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 1166450,
+     "asesores": 946440
+    },
+    {
+     "nombre": "Trabajo e Inmigración",
+     "altos": 1036870,
+     "asesores": 991120
+    },
+    {
+     "nombre": "Interior",
+     "altos": 1028170,
+     "asesores": 929840
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1251330,
+     "asesores": 597700
+    },
+    {
+     "nombre": "Educación, Política Social y Deporte",
+     "altos": 848870,
+     "asesores": 953420
+    },
+    {
+     "nombre": "Ciencia e Innovación",
+     "altos": 797760,
+     "asesores": 955610
+    },
+    {
+     "nombre": "Sanidad y Consumo",
+     "altos": 817440,
+     "asesores": 578420
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 606600,
+     "asesores": 744760
+    },
+    {
+     "nombre": "Igualdad",
+     "altos": 519440,
+     "asesores": 528460
+    },
+    {
+     "nombre": "Cultura",
+     "altos": 454070,
+     "asesores": 529540
+    },
+    {
+     "nombre": "Vivienda",
+     "altos": 460220,
+     "asesores": 449360
+    }
+   ]
+  },
+  {
+   "anyo": 2010,
+   "prorrogado": null,
+   "autor": "José Luis Rodríguez Zapatero",
+   "gobierna": "José Luis Rodríguez Zapatero",
+   "gobierno_altos": 19073030,
+   "gobierno_asesores": 26220220,
+   "congreso": 30291500,
+   "senado": 20011390,
+   "justicia": 15617050,
+   "organos": 13502040,
+   "organismos": 10272280,
+   "total": 134987510,
+   "poblacion": 46576897,
+   "factor_ipc": 1.3151,
+   "ministerios": 17,
+   "secretarias_estado": 18,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia",
+     "altos": 3580450,
+     "asesores": 12789350
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1743360,
+     "asesores": 1004660
+    },
+    {
+     "nombre": "Industria, Turismo y Comercio",
+     "altos": 1149040,
+     "asesores": 1514450
+    },
+    {
+     "nombre": "Economía y Hacienda",
+     "altos": 1748970,
+     "asesores": 814110
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 1235290,
+     "asesores": 1006480
+    },
+    {
+     "nombre": "Medio Ambiente, y Medio Rural y Marino",
+     "altos": 1225240,
+     "asesores": 962720
+    },
+    {
+     "nombre": "Trabajo e Inmigración",
+     "altos": 1035790,
+     "asesores": 990020
+    },
+    {
+     "nombre": "Interior",
+     "altos": 1026790,
+     "asesores": 933980
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1245210,
+     "asesores": 683490
+    },
+    {
+     "nombre": "Política Territorial",
+     "altos": 664040,
+     "asesores": 1219290
+    },
+    {
+     "nombre": "Sanidad y Política Social",
+     "altos": 1006180,
+     "asesores": 591460
+    },
+    {
+     "nombre": "Educación",
+     "altos": 778020,
+     "asesores": 746250
+    },
+    {
+     "nombre": "Ciencia e Innovación",
+     "altos": 598540,
+     "asesores": 776850
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 605900,
+     "asesores": 744760
+    },
+    {
+     "nombre": "Igualdad",
+     "altos": 518900,
+     "asesores": 527900
+    },
+    {
+     "nombre": "Cultura",
+     "altos": 451690,
+     "asesores": 529540
+    },
+    {
+     "nombre": "Vivienda",
+     "altos": 459620,
+     "asesores": 384910
+    }
+   ]
+  },
+  {
+   "anyo": 2011,
+   "prorrogado": null,
+   "autor": "José Luis Rodríguez Zapatero",
+   "gobierna": "José Luis Rodríguez Zapatero",
+   "gobierno_altos": 15909100,
+   "gobierno_asesores": 24466930,
+   "congreso": 27845430,
+   "senado": 17985700,
+   "justicia": 14103730,
+   "organos": 12210770,
+   "organismos": 8147640,
+   "total": 120669300,
+   "poblacion": 46742697,
+   "factor_ipc": 1.2743,
+   "ministerios": 15,
+   "secretarias_estado": 16,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia",
+     "altos": 2966070,
+     "asesores": 12371670
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 1486610,
+     "asesores": 1404660
+    },
+    {
+     "nombre": "Sanidad, Política Social e Igualdad",
+     "altos": 1224420,
+     "asesores": 1028300
+    },
+    {
+     "nombre": "Economía y Hacienda",
+     "altos": 1476630,
+     "asesores": 711880
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1172040,
+     "asesores": 993970
+    },
+    {
+     "nombre": "Medio Ambiente, y Medio Rural y Marino",
+     "altos": 1116580,
+     "asesores": 902930
+    },
+    {
+     "nombre": "Industria, Turismo y Comercio",
+     "altos": 915050,
+     "asesores": 1028780
+    },
+    {
+     "nombre": "Trabajo e Inmigración",
+     "altos": 951880,
+     "asesores": 915400
+    },
+    {
+     "nombre": "Política Territorial y Administración Pública",
+     "altos": 602000,
+     "asesores": 1150260
+    },
+    {
+     "nombre": "Interior",
+     "altos": 826290,
+     "asesores": 851270
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1078830,
+     "asesores": 597930
+    },
+    {
+     "nombre": "Educación",
+     "altos": 652520,
+     "asesores": 701700
+    },
+    {
+     "nombre": "Ciencia e Innovación",
+     "altos": 542670,
+     "asesores": 733810
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 488040,
+     "asesores": 674840
+    },
+    {
+     "nombre": "Cultura",
+     "altos": 409470,
+     "asesores": 399530
+    }
+   ]
+  },
+  {
+   "anyo": 2012,
+   "prorrogado": null,
+   "autor": "Mariano Rajoy",
+   "gobierna": "Mariano Rajoy",
+   "gobierno_altos": 13470000,
+   "gobierno_asesores": 23809050,
+   "congreso": 26172450,
+   "senado": 16803790,
+   "justicia": 14079930,
+   "organos": 12335160,
+   "organismos": 7995180,
+   "total": 114665560,
+   "poblacion": 46773055,
+   "factor_ipc": 1.2439,
+   "ministerios": 13,
+   "secretarias_estado": 17,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia",
+     "altos": 1404570,
+     "asesores": 8248620
+    },
+    {
+     "nombre": "Hacienda y Administraciones Públicas",
+     "altos": 2505880,
+     "asesores": 6283950
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1177210,
+     "asesores": 993970
+    },
+    {
+     "nombre": "Economía y Competitividad",
+     "altos": 1022320,
+     "asesores": 1115840
+    },
+    {
+     "nombre": "Industria, Energía y Turismo",
+     "altos": 685360,
+     "asesores": 1091020
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 1029130,
+     "asesores": 708650
+    },
+    {
+     "nombre": "Agricultura, Alimentación y Medio Ambiente",
+     "altos": 1042470,
+     "asesores": 681960
+    },
+    {
+     "nombre": "Educación, Cultura y Deporte",
+     "altos": 777330,
+     "asesores": 928270
+    },
+    {
+     "nombre": "Empleo y Seguridad Social",
+     "altos": 777300,
+     "asesores": 914780
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1023100,
+     "asesores": 597230
+    },
+    {
+     "nombre": "Interior",
+     "altos": 723600,
+     "asesores": 846770
+    },
+    {
+     "nombre": "Sanidad, Servicios Sociales e Igualdad",
+     "altos": 814810,
+     "asesores": 716460
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 486920,
+     "asesores": 681530
+    }
+   ]
+  },
+  {
+   "anyo": 2013,
+   "prorrogado": null,
+   "autor": "Mariano Rajoy",
+   "gobierna": "Mariano Rajoy",
+   "gobierno_altos": 13365240,
+   "gobierno_asesores": 22765180,
+   "congreso": 26186220,
+   "senado": 16840190,
+   "justicia": 14079930,
+   "organos": 12294000,
+   "organismos": 8001210,
+   "total": 113531970,
+   "poblacion": 46604197,
+   "factor_ipc": 1.2266,
+   "ministerios": 13,
+   "secretarias_estado": 17,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia",
+     "altos": 1354470,
+     "asesores": 7824530
+    },
+    {
+     "nombre": "Hacienda y Administraciones Públicas",
+     "altos": 2505880,
+     "asesores": 6179880
+    },
+    {
+     "nombre": "Economía y Competitividad",
+     "altos": 967670,
+     "asesores": 1221340
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1177210,
+     "asesores": 664000
+    },
+    {
+     "nombre": "Agricultura, Alimentación y Medio Ambiente",
+     "altos": 1042470,
+     "asesores": 688800
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 1029130,
+     "asesores": 690520
+    },
+    {
+     "nombre": "Educación, Cultura y Deporte",
+     "altos": 777330,
+     "asesores": 929780
+    },
+    {
+     "nombre": "Empleo y Seguridad Social",
+     "altos": 777300,
+     "asesores": 914780
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1023090,
+     "asesores": 597230
+    },
+    {
+     "nombre": "Interior",
+     "altos": 723600,
+     "asesores": 857880
+    },
+    {
+     "nombre": "Sanidad, Servicios Sociales e Igualdad",
+     "altos": 814810,
+     "asesores": 719520
+    },
+    {
+     "nombre": "Industria, Energía y Turismo",
+     "altos": 685360,
+     "asesores": 795390
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 486920,
+     "asesores": 681530
+    }
+   ]
+  },
+  {
+   "anyo": 2014,
+   "prorrogado": null,
+   "autor": "Mariano Rajoy",
+   "gobierna": "Mariano Rajoy",
+   "gobierno_altos": 13542710,
+   "gobierno_asesores": 22913690,
+   "congreso": 26287620,
+   "senado": 16840190,
+   "justicia": 13742110,
+   "organos": 10650370,
+   "organismos": 9119200,
+   "total": 113095890,
+   "poblacion": 46460733,
+   "factor_ipc": 1.2285,
+   "ministerios": 13,
+   "secretarias_estado": 17,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia",
+     "altos": 1477230,
+     "asesores": 7907580
+    },
+    {
+     "nombre": "Hacienda y Administraciones Públicas",
+     "altos": 2560520,
+     "asesores": 6179880
+    },
+    {
+     "nombre": "Economía y Competitividad",
+     "altos": 967670,
+     "asesores": 1205860
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1177210,
+     "asesores": 718850
+    },
+    {
+     "nombre": "Agricultura, Alimentación y Medio Ambiente",
+     "altos": 1042470,
+     "asesores": 688800
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 1029130,
+     "asesores": 690520
+    },
+    {
+     "nombre": "Educación, Cultura y Deporte",
+     "altos": 777410,
+     "asesores": 929780
+    },
+    {
+     "nombre": "Empleo y Seguridad Social",
+     "altos": 777300,
+     "asesores": 914780
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1023090,
+     "asesores": 597230
+    },
+    {
+     "nombre": "Interior",
+     "altos": 723600,
+     "asesores": 847190
+    },
+    {
+     "nombre": "Sanidad, Servicios Sociales e Igualdad",
+     "altos": 814810,
+     "asesores": 719520
+    },
+    {
+     "nombre": "Industria, Energía y Turismo",
+     "altos": 685360,
+     "asesores": 832170
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 486910,
+     "asesores": 681530
+    }
+   ]
+  },
+  {
+   "anyo": 2015,
+   "prorrogado": null,
+   "autor": "Mariano Rajoy",
+   "gobierna": "Mariano Rajoy",
+   "gobierno_altos": 13446750,
+   "gobierno_asesores": 22545710,
+   "congreso": 26287620,
+   "senado": 15128310,
+   "justicia": 14094130,
+   "organos": 10527480,
+   "organismos": 8327420,
+   "total": 110357420,
+   "poblacion": 46422303,
+   "factor_ipc": 1.2347,
+   "ministerios": 13,
+   "secretarias_estado": 19,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia",
+     "altos": 1413520,
+     "asesores": 7907580
+    },
+    {
+     "nombre": "Hacienda y Administraciones Públicas",
+     "altos": 2624230,
+     "asesores": 6179880
+    },
+    {
+     "nombre": "Economía y Competitividad",
+     "altos": 1022320,
+     "asesores": 780600
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1177210,
+     "asesores": 590830
+    },
+    {
+     "nombre": "Agricultura, Alimentación y Medio Ambiente",
+     "altos": 1042470,
+     "asesores": 690510
+    },
+    {
+     "nombre": "Educación, Cultura y Deporte",
+     "altos": 777410,
+     "asesores": 929780
+    },
+    {
+     "nombre": "Industria, Energía y Turismo",
+     "altos": 685360,
+     "asesores": 1010640
+    },
+    {
+     "nombre": "Empleo y Seguridad Social",
+     "altos": 777300,
+     "asesores": 914780
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 933170,
+     "asesores": 695640
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1023090,
+     "asesores": 597230
+    },
+    {
+     "nombre": "Interior",
+     "altos": 723600,
+     "asesores": 847190
+    },
+    {
+     "nombre": "Sanidad, Servicios Sociales e Igualdad",
+     "altos": 760160,
+     "asesores": 719520
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 486910,
+     "asesores": 681530
+    }
+   ]
+  },
+  {
+   "anyo": 2016,
+   "prorrogado": null,
+   "autor": "Mariano Rajoy",
+   "gobierna": "Mariano Rajoy",
+   "gobierno_altos": 13446750,
+   "gobierno_asesores": 22916880,
+   "congreso": 26550510,
+   "senado": 16843760,
+   "justicia": 14206060,
+   "organos": 11059940,
+   "organismos": 8529670,
+   "total": 113553570,
+   "poblacion": 46458139,
+   "factor_ipc": 1.2372,
+   "ministerios": 13,
+   "secretarias_estado": 19,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia",
+     "altos": 1413520,
+     "asesores": 7907580
+    },
+    {
+     "nombre": "Hacienda y Administraciones Públicas",
+     "altos": 2624230,
+     "asesores": 6179880
+    },
+    {
+     "nombre": "Economía y Competitividad",
+     "altos": 1022320,
+     "asesores": 1153850
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1231860,
+     "asesores": 590830
+    },
+    {
+     "nombre": "Agricultura, Alimentación y Medio Ambiente",
+     "altos": 1042470,
+     "asesores": 693540
+    },
+    {
+     "nombre": "Educación, Cultura y Deporte",
+     "altos": 777410,
+     "asesores": 929780
+    },
+    {
+     "nombre": "Industria, Energía y Turismo",
+     "altos": 685360,
+     "asesores": 1010640
+    },
+    {
+     "nombre": "Empleo y Seguridad Social",
+     "altos": 777300,
+     "asesores": 914780
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1023090,
+     "asesores": 597230
+    },
+    {
+     "nombre": "Interior",
+     "altos": 723600,
+     "asesores": 847190
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 878520,
+     "asesores": 690530
+    },
+    {
+     "nombre": "Sanidad, Servicios Sociales e Igualdad",
+     "altos": 760160,
+     "asesores": 719520
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 486910,
+     "asesores": 681530
+    }
+   ]
+  },
+  {
+   "anyo": 2017,
+   "prorrogado": null,
+   "autor": "Mariano Rajoy",
+   "gobierna": "Mariano Rajoy",
+   "gobierno_altos": 13605880,
+   "gobierno_asesores": 23513500,
+   "congreso": 28562330,
+   "senado": 17442920,
+   "justicia": 14459840,
+   "organos": 11389640,
+   "organismos": 9211750,
+   "total": 118185860,
+   "poblacion": 46571232,
+   "factor_ipc": 1.2134,
+   "ministerios": 13,
+   "secretarias_estado": 20,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia y para las Administraciones Territoriales",
+     "altos": 2676960,
+     "asesores": 13175340
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1256450,
+     "asesores": 1140690
+    },
+    {
+     "nombre": "Hacienda y Función Pública",
+     "altos": 1386600,
+     "asesores": 986870
+    },
+    {
+     "nombre": "Economía, Industria y Competitividad",
+     "altos": 1107850,
+     "asesores": 975830
+    },
+    {
+     "nombre": "Agricultura y Pesca, Alimentación y Medio Ambiente",
+     "altos": 1063430,
+     "asesores": 700450
+    },
+    {
+     "nombre": "Educación, Cultura y Deporte",
+     "altos": 793030,
+     "asesores": 939460
+    },
+    {
+     "nombre": "Empleo y Seguridad Social",
+     "altos": 793030,
+     "asesores": 923920
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1043590,
+     "asesores": 663480
+    },
+    {
+     "nombre": "Energía, Turismo y Agenda Digital",
+     "altos": 578380,
+     "asesores": 1031800
+    },
+    {
+     "nombre": "Interior",
+     "altos": 738300,
+     "asesores": 864230
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 896180,
+     "asesores": 697450
+    },
+    {
+     "nombre": "Sanidad, Servicios Sociales e Igualdad",
+     "altos": 775440,
+     "asesores": 719900
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 496640,
+     "asesores": 694080
+    }
+   ]
+  },
+  {
+   "anyo": 2018,
+   "prorrogado": null,
+   "autor": "Mariano Rajoy",
+   "gobierna": "Pedro Sánchez",
+   "gobierno_altos": 14127730,
+   "gobierno_asesores": 24562270,
+   "congreso": 29119120,
+   "senado": 17829650,
+   "justicia": 15432870,
+   "organos": 11802370,
+   "organismos": 9379210,
+   "total": 122253220,
+   "poblacion": 46782011,
+   "factor_ipc": 1.1935,
+   "ministerios": 13,
+   "secretarias_estado": 20,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia y para las Administraciones Territoriales",
+     "altos": 2917680,
+     "asesores": 13733490
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1324100,
+     "asesores": 1159300
+    },
+    {
+     "nombre": "Hacienda y Función Pública",
+     "altos": 1409060,
+     "asesores": 1002960
+    },
+    {
+     "nombre": "Economía, Industria y Competitividad",
+     "altos": 1125810,
+     "asesores": 1212340
+    },
+    {
+     "nombre": "Educación, Cultura y Deporte",
+     "altos": 805880,
+     "asesores": 1030610
+    },
+    {
+     "nombre": "Empleo y Seguridad Social",
+     "altos": 862530,
+     "asesores": 939010
+    },
+    {
+     "nombre": "Agricultura y Pesca, Alimentación y Medio Ambiente",
+     "altos": 1080650,
+     "asesores": 719010
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1060680,
+     "asesores": 674300
+    },
+    {
+     "nombre": "Energía, Turismo y Agenda Digital",
+     "altos": 587760,
+     "asesores": 1052790
+    },
+    {
+     "nombre": "Interior",
+     "altos": 750150,
+     "asesores": 878320
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 910700,
+     "asesores": 715910
+    },
+    {
+     "nombre": "Sanidad, Servicios Sociales e Igualdad",
+     "altos": 788010,
+     "asesores": 738840
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 504720,
+     "asesores": 705390
+    }
+   ]
+  },
+  {
+   "anyo": 2019,
+   "prorrogado": 2018,
+   "autor": "Mariano Rajoy",
+   "gobierna": "Pedro Sánchez",
+   "gobierno_altos": 14127730,
+   "gobierno_asesores": 24562270,
+   "congreso": 29119120,
+   "senado": 17829650,
+   "justicia": 15432870,
+   "organos": 11802370,
+   "organismos": 9379210,
+   "total": 122253220,
+   "poblacion": 47118501,
+   "factor_ipc": 1.1852,
+   "ministerios": 13,
+   "secretarias_estado": 20,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia y para las Administraciones Territoriales",
+     "altos": 2917680,
+     "asesores": 13733490
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1324100,
+     "asesores": 1159300
+    },
+    {
+     "nombre": "Hacienda y Función Pública",
+     "altos": 1409060,
+     "asesores": 1002960
+    },
+    {
+     "nombre": "Economía, Industria y Competitividad",
+     "altos": 1125810,
+     "asesores": 1212340
+    },
+    {
+     "nombre": "Educación, Cultura y Deporte",
+     "altos": 805880,
+     "asesores": 1030610
+    },
+    {
+     "nombre": "Empleo y Seguridad Social",
+     "altos": 862530,
+     "asesores": 939010
+    },
+    {
+     "nombre": "Agricultura y Pesca, Alimentación y Medio Ambiente",
+     "altos": 1080650,
+     "asesores": 719010
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1060680,
+     "asesores": 674300
+    },
+    {
+     "nombre": "Energía, Turismo y Agenda Digital",
+     "altos": 587760,
+     "asesores": 1052790
+    },
+    {
+     "nombre": "Interior",
+     "altos": 750150,
+     "asesores": 878320
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 910700,
+     "asesores": 715910
+    },
+    {
+     "nombre": "Sanidad, Servicios Sociales e Igualdad",
+     "altos": 788010,
+     "asesores": 738840
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 504720,
+     "asesores": 705390
+    }
+   ]
+  },
+  {
+   "anyo": 2020,
+   "prorrogado": 2018,
+   "autor": "Mariano Rajoy",
+   "gobierna": "Pedro Sánchez",
+   "gobierno_altos": 14127730,
+   "gobierno_asesores": 24562270,
+   "congreso": 29119120,
+   "senado": 17829650,
+   "justicia": 15432870,
+   "organos": 11802370,
+   "organismos": 9379210,
+   "total": 122253220,
+   "poblacion": 47359424,
+   "factor_ipc": 1.189,
+   "ministerios": 13,
+   "secretarias_estado": 20,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia y para las Administraciones Territoriales",
+     "altos": 2917680,
+     "asesores": 13733490
+    },
+    {
+     "nombre": "Asuntos Exteriores y de Cooperación",
+     "altos": 1324100,
+     "asesores": 1159300
+    },
+    {
+     "nombre": "Hacienda y Función Pública",
+     "altos": 1409060,
+     "asesores": 1002960
+    },
+    {
+     "nombre": "Economía, Industria y Competitividad",
+     "altos": 1125810,
+     "asesores": 1212340
+    },
+    {
+     "nombre": "Educación, Cultura y Deporte",
+     "altos": 805880,
+     "asesores": 1030610
+    },
+    {
+     "nombre": "Empleo y Seguridad Social",
+     "altos": 862530,
+     "asesores": 939010
+    },
+    {
+     "nombre": "Agricultura y Pesca, Alimentación y Medio Ambiente",
+     "altos": 1080650,
+     "asesores": 719010
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1060680,
+     "asesores": 674300
+    },
+    {
+     "nombre": "Energía, Turismo y Agenda Digital",
+     "altos": 587760,
+     "asesores": 1052790
+    },
+    {
+     "nombre": "Interior",
+     "altos": 750150,
+     "asesores": 878320
+    },
+    {
+     "nombre": "Fomento",
+     "altos": 910700,
+     "asesores": 715910
+    },
+    {
+     "nombre": "Sanidad, Servicios Sociales e Igualdad",
+     "altos": 788010,
+     "asesores": 738840
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 504720,
+     "asesores": 705390
+    }
+   ]
+  },
+  {
+   "anyo": 2021,
+   "prorrogado": null,
+   "autor": "Pedro Sánchez",
+   "gobierna": "Pedro Sánchez",
+   "gobierno_altos": 19825610,
+   "gobierno_asesores": 41309630,
+   "congreso": 33300000,
+   "senado": 19410580,
+   "justicia": 16155120,
+   "organos": 14602750,
+   "organismos": 9958730,
+   "total": 154562420,
+   "poblacion": 47443821,
+   "factor_ipc": 1.1533,
+   "ministerios": 22,
+   "secretarias_estado": 23,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia, Relaciones con las Cortes y Memoria Democrática",
+     "altos": 2373960,
+     "asesores": 18297030
+    },
+    {
+     "nombre": "Política Territorial y Función Pública",
+     "altos": 2151630,
+     "asesores": 6665330
+    },
+    {
+     "nombre": "Asuntos Exteriores, Unión Europea y Cooperación",
+     "altos": 1523290,
+     "asesores": 1525560
+    },
+    {
+     "nombre": "Transición Ecológica y el Reto Demográfico",
+     "altos": 1036180,
+     "asesores": 1306060
+    },
+    {
+     "nombre": "Asuntos Económicos y Transformación Digital",
+     "altos": 1005420,
+     "asesores": 1309870
+    },
+    {
+     "nombre": "Derechos Sociales y Agenda 2030",
+     "altos": 789150,
+     "asesores": 1237720
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1110130,
+     "asesores": 848530
+    },
+    {
+     "nombre": "Hacienda",
+     "altos": 1149920,
+     "asesores": 770050
+    },
+    {
+     "nombre": "Transportes, Movilidad y Agenda Urbana",
+     "altos": 1141000,
+     "asesores": 755830
+    },
+    {
+     "nombre": "Interior",
+     "altos": 844500,
+     "asesores": 927370
+    },
+    {
+     "nombre": "Inclusión, Seguridad Social y Migraciones",
+     "altos": 726330,
+     "asesores": 995640
+    },
+    {
+     "nombre": "Industria, Comercio y Turismo",
+     "altos": 665660,
+     "asesores": 957210
+    },
+    {
+     "nombre": "Sanidad",
+     "altos": 706230,
+     "asesores": 772070
+    },
+    {
+     "nombre": "Agricultura, Pesca y Alimentación",
+     "altos": 815950,
+     "asesores": 503340
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 528330,
+     "asesores": 738410
+    },
+    {
+     "nombre": "Trabajo y Economía Social",
+     "altos": 459210,
+     "asesores": 749400
+    },
+    {
+     "nombre": "Educación y Formación Profesional",
+     "altos": 587740,
+     "asesores": 536120
+    },
+    {
+     "nombre": "Ciencia e Innovación",
+     "altos": 460150,
+     "asesores": 553530
+    },
+    {
+     "nombre": "Cultura y Deporte",
+     "altos": 509620,
+     "asesores": 478760
+    },
+    {
+     "nombre": "Igualdad",
+     "altos": 459170,
+     "asesores": 526940
+    },
+    {
+     "nombre": "Consumo",
+     "altos": 450320,
+     "asesores": 395210
+    },
+    {
+     "nombre": "Universidades",
+     "altos": 331720,
+     "asesores": 459650
+    }
+   ]
+  },
+  {
+   "anyo": 2022,
+   "prorrogado": null,
+   "autor": "Pedro Sánchez",
+   "gobierna": "Pedro Sánchez",
+   "gobierno_altos": 20585520,
+   "gobierno_asesores": 42975300,
+   "congreso": 33871930,
+   "senado": 20076370,
+   "justicia": 16478260,
+   "organos": 15006880,
+   "organismos": 10152090,
+   "total": 159146350,
+   "poblacion": 47786102,
+   "factor_ipc": 1.064,
+   "ministerios": 22,
+   "secretarias_estado": 24,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia, Relaciones con las Cortes y Memoria Democrática",
+     "altos": 2192870,
+     "asesores": 18649510
+    },
+    {
+     "nombre": "Política Territorial",
+     "altos": 1956330,
+     "asesores": 6654790
+    },
+    {
+     "nombre": "Asuntos Exteriores, Unión Europea y Cooperación",
+     "altos": 1638380,
+     "asesores": 1539300
+    },
+    {
+     "nombre": "Hacienda y Función Pública",
+     "altos": 1578670,
+     "asesores": 1025410
+    },
+    {
+     "nombre": "Asuntos Económicos y Transformación Digital",
+     "altos": 1095210,
+     "asesores": 1444620
+    },
+    {
+     "nombre": "Transición Ecológica y el Reto Demográfico",
+     "altos": 1065830,
+     "asesores": 1273820
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1141900,
+     "asesores": 1081340
+    },
+    {
+     "nombre": "Transportes, Movilidad y Agenda Urbana",
+     "altos": 1173780,
+     "asesores": 758900
+    },
+    {
+     "nombre": "Interior",
+     "altos": 964760,
+     "asesores": 913300
+    },
+    {
+     "nombre": "Inclusión, Seguridad Social y Migraciones",
+     "altos": 745420,
+     "asesores": 1038280
+    },
+    {
+     "nombre": "Derechos Sociales y Agenda 2030",
+     "altos": 735400,
+     "asesores": 984100
+    },
+    {
+     "nombre": "Industria, Comercio y Turismo",
+     "altos": 684480,
+     "asesores": 1006310
+    },
+    {
+     "nombre": "Trabajo y Economía Social",
+     "altos": 548080,
+     "asesores": 1033030
+    },
+    {
+     "nombre": "Sanidad",
+     "altos": 726260,
+     "asesores": 772070
+    },
+    {
+     "nombre": "Agricultura, Pesca y Alimentación",
+     "altos": 857480,
+     "asesores": 503340
+    },
+    {
+     "nombre": "Educación y Formación Profesional",
+     "altos": 604180,
+     "asesores": 749360
+    },
+    {
+     "nombre": "Igualdad",
+     "altos": 532960,
+     "asesores": 750610
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 543090,
+     "asesores": 739270
+    },
+    {
+     "nombre": "Ciencia e Innovación",
+     "altos": 472960,
+     "asesores": 553780
+    },
+    {
+     "nombre": "Cultura y Deporte",
+     "altos": 523880,
+     "asesores": 483060
+    },
+    {
+     "nombre": "Consumo",
+     "altos": 462840,
+     "asesores": 509400
+    },
+    {
+     "nombre": "Universidades",
+     "altos": 340760,
+     "asesores": 511700
+    }
+   ]
+  },
+  {
+   "anyo": 2023,
+   "prorrogado": null,
+   "autor": "Pedro Sánchez",
+   "gobierna": "Pedro Sánchez",
+   "gobierno_altos": 21306170,
+   "gobierno_asesores": 46762340,
+   "congreso": 35569100,
+   "senado": 21406820,
+   "justicia": 17323260,
+   "organos": 15352210,
+   "organismos": 10764230,
+   "total": 168484130,
+   "poblacion": 48352528,
+   "factor_ipc": 1.0277,
+   "ministerios": 22,
+   "secretarias_estado": 24,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia, Relaciones con las Cortes y Memoria Democrática",
+     "altos": 2467120,
+     "asesores": 21534990
+    },
+    {
+     "nombre": "Política Territorial",
+     "altos": 1956330,
+     "asesores": 6657790
+    },
+    {
+     "nombre": "Asuntos Exteriores, Unión Europea y Cooperación",
+     "altos": 1638380,
+     "asesores": 1847180
+    },
+    {
+     "nombre": "Asuntos Económicos y Transformación Digital",
+     "altos": 1227410,
+     "asesores": 1467050
+    },
+    {
+     "nombre": "Hacienda y Función Pública",
+     "altos": 1578670,
+     "asesores": 1099370
+    },
+    {
+     "nombre": "Transición Ecológica y el Reto Demográfico",
+     "altos": 1136940,
+     "asesores": 1288130
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1141900,
+     "asesores": 1101770
+    },
+    {
+     "nombre": "Transportes, Movilidad y Agenda Urbana",
+     "altos": 1173780,
+     "asesores": 821370
+    },
+    {
+     "nombre": "Interior",
+     "altos": 972090,
+     "asesores": 935000
+    },
+    {
+     "nombre": "Inclusión, Seguridad Social y Migraciones",
+     "altos": 806440,
+     "asesores": 1038280
+    },
+    {
+     "nombre": "Derechos Sociales y Agenda 2030",
+     "altos": 735400,
+     "asesores": 1024150
+    },
+    {
+     "nombre": "Industria, Comercio y Turismo",
+     "altos": 684480,
+     "asesores": 985400
+    },
+    {
+     "nombre": "Trabajo y Economía Social",
+     "altos": 548060,
+     "asesores": 1051580
+    },
+    {
+     "nombre": "Sanidad",
+     "altos": 726260,
+     "asesores": 782570
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 665120,
+     "asesores": 813130
+    },
+    {
+     "nombre": "Educación y Formación Profesional",
+     "altos": 604180,
+     "asesores": 764040
+    },
+    {
+     "nombre": "Agricultura, Pesca y Alimentación",
+     "altos": 838990,
+     "asesores": 519820
+    },
+    {
+     "nombre": "Igualdad",
+     "altos": 533020,
+     "asesores": 771300
+    },
+    {
+     "nombre": "Ciencia e Innovación",
+     "altos": 544120,
+     "asesores": 685560
+    },
+    {
+     "nombre": "Cultura y Deporte",
+     "altos": 523880,
+     "asesores": 533770
+    },
+    {
+     "nombre": "Consumo",
+     "altos": 462840,
+     "asesores": 518370
+    },
+    {
+     "nombre": "Universidades",
+     "altos": 340760,
+     "asesores": 521720
+    }
+   ]
+  },
+  {
+   "anyo": 2024,
+   "prorrogado": 2023,
+   "autor": "Pedro Sánchez",
+   "gobierna": "Pedro Sánchez",
+   "gobierno_altos": 21306170,
+   "gobierno_asesores": 46762340,
+   "congreso": 35569100,
+   "senado": 21406820,
+   "justicia": 17323260,
+   "organos": 15352210,
+   "organismos": 10764230,
+   "total": 168484130,
+   "poblacion": 48848840,
+   "factor_ipc": 1.0,
+   "ministerios": 22,
+   "secretarias_estado": 24,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia, Relaciones con las Cortes y Memoria Democrática",
+     "altos": 2467120,
+     "asesores": 21534990
+    },
+    {
+     "nombre": "Política Territorial",
+     "altos": 1956330,
+     "asesores": 6657790
+    },
+    {
+     "nombre": "Asuntos Exteriores, Unión Europea y Cooperación",
+     "altos": 1638380,
+     "asesores": 1847180
+    },
+    {
+     "nombre": "Asuntos Económicos y Transformación Digital",
+     "altos": 1227410,
+     "asesores": 1467050
+    },
+    {
+     "nombre": "Hacienda y Función Pública",
+     "altos": 1578670,
+     "asesores": 1099370
+    },
+    {
+     "nombre": "Transición Ecológica y el Reto Demográfico",
+     "altos": 1136940,
+     "asesores": 1288130
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1141900,
+     "asesores": 1101770
+    },
+    {
+     "nombre": "Transportes, Movilidad y Agenda Urbana",
+     "altos": 1173780,
+     "asesores": 821370
+    },
+    {
+     "nombre": "Interior",
+     "altos": 972090,
+     "asesores": 935000
+    },
+    {
+     "nombre": "Inclusión, Seguridad Social y Migraciones",
+     "altos": 806440,
+     "asesores": 1038280
+    },
+    {
+     "nombre": "Derechos Sociales y Agenda 2030",
+     "altos": 735400,
+     "asesores": 1024150
+    },
+    {
+     "nombre": "Industria, Comercio y Turismo",
+     "altos": 684480,
+     "asesores": 985400
+    },
+    {
+     "nombre": "Trabajo y Economía Social",
+     "altos": 548060,
+     "asesores": 1051580
+    },
+    {
+     "nombre": "Sanidad",
+     "altos": 726260,
+     "asesores": 782570
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 665120,
+     "asesores": 813130
+    },
+    {
+     "nombre": "Educación y Formación Profesional",
+     "altos": 604180,
+     "asesores": 764040
+    },
+    {
+     "nombre": "Agricultura, Pesca y Alimentación",
+     "altos": 838990,
+     "asesores": 519820
+    },
+    {
+     "nombre": "Igualdad",
+     "altos": 533020,
+     "asesores": 771300
+    },
+    {
+     "nombre": "Ciencia e Innovación",
+     "altos": 544120,
+     "asesores": 685560
+    },
+    {
+     "nombre": "Cultura y Deporte",
+     "altos": 523880,
+     "asesores": 533770
+    },
+    {
+     "nombre": "Consumo",
+     "altos": 462840,
+     "asesores": 518370
+    },
+    {
+     "nombre": "Universidades",
+     "altos": 340760,
+     "asesores": 521720
+    }
+   ]
+  },
+  {
+   "anyo": 2025,
+   "prorrogado": 2023,
+   "autor": "Pedro Sánchez",
+   "gobierna": "Pedro Sánchez",
+   "gobierno_altos": 21306170,
+   "gobierno_asesores": 46762340,
+   "congreso": 35569100,
+   "senado": 21406820,
+   "justicia": 17323260,
+   "organos": 15352210,
+   "organismos": 10764230,
+   "total": 168484130,
+   "poblacion": 49355143,
+   "factor_ipc": null,
+   "ministerios": 22,
+   "secretarias_estado": 24,
+   "por_ministerio": [
+    {
+     "nombre": "Presidencia, Relaciones con las Cortes y Memoria Democrática",
+     "altos": 2467120,
+     "asesores": 21534990
+    },
+    {
+     "nombre": "Política Territorial",
+     "altos": 1956330,
+     "asesores": 6657790
+    },
+    {
+     "nombre": "Asuntos Exteriores, Unión Europea y Cooperación",
+     "altos": 1638380,
+     "asesores": 1847180
+    },
+    {
+     "nombre": "Asuntos Económicos y Transformación Digital",
+     "altos": 1227410,
+     "asesores": 1467050
+    },
+    {
+     "nombre": "Hacienda y Función Pública",
+     "altos": 1578670,
+     "asesores": 1099370
+    },
+    {
+     "nombre": "Transición Ecológica y el Reto Demográfico",
+     "altos": 1136940,
+     "asesores": 1288130
+    },
+    {
+     "nombre": "Defensa",
+     "altos": 1141900,
+     "asesores": 1101770
+    },
+    {
+     "nombre": "Transportes, Movilidad y Agenda Urbana",
+     "altos": 1173780,
+     "asesores": 821370
+    },
+    {
+     "nombre": "Interior",
+     "altos": 972090,
+     "asesores": 935000
+    },
+    {
+     "nombre": "Inclusión, Seguridad Social y Migraciones",
+     "altos": 806440,
+     "asesores": 1038280
+    },
+    {
+     "nombre": "Derechos Sociales y Agenda 2030",
+     "altos": 735400,
+     "asesores": 1024150
+    },
+    {
+     "nombre": "Industria, Comercio y Turismo",
+     "altos": 684480,
+     "asesores": 985400
+    },
+    {
+     "nombre": "Trabajo y Economía Social",
+     "altos": 548060,
+     "asesores": 1051580
+    },
+    {
+     "nombre": "Sanidad",
+     "altos": 726260,
+     "asesores": 782570
+    },
+    {
+     "nombre": "Justicia",
+     "altos": 665120,
+     "asesores": 813130
+    },
+    {
+     "nombre": "Educación y Formación Profesional",
+     "altos": 604180,
+     "asesores": 764040
+    },
+    {
+     "nombre": "Agricultura, Pesca y Alimentación",
+     "altos": 838990,
+     "asesores": 519820
+    },
+    {
+     "nombre": "Igualdad",
+     "altos": 533020,
+     "asesores": 771300
+    },
+    {
+     "nombre": "Ciencia e Innovación",
+     "altos": 544120,
+     "asesores": 685560
+    },
+    {
+     "nombre": "Cultura y Deporte",
+     "altos": 523880,
+     "asesores": 533770
+    },
+    {
+     "nombre": "Consumo",
+     "altos": 462840,
+     "asesores": 518370
+    },
+    {
+     "nombre": "Universidades",
+     "altos": 340760,
+     "asesores": 521720
+    }
+   ]
+  }
+ ],
+ "gobiernos": [
+  {
+   "presidente": "Adolfo Suárez",
+   "partido": "UCD",
+   "desde": "1977-07-04"
+  },
+  {
+   "presidente": "Leopoldo Calvo-Sotelo",
+   "partido": "UCD",
+   "desde": "1981-02-26"
+  },
+  {
+   "presidente": "Felipe González",
+   "partido": "PSOE",
+   "desde": "1982-12-02"
+  },
+  {
+   "presidente": "José María Aznar",
+   "partido": "PP",
+   "desde": "1996-05-05"
+  },
+  {
+   "presidente": "José Luis Rodríguez Zapatero",
+   "partido": "PSOE",
+   "desde": "2004-04-17"
+  },
+  {
+   "presidente": "Mariano Rajoy",
+   "partido": "PP",
+   "desde": "2011-12-21"
+  },
+  {
+   "presidente": "Pedro Sánchez",
+   "partido": "PSOE",
+   "desde": "2018-06-02"
+  }
+ ],
+ "sueldos": {
+  "serie": [
+   {
+    "anyo": 1986,
+    "presidente": 49664.49,
+    "vicepresidente": 46679.67,
+    "ministro": 43818.4,
+    "ley": "Ley 46/1985",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-26831",
+    "factor_ipc": 3.188
+   },
+   {
+    "anyo": 1987,
+    "presidente": 52147.78,
+    "vicepresidente": 49013.67,
+    "ministro": 46009.38,
+    "ley": "Ley 21/1986",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-33382",
+    "factor_ipc": 3.029
+   },
+   {
+    "anyo": 1988,
+    "presidente": 54233.75,
+    "vicepresidente": 50974.22,
+    "ley": "Ley 33/1987",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-28404",
+    "factor_ipc": 2.8893
+   },
+   {
+    "anyo": 1989,
+    "presidente": 56403.16,
+    "vicepresidente": 53013.23,
+    "ministro": 49763.8,
+    "ley": "Ley 37/1988",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1988-29563",
+    "factor_ipc": 2.7055
+   },
+   {
+    "anyo": 1990,
+    "presidente": 59787.39,
+    "vicepresidente": 56194.08,
+    "ministro": 52749.63,
+    "ley": "Ley 4/1990",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-15347",
+    "factor_ipc": 2.5351
+   },
+   {
+    "anyo": 1991,
+    "presidente": 63530.13,
+    "vicepresidente": 59711.87,
+    "ministro": 56051.78,
+    "ley": "Ley 31/1990",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31180",
+    "factor_ipc": 2.3931
+   },
+   {
+    "anyo": 1992,
+    "presidente": 67758.03,
+    "vicepresidente": 63685.69,
+    "ministro": 59782.05,
+    "ley": "Ley 31/1991",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-30903",
+    "factor_ipc": 2.2593
+   },
+   {
+    "anyo": 1993,
+    "presidente": 67758.03,
+    "vicepresidente": 63685.69,
+    "ministro": 59782.05,
+    "ley": "Ley 39/1992",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28826",
+    "factor_ipc": 2.1605
+   },
+   {
+    "anyo": 1994,
+    "presidente": 67758.03,
+    "vicepresidente": 63685.69,
+    "ministro": 59782.05,
+    "ley": "Ley 21/1993",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1993-31087",
+    "factor_ipc": 2.0632
+   },
+   {
+    "anyo": 1995,
+    "presidente": 70129.6,
+    "vicepresidente": 65914.75,
+    "ministro": 61874.44,
+    "ley": "Ley 41/1994",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-28967",
+    "factor_ipc": 1.9711
+   },
+   {
+    "anyo": 1997,
+    "presidente": 72584.18,
+    "vicepresidente": 68221.77,
+    "ministro": 64040.1,
+    "ley": "Ley 12/1996",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-29116",
+    "factor_ipc": 1.8665
+   },
+   {
+    "anyo": 1998,
+    "presidente": 74108.47,
+    "vicepresidente": 69654.47,
+    "ministro": 65384.95,
+    "ley": "Ley 65/1997",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-28052",
+    "factor_ipc": 1.8329
+   },
+   {
+    "anyo": 1999,
+    "presidente": 75442.43,
+    "vicepresidente": 70908.3,
+    "ministro": 66561.9,
+    "ley": "Ley 49/1998",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-30154",
+    "factor_ipc": 1.7915
+   },
+   {
+    "anyo": 2000,
+    "presidente": 76951.28,
+    "vicepresidente": 72326.49,
+    "ministro": 67893.19,
+    "ley": "Ley 54/1999",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-24785",
+    "factor_ipc": 1.7321
+   },
+   {
+    "anyo": 2001,
+    "presidente": 78490.35,
+    "vicepresidente": 73773.03,
+    "ministro": 69251.09,
+    "ley": "Ley 13/2000",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-24265",
+    "factor_ipc": 1.672
+   },
+   {
+    "anyo": 2002,
+    "presidente": 80060.16,
+    "vicepresidente": 75248.52,
+    "ministro": 70636.2,
+    "ley": "Ley 23/2001",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-24964",
+    "factor_ipc": 1.6223
+   },
+   {
+    "anyo": 2003,
+    "presidente": 81661.44,
+    "vicepresidente": 76753.56,
+    "ministro": 72048.96,
+    "ley": "Ley 52/2002",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-25411",
+    "factor_ipc": 1.5745
+   },
+   {
+    "anyo": 2004,
+    "presidente": 83294.76,
+    "vicepresidente": 78288.72,
+    "ministro": 73490.04,
+    "ley": "Ley 61/2003",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23935",
+    "factor_ipc": 1.528
+   },
+   {
+    "anyo": 2005,
+    "presidente": 84960.72,
+    "vicepresidente": 79854.6,
+    "ministro": 74959.92,
+    "ley": "Ley 2/2004",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-21688",
+    "factor_ipc": 1.4782
+   },
+   {
+    "anyo": 2006,
+    "presidente": 87552.12,
+    "vicepresidente": 82290.24,
+    "ministro": 77246.28,
+    "ley": "Ley 30/2005",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2005-21525",
+    "factor_ipc": 1.428
+   },
+   {
+    "anyo": 2007,
+    "presidente": 89303.28,
+    "vicepresidente": 83936.16,
+    "ministro": 78791.28,
+    "ley": "Ley 42/2006",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-22865",
+    "factor_ipc": 1.3893
+   },
+   {
+    "anyo": 2008,
+    "presidente": 91982.4,
+    "vicepresidente": 86454.36,
+    "ministro": 81155.04,
+    "ley": "Ley 51/2007",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-22295",
+    "factor_ipc": 1.3349
+   },
+   {
+    "anyo": 2009,
+    "presidente": 91982.4,
+    "vicepresidente": 86454.36,
+    "ministro": 81155.04,
+    "ley": "Ley 2/2008",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-20744",
+    "factor_ipc": 1.3387
+   },
+   {
+    "anyo": 2010,
+    "presidente": 78185.04,
+    "vicepresidente": 73486.32,
+    "ministro": 68981.88,
+    "ley": "Ley 26/2009",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-20765",
+    "factor_ipc": 1.3151
+   },
+   {
+    "anyo": 2011,
+    "presidente": 78185.04,
+    "vicepresidente": 73486.32,
+    "ministro": 68981.88,
+    "ley": "Ley 39/2010",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-19703",
+    "factor_ipc": 1.2743
+   },
+   {
+    "anyo": 2012,
+    "presidente": 78185.04,
+    "vicepresidente": 73486.32,
+    "ministro": 68981.88,
+    "ley": "Ley 2/2012",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-8745",
+    "factor_ipc": 1.2439
+   },
+   {
+    "anyo": 2013,
+    "presidente": 78185.04,
+    "vicepresidente": 73486.32,
+    "ministro": 68981.88,
+    "ley": "Ley 17/2012",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-15651",
+    "factor_ipc": 1.2266
+   },
+   {
+    "anyo": 2014,
+    "presidente": 78185.04,
+    "vicepresidente": 73486.32,
+    "ministro": 68981.88,
+    "ley": "Ley 22/2013",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-13616",
+    "factor_ipc": 1.2285
+   },
+   {
+    "anyo": 2015,
+    "presidente": 78185.04,
+    "vicepresidente": 73486.32,
+    "ministro": 68981.88,
+    "ley": "Ley 36/2014",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-13612",
+    "factor_ipc": 1.2347
+   },
+   {
+    "anyo": 2016,
+    "presidente": 78966.96,
+    "vicepresidente": 74221.2,
+    "ministro": 69671.76,
+    "ley": "Ley 48/2015",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11644",
+    "factor_ipc": 1.2372
+   },
+   {
+    "anyo": 2017,
+    "presidente": 79756.68,
+    "vicepresidente": 74963.52,
+    "ministro": 70368.48,
+    "ley": "Ley 3/2017",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-7387",
+    "factor_ipc": 1.2134
+   },
+   {
+    "anyo": 2018,
+    "presidente": 80953.08,
+    "vicepresidente": 76088.04,
+    "ministro": 71424.12,
+    "ley": "Ley 6/2018",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-9268",
+    "factor_ipc": 1.1935
+   },
+   {
+    "anyo": 2021,
+    "presidente": 84845.16,
+    "vicepresidente": 79746.24,
+    "ministro": 74858.16,
+    "ley": "Ley 11/2020",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-17339",
+    "factor_ipc": 1.1533
+   },
+   {
+    "anyo": 2022,
+    "presidente": 86542.08,
+    "vicepresidente": 81341.16,
+    "ministro": 76355.28,
+    "ley": "Ley 22/2021",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21653",
+    "factor_ipc": 1.064
+   },
+   {
+    "anyo": 2023,
+    "presidente": 90010.2,
+    "vicepresidente": 84600.72,
+    "ministro": 79415.16,
+    "ley": "Ley 31/2022",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "factor_ipc": 1.0277
+   }
+  ],
+  "detalle": {
+   "anyo": 2023,
+   "ley": "Ley 31/2022",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+   "cargos": [
+    {
+     "cargo": "Presidente del Tribunal Constitucional",
+     "grupo": "Órganos constitucionales",
+     "anual": 167169.1,
+     "calculo": "total anual fijado en la ley"
+    },
+    {
+     "cargo": "Vicepresidente del Tribunal Constitucional",
+     "grupo": "Órganos constitucionales",
+     "anual": 157133.06,
+     "calculo": "total anual fijado en la ley"
+    },
+    {
+     "cargo": "Presidente del Tribunal Supremo y del Consejo General del Poder Judicial",
+     "grupo": "Órganos constitucionales",
+     "anual": 151186.2,
+     "calculo": "total anual fijado en la ley"
+    },
+    {
+     "cargo": "Presidente de Sección del Tribunal Constitucional",
+     "grupo": "Órganos constitucionales",
+     "anual": 149444.96,
+     "calculo": "total anual fijado en la ley"
+    },
+    {
+     "cargo": "Magistrado del Tribunal Constitucional",
+     "grupo": "Órganos constitucionales",
+     "anual": 141757.28,
+     "calculo": "total anual fijado en la ley"
+    },
+    {
+     "cargo": "Secretario General del Tribunal Constitucional",
+     "grupo": "Órganos constitucionales",
+     "anual": 134150.24,
+     "calculo": "total anual fijado en la ley"
+    },
+    {
+     "cargo": "Presidente del Tribunal de Cuentas",
+     "grupo": "Órganos constitucionales",
+     "anual": 130771.62,
+     "calculo": "total anual fijado en la ley"
+    },
+    {
+     "cargo": "Presidente de Sección del Tribunal de Cuentas",
+     "grupo": "Órganos constitucionales",
+     "anual": 130771.62,
+     "calculo": "total anual fijado en la ley"
+    },
+    {
+     "cargo": "Consejero de Cuentas del Tribunal de Cuentas",
+     "grupo": "Órganos constitucionales",
+     "anual": 130771.62,
+     "calculo": "total anual fijado en la ley"
+    },
+    {
+     "cargo": "Vocal del Consejo General del Poder Judicial",
+     "grupo": "Órganos constitucionales",
+     "anual": 130390.4,
+     "calculo": "total anual fijado en la ley"
+    },
+    {
+     "cargo": "Secretario General del Consejo General del Poder Judicial",
+     "grupo": "Órganos constitucionales",
+     "anual": 127384.6,
+     "calculo": "total anual fijado en la ley"
+    },
+    {
+     "cargo": "Secretario General del Tribunal de Cuentas",
+     "grupo": "Órganos constitucionales",
+     "anual": 112584.64,
+     "calculo": "total anual fijado en la ley"
+    },
+    {
+     "cargo": "Presidente del Consejo Económico y Social",
+     "grupo": "Órganos consultivos",
+     "anual": 98741.4,
+     "calculo": "12 mensualidades, sin pagas extra"
+    },
+    {
+     "cargo": "Presidente del Consejo de Estado",
+     "grupo": "Órganos consultivos",
+     "anual": 90383.28,
+     "calculo": "12 mensualidades, sin pagas extra"
+    },
+    {
+     "cargo": "Presidente del Gobierno",
+     "grupo": "Gobierno",
+     "anual": 90010.2,
+     "calculo": "12 mensualidades, sin pagas extra"
+    },
+    {
+     "cargo": "Vicepresidente del Gobierno",
+     "grupo": "Gobierno",
+     "anual": 84600.72,
+     "calculo": "12 mensualidades, sin pagas extra"
+    },
+    {
+     "cargo": "Secretario de Estado",
+     "grupo": "Administración General del Estado",
+     "anual": 83505.06,
+     "calculo": "sueldo + complemento de destino + complemento específico + 2 pagas extra; sin productividad"
+    },
+    {
+     "cargo": "Ministro del Gobierno",
+     "grupo": "Gobierno",
+     "anual": 79415.16,
+     "calculo": "12 mensualidades, sin pagas extra"
+    },
+    {
+     "cargo": "Subsecretario",
+     "grupo": "Administración General del Estado",
+     "anual": 74000.7,
+     "calculo": "sueldo + complemento de destino + complemento específico + 2 pagas extra; sin productividad"
+    },
+    {
+     "cargo": "Director general",
+     "grupo": "Administración General del Estado",
+     "anual": 63468.8,
+     "calculo": "sueldo + complemento de destino + complemento específico + 2 pagas extra; sin productividad"
+    }
+   ],
+   "referencias": {
+    "funcionario_A1_24": {
+     "texto": "Funcionario A1 con nivel 24 (p. ej., profesor de secundaria o médico)",
+     "anual": 26529.82
+    },
+    "funcionario_A2_22": {
+     "texto": "Funcionario A2 con nivel 22 (p. ej., maestro o enfermero)",
+     "anual": 23284.44
+    },
+    "funcionario_C1_18": {
+     "texto": "Funcionario C1 con nivel 18 (p. ej., administrativo o técnico)",
+     "anual": 17903.7
+    },
+    "nota": "Retribución básica estatal: sueldo + complemento de destino + 2 pagas extra, sin trienios ni complemento específico (que fija cada administración). El sueldo real suele ser mayor."
+   }
+  },
+  "fuente": "Leyes de Presupuestos Generales del Estado (BOE), texto consolidado vía legalize-es"
+ },
+ "fuentes": [
+  {
+   "texto": "Presupuestos Generales del Estado 2007-2023, partida a partida (Fundación Civio, a partir de la SEPG)",
+   "url": "https://github.com/civio/presupuesto-pge"
+  },
+  {
+   "texto": "Leyes de Presupuestos Generales del Estado (BOE)",
+   "url": "https://www.boe.es/buscar/legislacion.php"
+  },
+  {
+   "texto": "Inflación (IPC) y población: Banco Mundial, con datos del INE",
+   "url": "https://datos.bancomundial.org/indicador/FP.CPI.TOTL.ZG?locations=ES"
+  }
+ ]
+}

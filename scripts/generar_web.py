@@ -12,6 +12,7 @@ from comun import ANYO, RAIZ, SALIDAS, metadatos, ruta
 ENTRADA = SALIDAS / "autonomico_unidades.csv"
 LOCAL = SALIDAS / "local_ccaa.json"
 ESTATAL = SALIDAS / "estatal.json"
+MUNICIPIOS = SALIDAS / "municipios.csv"
 SALIDA = RAIZ / "docs" / "datos.json"
 # Población a mitad del año de los datos; si el INE aún no la tiene, la fecha disponible más cercana
 FECHAS_POBLACION = [f"{ANYO}-07-01", f"{ANYO + 1}-01-01", f"{ANYO}-01-01"]
@@ -129,6 +130,19 @@ def main():
         "estado": json.loads(ESTATAL.read_text(encoding="utf-8")),
     }
     SALIDA.write_text(json.dumps(salida, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    # Buscador de municipios: [nombre, provincia, comunidad, población, electos, asesores]
+    if MUNICIPIOS.exists():
+        with open(MUNICIPIOS, encoding="utf-8") as f:
+            filas = [[r["municipio"], r["provincia"], r["ccaa"], int(r["poblacion"]), int(r["electos"]), int(r["eventual"])]
+                     for r in csv.DictReader(f)]
+        (RAIZ / "docs" / "municipios.json").write_text(
+            json.dumps({"anyo": ANYO, "campos": ["municipio", "provincia", "ccaa", "poblacion", "electos", "asesores"],
+                        "fuentes": meta["local"], "filas": filas}, ensure_ascii=False, separators=(",", ":")),
+            encoding="utf-8")
+        print(f"-> docs/municipios.json ({len(filas)} municipios)")
+    else:
+        print(f"AVISO: falta {MUNICIPIOS.relative_to(RAIZ)} (scripts/local.py): la web no tendrá buscador de municipios")
 
     # Resumen por consola: opción por defecto de la web (gobierno + parlamento + local sin directivos)
     filas = []

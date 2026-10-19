@@ -9,10 +9,12 @@
 - Directivos: CONPREL, concepto 101, todas las entidades locales.
 Ceuta y Melilla se excluyen: ya cuentan en el nivel autonómico.
 
-Lee datos/fuentes/<año>/ispa y conprel; escribe datos/<año>/local_ccaa.json.
+Lee datos/fuentes/<año>/ispa y conprel; escribe datos/<año>/local_ccaa.json y datos/<año>/municipios.csv
+(todos los municipios con su población, para el buscador de la web).
 Uso: py scripts/local.py [año]
 """
 import collections
+import csv
 import json
 import re
 import unicodedata
@@ -101,7 +103,7 @@ def main():
     def muni(cc, cp, nombre):
         claves = [(cp, v) for v in variantes(nombre)]
         clave = next((k for k in claves if k in municipios[cc]), claves[0])
-        return municipios[cc].setdefault(clave, {"nombre": str(nombre), "electos": 0.0, "eventual": 0.0})
+        return municipios[cc].setdefault(clave, {"nombre": str(nombre), "provincia": cp, "electos": 0.0, "eventual": 0.0})
     avisos = collections.defaultdict(list)
 
     # --- Alcaldes y concejales (ISPA) ---
@@ -191,6 +193,19 @@ def main():
     alava = [nom for c, nom, *_ in ente.values() if c[:2] == "01" and c[5:7] == "AA"]
     if len(alava) < 10:
         avisos["País Vasco"].append("Asesores municipales: Hacienda no incluye los ayuntamientos de Álava, tampoco Vitoria-Gasteiz.")
+
+    # Todos los municipios, con su población (inventario de CONPREL), para el buscador de la web
+    nombres_prov = {cp: r for cp, r in ((r.Provincia.strip(), r.Nombre.strip())
+                                        for r in cur.execute("SELECT Provincia, Nombre FROM tb_Provincias"))}
+    with open(SALIDAS / "municipios.csv", "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["ccaa", "provincia", "municipio", "poblacion", "electos", "eventual"])
+        for cc in CCAA_CONPREL.values():
+            for (cp, _), m in sorted(municipios[cc].items(), key=lambda x: x[1]["nombre"]):
+                idente = next((aytos_conprel[(cp, v)] for v in variantes(m["nombre"]) if (cp, v) in aytos_conprel), None)
+                pob = ente[idente][3] if idente is not None else 0
+                w.writerow([cc, nombres_prov.get(cp, cp), m["nombre"], pob, round(m["electos"]), round(m["eventual"])])
+    print("->", SALIDAS / "municipios.csv")
 
     salida = {}
     for cc in CCAA_CONPREL.values():
