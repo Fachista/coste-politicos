@@ -1,0 +1,426 @@
+{
+ "serie": [
+  {
+   "anyo": 1986,
+   "presidente": 49664.49,
+   "vicepresidente": 46679.67,
+   "ministro": 43818.4,
+   "ley": "Ley 46/1985",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-26831"
+  },
+  {
+   "anyo": 1987,
+   "presidente": 52147.78,
+   "vicepresidente": 49013.67,
+   "ministro": 46009.38,
+   "ley": "Ley 21/1986",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1986-33382"
+  },
+  {
+   "anyo": 1988,
+   "presidente": 54233.75,
+   "vicepresidente": 50974.22,
+   "ley": "Ley 33/1987",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1987-28404"
+  },
+  {
+   "anyo": 1989,
+   "presidente": 56403.16,
+   "vicepresidente": 53013.23,
+   "ministro": 49763.8,
+   "ley": "Ley 37/1988",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1988-29563"
+  },
+  {
+   "anyo": 1990,
+   "presidente": 59787.39,
+   "vicepresidente": 56194.08,
+   "ministro": 52749.63,
+   "ley": "Ley 4/1990",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-15347"
+  },
+  {
+   "anyo": 1991,
+   "presidente": 63530.13,
+   "vicepresidente": 59711.87,
+   "ministro": 56051.78,
+   "ley": "Ley 31/1990",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-31180"
+  },
+  {
+   "anyo": 1992,
+   "presidente": 67758.03,
+   "vicepresidente": 63685.69,
+   "ministro": 59782.05,
+   "ley": "Ley 31/1991",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1991-30903"
+  },
+  {
+   "anyo": 1993,
+   "presidente": 67758.03,
+   "vicepresidente": 63685.69,
+   "ministro": 59782.05,
+   "ley": "Ley 39/1992",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28826"
+  },
+  {
+   "anyo": 1994,
+   "presidente": 67758.03,
+   "vicepresidente": 63685.69,
+   "ministro": 59782.05,
+   "ley": "Ley 21/1993",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1993-31087"
+  },
+  {
+   "anyo": 1995,
+   "presidente": 70129.6,
+   "vicepresidente": 65914.75,
+   "ministro": 61874.44,
+   "ley": "Ley 41/1994",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-28967"
+  },
+  {
+   "anyo": 1997,
+   "presidente": 72584.18,
+   "vicepresidente": 68221.77,
+   "ministro": 64040.1,
+   "ley": "Ley 12/1996",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-29116"
+  },
+  {
+   "anyo": 1998,
+   "presidente": 74108.47,
+   "vicepresidente": 69654.47,
+   "ministro": 65384.95,
+   "ley": "Ley 65/1997",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-28052"
+  },
+  {
+   "anyo": 1999,
+   "presidente": 75442.43,
+   "vicepresidente": 70908.3,
+   "ministro": 66561.9,
+   "ley": "Ley 49/1998",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-30154"
+  },
+  {
+   "anyo": 2000,
+   "presidente": 76951.28,
+   "vicepresidente": 72326.49,
+   "ministro": 67893.19,
+   "ley": "Ley 54/1999",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1999-24785"
+  },
+  {
+   "anyo": 2001,
+   "presidente": 78490.35,
+   "vicepresidente": 73773.03,
+   "ministro": 69251.09,
+   "ley": "Ley 13/2000",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2000-24265"
+  },
+  {
+   "anyo": 2002,
+   "presidente": 80060.16,
+   "vicepresidente": 75248.52,
+   "ministro": 70636.2,
+   "ley": "Ley 23/2001",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-24964"
+  },
+  {
+   "anyo": 2003,
+   "presidente": 81661.44,
+   "vicepresidente": 76753.56,
+   "ministro": 72048.96,
+   "ley": "Ley 52/2002",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-25411"
+  },
+  {
+   "anyo": 2004,
+   "presidente": 83294.76,
+   "vicepresidente": 78288.72,
+   "ministro": 73490.04,
+   "ley": "Ley 61/2003",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23935"
+  },
+  {
+   "anyo": 2005,
+   "presidente": 84960.72,
+   "vicepresidente": 79854.6,
+   "ministro": 74959.92,
+   "ley": "Ley 2/2004",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-21688"
+  },
+  {
+   "anyo": 2006,
+   "presidente": 87552.12,
+   "vicepresidente": 82290.24,
+   "ministro": 77246.28,
+   "ley": "Ley 30/2005",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2005-21525"
+  },
+  {
+   "anyo": 2007,
+   "presidente": 89303.28,
+   "vicepresidente": 83936.16,
+   "ministro": 78791.28,
+   "ley": "Ley 42/2006",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-22865"
+  },
+  {
+   "anyo": 2008,
+   "presidente": 91982.4,
+   "vicepresidente": 86454.36,
+   "ministro": 81155.04,
+   "ley": "Ley 51/2007",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-22295"
+  },
+  {
+   "anyo": 2009,
+   "presidente": 91982.4,
+   "vicepresidente": 86454.36,
+   "ministro": 81155.04,
+   "ley": "Ley 2/2008",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-20744"
+  },
+  {
+   "anyo": 2010,
+   "presidente": 78185.04,
+   "vicepresidente": 73486.32,
+   "ministro": 68981.88,
+   "ley": "Ley 26/2009",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-20765"
+  },
+  {
+   "anyo": 2011,
+   "presidente": 78185.04,
+   "vicepresidente": 73486.32,
+   "ministro": 68981.88,
+   "ley": "Ley 39/2010",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-19703"
+  },
+  {
+   "anyo": 2012,
+   "presidente": 78185.04,
+   "vicepresidente": 73486.32,
+   "ministro": 68981.88,
+   "ley": "Ley 2/2012",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-8745"
+  },
+  {
+   "anyo": 2013,
+   "presidente": 78185.04,
+   "vicepresidente": 73486.32,
+   "ministro": 68981.88,
+   "ley": "Ley 17/2012",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-15651"
+  },
+  {
+   "anyo": 2014,
+   "presidente": 78185.04,
+   "vicepresidente": 73486.32,
+   "ministro": 68981.88,
+   "ley": "Ley 22/2013",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-13616"
+  },
+  {
+   "anyo": 2015,
+   "presidente": 78185.04,
+   "vicepresidente": 73486.32,
+   "ministro": 68981.88,
+   "ley": "Ley 36/2014",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-13612"
+  },
+  {
+   "anyo": 2016,
+   "presidente": 78966.96,
+   "vicepresidente": 74221.2,
+   "ministro": 69671.76,
+   "ley": "Ley 48/2015",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-11644"
+  },
+  {
+   "anyo": 2017,
+   "presidente": 79756.68,
+   "vicepresidente": 74963.52,
+   "ministro": 70368.48,
+   "ley": "Ley 3/2017",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-7387"
+  },
+  {
+   "anyo": 2018,
+   "presidente": 80953.08,
+   "vicepresidente": 76088.04,
+   "ministro": 71424.12,
+   "ley": "Ley 6/2018",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-9268"
+  },
+  {
+   "anyo": 2021,
+   "presidente": 84845.16,
+   "vicepresidente": 79746.24,
+   "ministro": 74858.16,
+   "ley": "Ley 11/2020",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2020-17339"
+  },
+  {
+   "anyo": 2022,
+   "presidente": 86542.08,
+   "vicepresidente": 81341.16,
+   "ministro": 76355.28,
+   "ley": "Ley 22/2021",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-21653"
+  },
+  {
+   "anyo": 2023,
+   "presidente": 90010.2,
+   "vicepresidente": 84600.72,
+   "ministro": 79415.16,
+   "ley": "Ley 31/2022",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128"
+  }
+ ],
+ "detalle": {
+  "anyo": 2023,
+  "ley": "Ley 31/2022",
+  "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+  "cargos": [
+   {
+    "cargo": "Presidente del Tribunal Constitucional",
+    "grupo": "Órganos constitucionales",
+    "anual": 167169.1,
+    "calculo": "total anual fijado en la ley"
+   },
+   {
+    "cargo": "Vicepresidente del Tribunal Constitucional",
+    "grupo": "Órganos constitucionales",
+    "anual": 157133.06,
+    "calculo": "total anual fijado en la ley"
+   },
+   {
+    "cargo": "Presidente del Tribunal Supremo y del Consejo General del Poder Judicial",
+    "grupo": "Órganos constitucionales",
+    "anual": 151186.2,
+    "calculo": "total anual fijado en la ley"
+   },
+   {
+    "cargo": "Presidente de Sección del Tribunal Constitucional",
+    "grupo": "Órganos constitucionales",
+    "anual": 149444.96,
+    "calculo": "total anual fijado en la ley"
+   },
+   {
+    "cargo": "Magistrado del Tribunal Constitucional",
+    "grupo": "Órganos constitucionales",
+    "anual": 141757.28,
+    "calculo": "total anual fijado en la ley"
+   },
+   {
+    "cargo": "Secretario General del Tribunal Constitucional",
+    "grupo": "Órganos constitucionales",
+    "anual": 134150.24,
+    "calculo": "total anual fijado en la ley"
+   },
+   {
+    "cargo": "Presidente del Tribunal de Cuentas",
+    "grupo": "Órganos constitucionales",
+    "anual": 130771.62,
+    "calculo": "total anual fijado en la ley"
+   },
+   {
+    "cargo": "Presidente de Sección del Tribunal de Cuentas",
+    "grupo": "Órganos constitucionales",
+    "anual": 130771.62,
+    "calculo": "total anual fijado en la ley"
+   },
+   {
+    "cargo": "Consejero de Cuentas del Tribunal de Cuentas",
+    "grupo": "Órganos constitucionales",
+    "anual": 130771.62,
+    "calculo": "total anual fijado en la ley"
+   },
+   {
+    "cargo": "Vocal del Consejo General del Poder Judicial",
+    "grupo": "Órganos constitucionales",
+    "anual": 130390.4,
+    "calculo": "total anual fijado en la ley"
+   },
+   {
+    "cargo": "Secretario General del Consejo General del Poder Judicial",
+    "grupo": "Órganos constitucionales",
+    "anual": 127384.6,
+    "calculo": "total anual fijado en la ley"
+   },
+   {
+    "cargo": "Secretario General del Tribunal de Cuentas",
+    "grupo": "Órganos constitucionales",
+    "anual": 112584.64,
+    "calculo": "total anual fijado en la ley"
+   },
+   {
+    "cargo": "Presidente del Consejo Económico y Social",
+    "grupo": "Órganos consultivos",
+    "anual": 98741.4,
+    "calculo": "12 mensualidades, sin pagas extra"
+   },
+   {
+    "cargo": "Presidente del Consejo de Estado",
+    "grupo": "Órganos consultivos",
+    "anual": 90383.28,
+    "calculo": "12 mensualidades, sin pagas extra"
+   },
+   {
+    "cargo": "Presidente del Gobierno",
+    "grupo": "Gobierno",
+    "anual": 90010.2,
+    "calculo": "12 mensualidades, sin pagas extra"
+   },
+   {
+    "cargo": "Vicepresidente del Gobierno",
+    "grupo": "Gobierno",
+    "anual": 84600.72,
+    "calculo": "12 mensualidades, sin pagas extra"
+   },
+   {
+    "cargo": "Secretario de Estado",
+    "grupo": "Administración General del Estado",
+    "anual": 83505.06,
+    "calculo": "sueldo + complemento de destino + complemento específico + 2 pagas extra; sin productividad"
+   },
+   {
+    "cargo": "Ministro del Gobierno",
+    "grupo": "Gobierno",
+    "anual": 79415.16,
+    "calculo": "12 mensualidades, sin pagas extra"
+   },
+   {
+    "cargo": "Subsecretario",
+    "grupo": "Administración General del Estado",
+    "anual": 74000.7,
+    "calculo": "sueldo + complemento de destino + complemento específico + 2 pagas extra; sin productividad"
+   },
+   {
+    "cargo": "Director general",
+    "grupo": "Administración General del Estado",
+    "anual": 63468.8,
+    "calculo": "sueldo + complemento de destino + complemento específico + 2 pagas extra; sin productividad"
+   }
+  ],
+  "referencias": {
+   "funcionario_A1_24": {
+    "texto": "Funcionario A1 con nivel 24 (p. ej., profesor de secundaria o médico)",
+    "anual": 26529.82
+   },
+   "funcionario_A2_22": {
+    "texto": "Funcionario A2 con nivel 22 (p. ej., maestro o enfermero)",
+    "anual": 23284.44
+   },
+   "funcionario_C1_18": {
+    "texto": "Funcionario C1 con nivel 18 (p. ej., administrativo o técnico)",
+    "anual": 17903.7
+   },
+   "nota": "Retribución básica estatal: sueldo + complemento de destino + 2 pagas extra, sin trienios ni complemento específico (que fija cada administración). El sueldo real suele ser mayor."
+  }
+ },
+ "fuente": "Leyes de Presupuestos Generales del Estado (BOE), texto consolidado vía legalize-es"
+}

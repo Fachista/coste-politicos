@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Periodistas y datos</title>
+<meta name="description" content="Cifras listas para citar, descargas en CSV, datos abiertos, método, fuentes y registro de cambios.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<nav class="menu" id="menu" aria-label="Secciones"></nav>
+<div class="app">
+  <h1>Para periodistas</h1>
+  <p class="entradilla">Todo lo necesario para usar estos datos en una información: cifras con su fuente, tablas descargables, el método y los límites de cada dato.</p>
+
+  <section class="seccion">
+    <h2>Cifras listas para citar</h2>
+    <ul class="claves" id="cifras"></ul>
+  </section>
+
+  <section class="seccion tarjeta" id="descargas">
+    <h2>Descargas</h2>
+    <p class="datos-linea">CSV con punto y coma y coma decimal: se abren directamente en Excel o LibreOffice en español.</p>
+    <div class="tabla-scroll"><table class="tabla"><tbody id="lista-descargas"></tbody></table></div>
+    <h3 style="font-size:0.95rem;margin:16px 0 4px">Datos abiertos (JSON)</h3>
+    <p class="datos-linea">Direcciones estables, para redacciones de datos y desarrolladores. Se actualizan con cada nueva versión.</p>
+    <ul id="json"></ul>
+  </section>
+
+  <section class="seccion texto">
+    <h2>Cómo citar</h2>
+    <pre id="cita"></pre>
+    <p><button class="boton" id="copiar-cita">Copiar</button></p>
+    <h3 style="font-size:0.95rem">Insertar un gráfico en tu web</h3>
+    <p>Cualquier página puede insertarse con un iframe. Por ejemplo, la evolución del Gobierno central:</p>
+    <pre id="iframe"></pre>
+    <p><button class="boton" id="copiar-iframe">Copiar</button></p>
+  </section>
+
+  <section class="seccion texto" id="metodo">
+    <h2>Método</h2>
+    <p><b>Qué se cuenta.</b> Sueldos brutos de cargos políticos (artículo 10 de los presupuestos, «altos cargos») y de su personal de confianza (artículo 11, «personal eventual»); parlamentarios autonómicos, diputados y senadores; alcaldes, concejales y diputados provinciales. No se cuentan funcionarios ni personal laboral.</p>
+    <p><b>Qué no se cuenta.</b> Dietas, indemnizaciones por desplazamiento, cotizaciones sociales a cargo de la administración, pensiones de expolíticos y gastos de funcionamiento (coches, oficinas).</p>
+    <p><b>Presupuestado o gastado.</b> Cada dato indica si es presupuesto inicial o gasto real (liquidación o cuentas). Para comparar años del Gobierno central se usa siempre el presupuesto inicial, porque es el único dato homogéneo desde 2007. En los años sin presupuesto nuevo (2019, 2020, 2024 y 2025) se repite el prorrogado, y la web lo marca.</p>
+    <p><b>Euros sin efecto de la inflación.</b> Cada importe se multiplica por la subida acumulada del IPC (media anual, INE) entre su año y el año base.</p>
+    <p><b>Por habitante.</b> Comunidades: población del INE a 1 de julio del año de los datos. Serie del Estado: población a 1 de enero del Banco Mundial (datos del INE).</p>
+    <p><b>Sueldos por cargo.</b> Cuantías que fija cada Ley de Presupuestos, sin antigüedad (trienios) ni complemento de productividad. Presidente, vicepresidente y ministros: 12 mensualidades sin pagas extra, tal como dice la ley. Secretarios de Estado, subsecretarios y directores generales: sueldo + complemento de destino + complemento específico + dos pagas extra.</p>
+    <p>El detalle completo está en el repositorio: <a href="https://github.com/fachista/coste-politicos/blob/main/FUENTES.md">FUENTES.md</a>.</p>
+  </section>
+
+  <section class="seccion texto" id="fuentes">
+    <h2>Fuentes</h2>
+    <p>Solo se usan fuentes oficiales. Cuando la web oficial no ofrece los datos en un formato reutilizable, se toman de una copia fiel publicada por terceros y se indica.</p>
+    <div class="tabla-scroll"><table class="tabla"><thead><tr><th>Dato</th><th>Fuente original</th><th>Cómo se obtiene</th></tr></thead><tbody id="tabla-fuentes"></tbody></table></div>
+  </section>
+
+  <section class="seccion texto">
+    <h2>Límites conocidos</h2>
+    <ul>
+      <li>El Gobierno central se compara con presupuestos, no con gasto real. La Intervención General del Estado publica la ejecución, pero aún no está incorporada.</li>
+      <li>Antes de 2007 no hay presupuestos partida a partida en formato abierto. Sí hay sueldos de presidente y ministros desde 1986.</li>
+      <li>Las subidas salariales de 2024 y 2025, aprobadas por real decreto-ley sin presupuesto nuevo, no están en la tabla de sueldos.</li>
+      <li>Algunas comunidades no publican el coste de su parlamento o solo publican presupuesto: se indica en la ficha de cada una.</li>
+      <li>Ayuntamientos: hay municipios que no envían datos a Hacienda; su peso se indica en la ficha de su comunidad.</li>
+    </ul>
+  </section>
+
+  <section class="seccion texto">
+    <h2>Registro de cambios</h2>
+    <ul id="cambios">
+      <li><b>2026-10-19.</b> Nueva web pensada para cualquier lector. Se añaden la serie del Gobierno central 2007-2025 con y sin inflación, los sueldos fijados por ley desde 1986, la calculadora de equivalencias, el «por qué» de cada comunidad y esta sección para periodistas.</li>
+      <li><b>2026-10-18.</b> Primera versión: coste por comunidad autónoma con datos de 2024.</li>
+    </ul>
+    <p>¿Has encontrado un error? Abre una incidencia en <a href="https://github.com/fachista/coste-politicos/issues">GitHub</a>. Las correcciones se anotan aquí con su fecha.</p>
+  </section>
+  <footer class="pie"><p id="pie"></p></footer>
+</div>
+<script src="comun.js"></script>
+<script src="periodistas.js"></script>
+</body>
+</html>

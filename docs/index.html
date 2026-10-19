@@ -4,49 +4,47 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Coste de los políticos</title>
-<meta name="description" content="Cuánto cuestan por habitante los altos cargos, asesores, parlamentarios, alcaldes y concejales de cada comunidad autónoma.">
+<meta name="description" content="Cuánto nos cuestan los políticos en España: gobiernos, parlamentos, ayuntamientos y Gobierno central, explicado para cualquiera y con datos descargables para periodistas.">
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+<nav class="menu" id="menu" aria-label="Secciones"></nav>
 <div class="app">
-  <header class="cab">
-    <h1>Coste de los políticos</h1>
-    <p class="sub">Por comunidad autónoma · <span class="anyo">2024</span> · € por habitante</p>
-  </header>
-
-  <div class="filtros" role="group" aria-label="Qué se incluye">
-    <label class="chip fijo"><input type="checkbox" checked disabled> Gobierno y asesores</label>
-    <label class="chip"><input type="checkbox" id="f-parlamento" checked> Parlamento</label>
-    <label class="chip"><input type="checkbox" id="f-local" checked> Ayuntamientos y diputaciones</label>
-    <label class="chip"><input type="checkbox" id="f-estado"> Estado</label>
-    <label class="chip"><input type="checkbox" id="f-otros"> Organismos y otros órganos</label>
-  </div>
-
-  <section class="kpis" id="kpis" aria-live="polite"></section>
-
-  <main class="rejilla">
-    <section class="tarjeta">
-      <svg id="mapa" role="img" aria-label="Mapa de España coloreado por coste por habitante"></svg>
-      <div class="leyenda" id="leyenda"></div>
-    </section>
-    <section class="tarjeta" id="ficha" aria-live="polite"></section>
-  </main>
-
-  <section class="tarjeta">
-    <h2 class="titulo">Ranking</h2>
-    <div id="ranking" class="ranking"></div>
+  <section class="portada" aria-live="polite">
+    <div class="det">Lo que paga cada persona en España, al año, en sueldos de políticos y sus asesores</div>
+    <div class="gran-cifra" id="cifra">…</div>
+    <p id="explica"></p>
+    <p class="det" id="equivale"></p>
   </section>
 
-  <footer class="pie">
-    <p>Sueldos brutos de <span class="anyo">2024</span> de altos cargos, asesores (personal eventual), parlamentarios, alcaldes, concejales, diputados provinciales, diputados y senadores. Sin dietas, cotizaciones sociales ni funcionarios. Ayuntamientos: ISPA y CONPREL. Estado: Presupuestos Generales del Estado y cuentas del Congreso y del Senado.</p>
-    <p id="pie-fuentes"></p>
-  </footer>
-</div>
-<div id="tip" class="tip" role="tooltip" hidden></div>
+  <section class="seccion">
+    <h2>Lo más importante</h2>
+    <ul class="claves" id="claves"></ul>
+  </section>
 
-<script src="vendor/d3.min.js"></script>
-<script src="vendor/topojson-client.min.js"></script>
-<script src="vendor/d3-composite-projections.min.js"></script>
-<script src="app.js"></script>
+  <section class="seccion">
+    <h2>Explora</h2>
+    <div class="tarjetas">
+      <a class="tarjeta-enlace" href="comunidades.html"><b>Tu comunidad</b><span>Mapa de lo que cuesta cada comunidad por habitante y por qué.</span></a>
+      <a class="tarjeta-enlace" href="ayuntamientos.html"><b>Tu ayuntamiento</b><span>Busca tu municipio y compáralo con otros de su tamaño.</span></a>
+      <a class="tarjeta-enlace" href="estado.html"><b>Gobierno de España</b><span>Cómo ha cambiado el gasto en altos cargos y asesores con cada Gobierno.</span></a>
+      <a class="tarjeta-enlace" href="sueldos.html"><b>Cuánto cobran</b><span>Los sueldos que fija la ley: del presidente a los magistrados del Constitucional.</span></a>
+      <a class="tarjeta-enlace" href="calculadora.html"><b>¿Qué se podría pagar?</b><span>Si se recortara una parte, ¿a cuántos maestros o enfermeros equivaldría?</span></a>
+      <a class="tarjeta-enlace" href="periodistas.html"><b>Periodistas y datos</b><span>Cifras listas para citar, descargas, método y fuentes.</span></a>
+    </div>
+  </section>
+
+  <section class="seccion texto">
+    <h2>Cómo leer estas cifras</h2>
+    <p><b>Solo sueldos de cargos políticos y de sus asesores.</b> Se cuentan presidentes, consejeros, ministros, secretarios de Estado, directores generales, parlamentarios, alcaldes, concejales y diputados provinciales, y el personal eventual (los asesores de confianza que nombra cada cargo). No se cuentan funcionarios, médicos, profesores ni policías.</p>
+    <p><b>Sin dietas ni cotizaciones sociales.</b> Son sueldos brutos. Las dietas, los gastos de viaje y las cuotas a la Seguridad Social van aparte, así que el coste total para las arcas públicas es algo mayor.</p>
+    <p><b>Presupuesto o gasto real.</b> Algunas administraciones publican lo que gastaron de verdad y otras solo lo que presupuestaron. Cada cifra indica cuál es.</p>
+    <p>Todas las fuentes son oficiales (BOE, Ministerio de Hacienda, INE, parlamentos y gobiernos autonómicos) y se enlazan en <a href="periodistas.html#fuentes">la página de fuentes</a>.</p>
+  </section>
+
+  <footer class="pie"><p id="pie"></p></footer>
+</div>
+<script src="comun.js"></script>
+<script src="inicio.js"></script>
 </body>
 </html>

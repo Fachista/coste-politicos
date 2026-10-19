@@ -120,3 +120,22 @@ https://servicios.ine.es/wstempus/js/ES/DATOS_TABLA/56940?nult=1
 Las fuentes de cada año van en `datos/fuentes/<año>/` y los resultados en `datos/<año>/`. Los textos y enlaces de las fuentes están en `datos/fuentes/<año>/fuentes.json`. El procedimiento está en [ACTUALIZAR.md](ACTUALIZAR.md).
 
 No hay GitHub Action: CONPREL necesita el controlador de Access de Windows y cinco fuentes se sacan a mano.
+
+## Serie histórica del Gobierno central (2007-2025)
+
+- **Presupuestos Generales del Estado partida a partida**, de la Fundación Civio (https://github.com/civio/presupuesto-pge, datos de la Secretaría de Estado de Presupuestos y Gastos; cada año comprueba sus totales con los oficiales). Se usan los artículos 10 (altos cargos) y 11 (personal eventual), créditos iniciales. Para 2023 cuadra con nuestro dato de 2024 (PGE 2023 prorrogados): artículo 11 idéntico y artículo 10 con menos de un 0,5 % de diferencia.
+- Clasificación: sección 02 → Congreso (02002), Senado (02003) y otros (Junta Electoral, Defensor del Pueblo); secciones 03, 04, 05 y 08 → órganos constitucionales; programas 112A y 112B de Justicia → cúpula judicial y fiscal (no son cargos del Gobierno); centros con tercer dígito distinto de 0 y sección 60 → organismos; resto → ministerios.
+- Años prorrogados: 2019 y 2020 (presupuesto de 2018), 2024 y 2025 (de 2023). No consta ninguna ley de presupuestos posterior a la de 2023.
+- Antes de 2007 no hay datos abiertos partida a partida. La SEPG publica los presupuestos anteriores en PDF y HTML, pero su web no es accesible desde el entorno donde se generó la serie.
+
+## Sueldos de altos cargos (1986-2023)
+
+- Leyes de Presupuestos Generales del Estado, artículo «Retribuciones de los altos cargos», del texto consolidado del BOE en la copia de legalize-es (https://github.com/legalize-dev/legalize-es). El consolidado recoge las modificaciones del propio año (por ejemplo, el recorte del 15 % de 2010 o la subida complementaria de 2023).
+- Presidente, vicepresidente y ministros: «referidas a doce mensualidades, sin derecho a pagas extraordinarias». Hasta 2001, en pesetas (1 € = 166,386 pta).
+- Faltan 1983-1985 (la ley no trae el cuadro), 1996, 2019 y 2020 (sin ley propia), y el ministro de 1988.
+- Salario mínimo de 2023: Real Decreto 99/2023 (BOE-A-2023-3982), 1.080 € al mes en 14 pagas.
+- Retribución básica de funcionarios (referencia de la calculadora): sueldo y complemento de destino de la Ley 31/2022, artículo 23, más dos pagas extra. Sin trienios ni complemento específico.
+
+## Inflación y población de la serie
+
+- IPC, variación media anual, y población a 1 de enero: Banco Mundial (indicadores FP.CPI.TOTL.ZG y SP.POP.TOTL, con datos del INE), en las copias de datahub (https://github.com/datasets/cpi y https://github.com/datasets/population). Guardado en `datos/historico/contexto.csv`.

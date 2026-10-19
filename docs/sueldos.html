@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuánto cobran</title>
+<meta name="description" content="Sueldos que fija la Ley de Presupuestos para el presidente del Gobierno, ministros, secretarios de Estado y miembros de los órganos constitucionales, y su evolución desde 1986.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<nav class="menu" id="menu" aria-label="Secciones"></nav>
+<div class="app">
+  <h1>¿Cuánto cobran?</h1>
+  <p class="entradilla">El sueldo bruto anual que la Ley de Presupuestos fija para cada cargo del Estado. <b>Sin dietas, sin antigüedad y sin cotizaciones sociales.</b> Es lo que marca la ley por el puesto; cada persona puede cobrar algo más por trienios o productividad.</p>
+
+  <section class="tarjeta">
+    <h2 id="titulo-ranking"></h2>
+    <div class="controles">
+      <label>Comparar con
+        <select id="comparar">
+          <option value="presi">el presidente del Gobierno</option>
+          <option value="smi">el salario mínimo</option>
+          <option value="maestro">un maestro o enfermero (retribución básica)</option>
+        </select>
+      </label>
+    </div>
+    <div class="barras" id="ranking"></div>
+    <p class="nota-pie" id="nota-ranking"></p>
+  </section>
+
+  <section class="seccion texto">
+    <h2>¿Es proporcionado?</h2>
+    <p>No hay una regla oficial que diga cuánto debe cobrar cada cargo, así que esta página no lo decide por ti. Te da tres referencias para juzgarlo:</p>
+    <ul>
+      <li><b>El presidente del Gobierno</b> es el cargo de mayor responsabilidad política. Los cargos que cobran más que él están marcados.</li>
+      <li><b>El salario mínimo</b> (<span id="smi"></span> en <span class="anyo-ley"></span>) mide cuántos sueldos mínimos equivale cada cargo.</li>
+      <li><b>Un maestro o un enfermero</b>: la retribución básica estatal de un funcionario A2 (<span id="maestro"></span>). Su sueldo real suele ser más alto porque cada comunidad añade complementos, así que esta comparación exagera la diferencia.</li>
+    </ul>
+    <p id="resumen-justo"></p>
+  </section>
+
+  <section class="seccion tarjeta">
+    <h2>El sueldo del presidente y de los ministros desde 1986</h2>
+    <div class="controles">
+      <div class="segmentos" role="group" aria-label="Euros">
+        <button data-ipc="no" aria-pressed="false">Euros de cada año</button>
+        <button data-ipc="si" aria-pressed="true">Sin efecto de la inflación</button>
+      </div>
+    </div>
+    <div class="leyenda-cat" id="leyenda-serie"></div>
+    <svg class="grafico" id="serie" role="img" aria-label="Evolución del sueldo del presidente, vicepresidente y ministros"></svg>
+    <p class="nota-pie" id="nota-serie"></p>
+    <details><summary>Ver los datos en una tabla</summary><div class="tabla-scroll" id="tabla-serie"></div></details>
+    <p><button class="boton" id="descargar">Descargar CSV</button></p>
+  </section>
+
+  <section class="seccion texto">
+    <h2>Lo que no está aquí (todavía)</h2>
+    <ul>
+      <li><b>Diputados y senadores.</b> Su sueldo no lo fija la Ley de Presupuestos sino las Mesas del Congreso y del Senado. Sí está su coste total en <a href="estado.html">Gobierno de España</a>.</li>
+      <li><b>Presidentes y consejeros autonómicos, alcaldes y concejales.</b> Lo fija cada comunidad y cada ayuntamiento. El coste total está en <a href="comunidades.html">Tu comunidad</a> y <a href="ayuntamientos.html">Tu ayuntamiento</a>.</li>
+      <li><b>Dietas e indemnizaciones</b> (viajes, alojamiento, asistencia a reuniones). Se pagan aparte del sueldo y no se incluyen en ninguna cifra de esta página.</li>
+    </ul>
+  </section>
+
+  <footer class="pie"><p id="pie-fuentes"></p></footer>
+</div>
+<script src="vendor/d3.min.js"></script>
+<script src="comun.js"></script>
+<script src="sueldos.js"></script>
+</body>
+</html>

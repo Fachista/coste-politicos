@@ -212,6 +212,46 @@
       <div class="fuentes">Fuente: ${est.fuentes.map((s) => `<a href="${s.url}" target="_blank" rel="noopener">${s.texto}</a>`).join(" · ")}</div>`;
   }
 
+  // ---- Por qué cuesta más o menos: cada componente por habitante frente a la mediana de las comunidades ----
+  const mediana = (v) => { const o = [...v].sort((a, b) => a - b), m = o.length >> 1; return o.length % 2 ? o[m] : (o[m - 1] + o[m]) / 2; };
+  const TEXTO_ALTO = {
+    gob_altos: "Su gobierno tiene más altos cargos (consejeros, viceconsejeros, directores generales) o mejor pagados que la mayoría.",
+    gob_eventual: "Su gobierno presupuesta más asesores de confianza (personal eventual) que la mayoría.",
+    parlamento: "Su parlamento sale caro por habitante: el coste de diputados y asesores se reparte entre menos población o es más alto.",
+    local_electos: "Los sueldos de alcaldes y concejales pesan más que en otras comunidades.",
+    local_diput: "Tiene varias diputaciones provinciales, cabildos o consejos insulares, cada uno con sus propios cargos.",
+    local_eventual: "Sus ayuntamientos contratan más asesores que la media.",
+  };
+  const TEXTO_BAJO = {
+    gob_altos: "Su gobierno gasta menos que la mayoría en altos cargos.",
+    gob_eventual: "Su gobierno tiene pocos asesores de confianza.",
+    parlamento: "Su parlamento cuesta poco por habitante.",
+    local_electos: "Sus alcaldes y concejales cobran, en conjunto, menos que en otras comunidades.",
+    local_diput: "Tiene poco o ningún gasto en diputaciones (las comunidades de una sola provincia no tienen diputación).",
+    local_eventual: "Sus ayuntamientos contratan pocos asesores.",
+  };
+  function explicar(f, res) {
+    const ids = Object.keys(TEXTO_ALTO).filter((id) => f.activos.some((k) => k.id === id));
+    const filas = ids.map((id) => {
+      const med = mediana(res.filas.map((x) => x.comp[id] / x.c.poblacion));
+      const v = f.comp[id] / f.c.poblacion;
+      return { id, v, med, dif: v - med, ratio: med > 0 ? v / med : 1 };
+    });
+    const altos = filas.filter((x) => x.ratio > 1.25 && x.dif > 0.3).sort((a, b) => b.dif - a.dif).slice(0, 3);
+    const bajos = filas.filter((x) => x.ratio < 0.8 && x.dif < -0.3).sort((a, b) => a.dif - b.dif).slice(0, 2);
+    const nombre = (id) => COMPONENTES.find((k) => k.id === id).nombre.toLowerCase();
+    const linea = (x, t) => `<li>${t} <span class="t2">(${nombre(x.id)}: ${porHab(x.v)} por habitante; la comunidad típica, ${porHab(x.med)})</span></li>`;
+    // Tamaño: comunidades pequeñas frente a grandes, solo si los propios datos lo confirman
+    const pequenas = res.filas.filter((x) => x.c.poblacion < 1.5e6), grandes = res.filas.filter((x) => x.c.poblacion >= 1.5e6);
+    const mP = mediana(pequenas.map((x) => x.porHab)), mG = mediana(grandes.map((x) => x.porHab));
+    const tam = f.c.poblacion < 1.5e6 && mP > mG * 1.15 && f.dif > 0
+      ? `<li>Es una comunidad pequeña (${fmtEnt.format(f.c.poblacion)} habitantes). Gobierno y parlamento tienen un mínimo de cargos que no depende de la población, y ese coste se reparte entre pocos: la comunidad pequeña típica paga ${porHab(mP)} por habitante y la grande, ${porHab(mG)}.</li>` : "";
+    if (!altos.length && !bajos.length && !tam) return `<div class="porque"><h3>¿Por qué?</h3><p>Ninguna parte destaca: todas están cerca de lo habitual.</p></div>`;
+    return `<div class="porque"><h3>¿Por qué ${f.dif >= 0 ? "cuesta más" : "cuesta menos"} que la media?</h3><ul>
+      ${tam}${altos.map((x) => linea(x, TEXTO_ALTO[x.id])).join("")}${bajos.map((x) => linea(x, TEXTO_BAJO[x.id])).join("")}
+      </ul></div>`;
+  }
+
   function pintarFicha(res) {
     if (seleccion === "ES") return pintarFichaEstado();
     const f = res.filas.find((x) => x.c.id === seleccion) || res.filas[0];
@@ -232,6 +272,7 @@
         ${partes.map((k) => `<tr><td><i class="mu" style="background:var(${k.color})"></i>${k.nombre}</td>
           <td class="num">${millones(f.comp[k.id])}</td><td class="num pct">${fmtPct.format((f.comp[k.id] / f.total) * 100)} %</td></tr>`).join("")}
       </tbody></table>
+      ${explicar(f, res)}
       ${c.faltan.length || c.notas.length || (filtros.local && c.avisos.length) ? `<ul class="avisos">
         ${c.faltan.map((t) => `<li class="falta">Sin datos. ${t}</li>`).join("")}
         ${filtros.local ? c.avisos.map((t) => `<li class="aviso">${t}</li>`).join("") : ""}
