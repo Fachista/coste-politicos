@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coste de los políticos</title>
+<meta name="description" content="¿Cuánto te cuestan tus políticos? Elige dónde vives y mira lo que te toca pagar al año en sueldos de cargos políticos y sus asesores, parte por parte y frente a la media de España.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<a class="saltar" href="#principal">Saltar al contenido</a>
+<header class="cabecera">
+  <div class="cab-dentro">
+    <a class="marca" href="../../index.html">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 8.6a4.2 4.2 0 1 0 0 6.8M6.8 11h6.4M6.8 13.4h5.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <span>Coste de los políticos</span>
+    </a>
+    <button class="menu-boton" type="button" aria-expanded="false" aria-controls="enlaces">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      Menú
+    </button>
+    <nav class="enlaces" id="enlaces" aria-label="Secciones">
+      <a href="../../comunidades.html">Comunidades</a>
+      <a href="../../ayuntamientos.html">Ayuntamientos</a>
+      <a href="../../estado.html">Gobierno de España</a>
+      <a href="../../sueldos.html">Sueldos</a>
+      <a href="../../calculadora.html">Calculadora</a>
+      <a href="../../periodistas.html">Periodistas</a>
+    </nav>
+  </div>
+</header>
+
+<main id="principal">
+  <!-- 1. Primera pantalla: ¿dónde vives? -> lo que te toca -->
+  <section class="heroe" aria-labelledby="titulo">
+    <div class="heroe-dentro">
+      <div class="heroe-titulo">
+        <p class="antetitulo">Datos oficiales de <span class="anyo">…</span><span class="solo-ancho"> · sueldos de cargos políticos y sus asesores</span></p>
+        <h1 id="titulo">¿Cuánto te cuestan tus políticos?</h1>
+      </div>
+      <div class="heroe-texto">
+        <div class="pregunta">
+          <label for="donde">¿Dónde vives?</label>
+          <div class="selector">
+            <select id="donde"><option value="">Toda España (media)</option></select>
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+
+        <div class="resultado" aria-live="polite" aria-atomic="true">
+          <p class="frase-arriba" id="frase-arriba">…</p>
+          <p class="cifra"><span id="cifra">…</span><span class="cifra-ud">€ al año</span></p>
+          <p class="comparacion" id="comparacion"></p>
+          <a class="mini-reparto" href="#t-reparto" id="mini-reparto" aria-label="Ver a dónde va ese dinero"></a>
+          <div class="equivalencias">
+            <ul id="equivalencias"></ul>
+            <button type="button" class="copiar" id="copiar"></button>
+          </div>
+          <p class="letra-pequena">Sueldos brutos de cargos políticos y de sus asesores, repartidos entre todos los habitantes (niños incluidos). Sin dietas ni cotizaciones sociales.</p>
+        </div>
+      </div>
+
+      <figure class="heroe-mapa">
+        <figcaption class="mapa-pista" id="mapa-pista">O toca tu comunidad en el mapa</figcaption>
+        <svg id="mapa" role="group" aria-label="Mapa de España por comunidades. Toca una para elegirla."></svg>
+        <div class="leyenda-mapa" id="leyenda-mapa" aria-hidden="true"></div>
+      </figure>
+    </div>
+  </section>
+
+  <div class="contenido">
+    <!-- 2. ¿A dónde va? -->
+    <section class="bloque tarjeta" id="reparto" aria-labelledby="t-reparto">
+      <div class="reparto">
+        <div class="reparto-izq">
+        <div class="reparto-grafico">
+          <div class="bloque-cab">
+            <h2 id="t-reparto">¿A dónde va ese dinero?</h2>
+            <p class="sub" id="sub-reparto">Parte por parte, frente a la media de España.</p>
+          </div>
+          <div id="barras" class="barras-comp"></div>
+          <ul class="leyenda" id="leyenda"></ul>
+          <ul class="claves" id="claves"></ul>
+        </div>
+        <div class="quedas">
+          <h3>¿Cómo quedas frente al resto?</h3>
+          <p class="sub" id="quedas-texto"></p>
+          <div id="enjambre" class="enjambre"></div>
+        </div>
+        </div>
+        <div class="recibo" id="recibo"></div>
+      </div>
+    </section>
+
+    <!-- 3. En perspectiva -->
+    <section class="bloque" aria-labelledby="t-perspectiva">
+      <div class="bloque-cab">
+        <h2 id="t-perspectiva">Para hacerse una idea</h2>
+      </div>
+      <div class="perspectiva">
+        <div class="tarjeta casa">
+          <h3>En tu casa</h3>
+          <div class="contador">
+            <span id="t-personas">¿Cuántos vivís?</span>
+            <div class="pasos" role="group" aria-labelledby="t-personas">
+              <button type="button" id="menos" aria-label="Una persona menos">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 12h12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+              </button>
+              <output id="personas" aria-live="polite">1</output>
+              <button type="button" id="mas" aria-label="Una persona más">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 12h12M12 6v12" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="casa-iconos" id="casa-iconos" aria-hidden="true"></div>
+          <p class="casa-cifra" id="casa-cifra"></p>
+          <p class="sub" id="casa-texto"></p>
+        </div>
+        <div class="tarjeta vecinos">
+          <h3 id="t-vecinos">Entre todos</h3>
+          <p class="vecinos-cifra" id="vecinos-cifra"></p>
+          <p class="sub" id="vecinos-texto"></p>
+          <p class="letra-pequena" id="vecinos-nota"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Más secciones -->
+    <section class="bloque" aria-labelledby="t-explora">
+      <div class="bloque-cab">
+        <h2 id="t-explora">Sigue mirando</h2>
+        <p class="sub">Cada sección responde a una pregunta.</p>
+      </div>
+      <div class="accesos" id="accesos"></div>
+    </section>
+
+    <!-- 5. Cómo leer las cifras -->
+    <section class="bloque" aria-labelledby="t-leer">
+      <div class="bloque-cab">
+        <h2 id="t-leer">Qué se cuenta y qué no</h2>
+      </div>
+      <ul class="lectura">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></svg>
+          <div><b>Solo políticos y sus asesores.</b> Presidentes, consejeros, ministros, altos cargos, parlamentarios, alcaldes, concejales y los asesores de confianza que nombran. No se cuentan funcionarios, médicos, profesores ni policías.</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 10h16M8 15h3"/></svg>
+          <div><b>Sueldos brutos.</b> Sin dietas, viajes ni cotizaciones a la Seguridad Social. Lo que cuesta de verdad a las arcas públicas es algo más.</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V9M12 19V5M19 19v-7"/></svg>
+          <div><b>Presupuesto o gasto real.</b> Unas administraciones publican lo que gastaron y otras solo lo que presupuestaron. El recibo de cada comunidad indica cuál es cada dato.</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg>
+          <div><b>Fuentes oficiales.</b> BOE, Ministerio de Hacienda, INE, parlamentos y gobiernos autonómicos. <a href="../../periodistas.html#fuentes">Ver todas las fuentes y el método</a>.</div>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <footer class="pie">
+    <div class="pie-dentro">
+      <p id="pie"></p>
+      <p><a href="../../periodistas.html">Para periodistas: cifras para citar, descargas y método</a></p>
+    </div>
+  </footer>
+</main>
+
+<script src="../../vendor/d3.min.js"></script>
+<script src="../../vendor/topojson-client.min.js"></script>
+<script src="../../vendor/d3-composite-projections.min.js"></script>
+<script src="../../comun.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -81,29 +81,58 @@
   };
   C.ocultarTip = () => tip && (tip.hidden = true);
 
-  // Menú común: se marca la página actual
+  // Compartir: hoja nativa del móvil si existe (WhatsApp, Telegram…); si no, copia texto y enlace
+  C.compartir = async function (boton, texto, url) {
+    const enlace = url || location.href;
+    if (navigator.share) {
+      try { await navigator.share({ title: document.title, text: texto, url: enlace }); return; }
+      catch (e) { if (e && e.name === "AbortError") return; }
+    }
+    C.copiar(boton, texto + " " + enlace);
+  };
+
+  // Menú común. Pocas entradas y con nombres llanos; la sección de periodistas va aparte, como enlace secundario.
+  // Los nombres de archivo no cambian: los enlaces de fuera siguen funcionando.
   const PAGINAS = [
-    ["index.html", "Inicio"],
     ["comunidades.html", "Tu comunidad"],
     ["ayuntamientos.html", "Tu ayuntamiento"],
     ["estado.html", "Gobierno de España"],
     ["sueldos.html", "Cuánto cobran"],
-    ["calculadora.html", "¿Qué se podría pagar?"],
-    ["periodistas.html", "Periodistas y datos"],
+    ["calculadora.html", "Qué se podría pagar"],
   ];
+  const SECUNDARIA = ["periodistas.html", "Periodistas y datos", "Cifras para citar, descargas y método"];
+  const LOGO = `<svg viewBox="0 0 24 24" aria-hidden="true" class="marca-logo"><rect x="3" y="12" width="4" height="9" rx="1.5"/><rect x="10" y="7" width="4" height="14" rx="1.5"/><rect x="17" y="3" width="4" height="18" rx="1.5"/></svg>`;
+  const ICONO_MENU = `<svg viewBox="0 0 24 24" aria-hidden="true" class="ico-abrir"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-cerrar"><path d="M6 6l12 12M18 6 6 18"/></svg>`;
+
   document.addEventListener("DOMContentLoaded", () => {
     const nav = document.getElementById("menu");
     if (!nav) return;
     const actual = location.pathname.split("/").pop() || "index.html";
-    nav.innerHTML = `<a class="marca" href="index.html">Coste de los políticos</a>
-      <button class="menu-boton" aria-expanded="false" aria-controls="menu-enlaces">Menú</button>
-      <div class="menu-enlaces" id="menu-enlaces">${PAGINAS.map(([h, t]) =>
-        `<a href="${h}"${h === actual ? ' aria-current="page"' : ""}>${t}</a>`).join("")}</div>`;
+    const enlace = ([h, t]) => `<a href="${h}"${h === actual ? ' aria-current="page"' : ""}>${t}</a>`;
+    nav.innerHTML = `<a class="marca" href="index.html"${actual === "index.html" ? ' aria-current="page"' : ""}>${LOGO}<span>Coste de los políticos</span></a>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-enlaces">${ICONO_MENU}<span>Menú</span></button>
+      <div class="menu-enlaces" id="menu-enlaces">
+        <a class="solo-movil" href="index.html"${actual === "index.html" ? ' aria-current="page"' : ""}>Inicio</a>
+        ${PAGINAS.map(enlace).join("")}
+        <a class="menu-secundario" href="${SECUNDARIA[0]}"${SECUNDARIA[0] === actual ? ' aria-current="page"' : ""}>${SECUNDARIA[1]}<small>${SECUNDARIA[2]}</small></a>
+      </div>`;
     const boton = nav.querySelector(".menu-boton");
-    boton.addEventListener("click", () => {
-      const abierto = nav.classList.toggle("abierto");
-      boton.setAttribute("aria-expanded", abierto);
+    const abrir = (si) => {
+      nav.classList.toggle("abierto", si);
+      boton.setAttribute("aria-expanded", String(si));
+      boton.querySelector("span").textContent = si ? "Cerrar" : "Menú";
+    };
+    boton.addEventListener("click", () => abrir(!nav.classList.contains("abierto")));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && nav.classList.contains("abierto")) { abrir(false); boton.focus(); }
     });
+    document.addEventListener("click", (e) => { if (nav.classList.contains("abierto") && !nav.contains(e.target)) abrir(false); });
+
+    // Alto de la cabecera fija: lo usan los anclajes (scroll-margin) y las barras fijas
+    const medir = () => document.documentElement.style.setProperty("--alto-cab", nav.offsetHeight + "px");
+    medir();
+    if ("ResizeObserver" in window) new ResizeObserver(medir).observe(nav);
+    else window.addEventListener("resize", medir);
   });
 
   window.C = C;

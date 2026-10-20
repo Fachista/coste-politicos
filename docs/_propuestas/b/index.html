@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coste de los políticos</title>
+<meta name="description" content="Cuánto pagamos cada persona en España por los sueldos de los políticos y sus asesores: de un vistazo, por comunidad y con fuentes oficiales.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="cabecera">
+  <a class="marca" href="../../index.html">
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="marca-logo"><rect x="3" y="12" width="4" height="9" rx="1.5"/><rect x="10" y="7" width="4" height="14" rx="1.5"/><rect x="17" y="3" width="4" height="18" rx="1.5"/></svg>
+    Coste de los políticos
+  </a>
+  <button class="menu-boton" id="menu-boton" aria-expanded="false" aria-controls="enlaces">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg> Menú
+  </button>
+  <nav class="enlaces" id="enlaces" aria-label="Secciones">
+    <a href="../../comunidades.html">Tu comunidad</a>
+    <a href="../../ayuntamientos.html">Tu ayuntamiento</a>
+    <a href="../../estado.html">Gobierno de España</a>
+    <a href="../../sueldos.html">Cuánto cobran</a>
+    <a href="../../calculadora.html">¿Qué se podría pagar?</a>
+    <a class="enlace-periodistas" href="../../periodistas.html">Periodistas y datos</a>
+  </nav>
+</header>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="persona" viewBox="0 0 16 22"><circle cx="8" cy="4.6" r="4"/><path d="M1 21.5v-5.2C1 12.5 4 10 8 10s7 2.5 7 6.3v5.2z"/></symbol>
+</svg>
+<main class="pagina">
+  <!-- Primera pantalla: la cifra, el reparto y el mapa -->
+  <section class="panel" aria-label="Resumen">
+    <div class="resumen">
+      <div class="bloque-cifra">
+        <p class="antetitulo">Cada persona en España paga al año</p>
+        <p class="cifra" id="cifra" aria-live="polite">&nbsp;</p>
+        <p class="tras-cifra">en sueldos de políticos y de sus asesores</p>
+        <div class="pastillas" id="pastillas"></div>
+      </div>
+
+      <div class="bloque-reparto">
+        <h2 class="mini-titulo">¿Dónde se paga ese dinero?</h2>
+        <div class="reparto-barra" id="reparto-barra" role="img"></div>
+        <ul class="reparto-leyenda" id="reparto-leyenda"></ul>
+      </div>
+
+    </div>
+
+    <div class="mapa-caja">
+      <div class="mapa-cab">
+        <div>
+          <h2>¿Y en tu comunidad?</h2>
+          <p class="mapa-sub">Su gobierno, su parlamento y sus ayuntamientos, por habitante y año</p>
+        </div>
+        <label class="selector">
+          <span class="oculto">Elige tu comunidad</span>
+          <select id="elige"><option value="">Elige tu comunidad</option></select>
+        </label>
+      </div>
+      <div class="mapa-cuerpo">
+        <div class="mapa-col">
+          <svg id="mapa" role="group" aria-label="Mapa de España: coste por habitante de cada comunidad"></svg>
+          <div class="leyenda-mapa" id="leyenda-mapa" aria-hidden="true"></div>
+        </div>
+        <aside class="ficha" id="ficha" aria-live="polite"></aside>
+      </div>
+      <details class="lista">
+        <summary>Ver todas las comunidades en una lista</summary>
+        <div id="lista" class="lista-cuerpo"></div>
+      </details>
+    </div>
+
+    <div class="franja">
+      <div class="bloque-asesores" id="asesores"></div>
+      <p class="aclaracion">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>
+        <span id="aclaracion">Sueldos brutos, sin dietas ni cotizaciones sociales. <a href="#como-leer">Cómo se calcula</a></span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Fichas visuales -->
+  <section class="bloque" aria-labelledby="t-fichas">
+    <h2 class="bloque-titulo" id="t-fichas">Más datos, de un vistazo</h2>
+    <div class="fichas">
+      <article class="fv" id="fv-estado">
+        <div class="fv-cab">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21v-7M15 21v-7M2.5 10 12 4l9.5 6z"/></svg>
+          Gobierno de España
+        </div>
+        <h3 class="fv-titulo" id="fv-estado-t"></h3>
+        <p class="fv-sub" id="fv-estado-s"></p>
+        <svg class="fv-graf" id="g-estado" role="img"></svg>
+        <div class="fv-datos" id="fv-estado-d"></div>
+        <div class="fv-pie"><span class="fv-fuente" id="fv-estado-f"></span><a class="fv-enlace" href="../../estado.html">Ver la evolución <span aria-hidden="true">→</span></a></div>
+      </article>
+
+      <article class="fv" id="fv-sueldos">
+        <div class="fv-cab">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/></svg>
+          Cuánto cobran
+        </div>
+        <h3 class="fv-titulo" id="fv-sueldos-t"></h3>
+        <p class="fv-sub" id="fv-sueldos-s"></p>
+        <svg class="fv-graf" id="g-sueldos" role="img"></svg>
+        <div class="fv-datos" id="fv-sueldos-d"></div>
+        <div class="fv-pie"><span class="fv-fuente" id="fv-sueldos-f"></span><a class="fv-enlace" href="../../sueldos.html">Ver todos los sueldos <span aria-hidden="true">→</span></a></div>
+      </article>
+
+      <article class="fv" id="fv-local">
+        <div class="fv-cab">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V9l8-5 8 5v12M2 21h20M9 21v-6h6v6M12 9.5v.5"/></svg>
+          Tu ayuntamiento
+        </div>
+        <h3 class="fv-titulo" id="fv-local-t"></h3>
+        <p class="fv-sub" id="fv-local-s"></p>
+        <div class="fv-barras" id="g-local"></div>
+        <div class="fv-datos" id="fv-local-d"></div>
+        <div class="fv-pie"><span class="fv-fuente" id="fv-local-f"></span><a class="fv-enlace" href="../../ayuntamientos.html">Busca tu municipio <span aria-hidden="true">→</span></a></div>
+      </article>
+
+      <article class="fv" id="fv-calc">
+        <div class="fv-cab">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M8 6.5h8M8.5 11h.5M12 11h.5M15.5 11h.5M8.5 14.5h.5M12 14.5h.5M15.5 14.5h.5M8.5 18h.5M12 18h.5M15.5 18h.5"/></svg>
+          ¿Qué se podría pagar?
+        </div>
+        <h3 class="fv-titulo" id="fv-calc-t"></h3>
+        <p class="fv-sub" id="fv-calc-s"></p>
+        <div class="pictograma" id="g-calc" role="img"></div>
+        <div class="fv-datos" id="fv-calc-d"></div>
+        <div class="fv-pie"><span class="fv-fuente" id="fv-calc-f"></span><a class="fv-enlace" href="../../calculadora.html">Haz tus cuentas <span aria-hidden="true">→</span></a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Cómo leer las cifras -->
+  <section class="bloque" id="como-leer" aria-labelledby="t-leer">
+    <h2 class="bloque-titulo" id="t-leer">Cómo leer estas cifras</h2>
+    <ul class="claves">
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-6 6.5-6s5.9 2.4 6.5 6"/><circle cx="17.5" cy="9" r="2.5"/><path d="M16 14.2c2.7.2 4.7 2.4 5.2 5.3"/></svg>
+        <div><b>Solo cargos políticos y sus asesores</b><span>Presidentes, ministros, consejeros, parlamentarios, alcaldes, concejales y los asesores de confianza que nombran. No entran funcionarios, médicos, profesores ni policías.</span></div>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/></svg>
+        <div><b>Sueldos brutos</b><span>Sin dietas, viajes ni cotizaciones a la Seguridad Social. El coste total para las arcas públicas es algo mayor.</span></div>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+        <div><b>Presupuesto o gasto real</b><span>Unas administraciones publican lo que gastaron y otras solo lo que presupuestaron. Cada ficha dice cuál es.</span></div>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.3 8 8 9 4.7-1 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+        <div><b>Fuentes oficiales</b><span>BOE, Ministerio de Hacienda, INE, parlamentos y gobiernos autonómicos. <a href="../../periodistas.html#fuentes">Ver todas las fuentes</a></span></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="banda-periodistas">
+    <div>
+      <b>¿Eres periodista o quieres los datos?</b>
+      <span>Cifras listas para citar con su fuente, tablas para descargar y el método completo.</span>
+    </div>
+    <a class="boton-principal" href="../../periodistas.html">Periodistas y datos <span aria-hidden="true">→</span></a>
+  </section>
+
+  <footer class="pie">
+    <p id="pie-fecha"></p>
+    <p id="pie-fuentes"></p>
+  </footer>
+</main>
+
+<script src="../../vendor/d3.min.js"></script>
+<script src="../../vendor/topojson-client.min.js"></script>
+<script src="../../vendor/d3-composite-projections.min.js"></script>
+<script src="../../comun.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

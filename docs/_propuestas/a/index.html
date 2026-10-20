@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coste de los políticos</title>
+<meta name="description" content="Cuánto cuestan en España los sueldos de los políticos y de sus asesores, contado en cinco pasos y con fuentes oficiales.">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="cab">
+  <div class="cab-in">
+    <a class="marca" href="index.html">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="10.5" class="marca-m"/><circle cx="12" cy="12" r="7.5" class="marca-r"/><text x="12" y="16.2" text-anchor="middle" class="marca-t">€</text></svg>
+      Coste de los políticos
+    </a>
+    <button class="cab-boton" id="cab-boton" aria-expanded="false" aria-controls="cab-enlaces">Menú</button>
+    <nav class="cab-enlaces" id="cab-enlaces" aria-label="Secciones">
+      <a href="../../comunidades.html">Tu comunidad</a>
+      <a href="../../ayuntamientos.html">Tu ayuntamiento</a>
+      <a href="../../estado.html">Gobierno de España</a>
+      <a href="../../sueldos.html">Cuánto cobran</a>
+      <a href="../../calculadora.html">Calculadora</a>
+      <a class="cab-prensa" href="../../periodistas.html">Periodistas y datos</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="progreso" id="progreso" aria-label="Pasos de la historia">
+  <div class="progreso-in">
+    <a class="progreso-cifra" href="#heroe-titulo" id="progreso-cifra"></a>
+    <ol>
+      <li><a href="#paso-1"><b>1</b><span>A dónde va</span></a></li>
+      <li><a href="#paso-2"><b>2</b><span>Dónde vives</span></a></li>
+      <li><a href="#paso-3"><b>3</b><span>Gobierno central</span></a></li>
+      <li><a href="#paso-4"><b>4</b><span>Quién cobra más</span></a></li>
+      <li><a href="#paso-5"><b>5</b><span>Para hacerse una idea</span></a></li>
+    </ol>
+  </div>
+</nav>
+
+<main>
+  <!-- Portada: la cifra por persona -->
+  <section class="heroe" aria-labelledby="heroe-titulo">
+    <div class="heroe-in">
+      <div class="heroe-texto">
+        <p class="antetitulo">España · datos de <span class="d-anyo">…</span></p>
+        <h1 id="heroe-titulo">
+          <span class="h1-a">Los sueldos de los políticos y de sus asesores cuestan</span>
+          <span class="gran-cifra" id="cifra">…</span>
+          <span class="h1-b">a cada persona, al año</span>
+        </h1>
+        <div class="cuenta" id="cuenta" aria-label="Cómo sale la cifra"></div>
+        <p class="heroe-nota">Sueldos brutos, sin dietas ni cotizaciones. Solo fuentes oficiales: <a href="../../periodistas.html#fuentes">ver fuentes</a>.</p>
+      </div>
+      <figure class="heroe-visual">
+        <svg id="monedas-heroe" class="monedas" role="img"></svg>
+        <figcaption><span class="moneda-ico" aria-hidden="true"></span> Cada moneda, 1 €</figcaption>
+      </figure>
+    </div>
+    <nav class="indice" aria-label="La historia en cinco pasos">
+      <p class="indice-t">Te lo contamos en 5 pasos</p>
+      <ol>
+        <li><a href="#paso-1"><b>1</b>A dónde va</a></li>
+        <li><a href="#paso-2"><b>2</b>Dónde vives</a></li>
+        <li><a href="#paso-3"><b>3</b>Gobierno central</a></li>
+        <li><a href="#paso-4"><b>4</b>Quién cobra más</a></li>
+        <li><a href="#paso-5"><b>5</b>Para hacerse una idea</a></li>
+      </ol>
+    </nav>
+  </section>
+
+  <!-- 1. A dónde va -->
+  <section class="paso" id="paso-1" aria-labelledby="t1">
+    <div class="paso-texto">
+      <p class="kicker"><b>1</b>A dónde va el dinero</p>
+      <h2 id="t1">…</h2>
+      <p class="entrada" id="e1"></p>
+      <a class="ver-mas" href="../../ayuntamientos.html">Busca tu ayuntamiento <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="paso-visual">
+      <div class="niveles" id="niveles"></div>
+      <div class="asesores" id="asesores"></div>
+      <p class="fuente">Unas administraciones publican lo que gastaron y otras solo lo que presupuestaron. Fuente: presupuestos y cuentas de cada administración, ISPA y CONPREL (Ministerio de Hacienda), <span class="d-anyo"></span>. <a href="../../periodistas.html#fuentes">Todas las fuentes</a>.</p>
+    </div>
+  </section>
+
+  <!-- 2. Dónde vives -->
+  <section class="paso paso-inv" id="paso-2" aria-labelledby="t2">
+    <div class="paso-texto">
+      <p class="kicker"><b>2</b>Dónde vives importa</p>
+      <h2 id="t2">…</h2>
+      <p class="entrada" id="e2"></p>
+      <div class="ficha-ccaa" id="ficha" aria-live="polite"></div>
+      <label class="elige"><span>Elige tu comunidad</span>
+        <select id="elige-ccaa"><option value="">—</option></select>
+      </label>
+      <a class="ver-mas" id="ver-ccaa" href="../../comunidades.html">Ver todas las comunidades <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="paso-visual">
+      <svg id="mapa" class="mapa" role="img" aria-label="Mapa de España: coste por habitante en cada comunidad"></svg>
+      <div class="tira" id="tira"></div>
+      <details class="como-tabla"><summary>Ver como lista</summary><ol class="lista-ccaa" id="lista-ccaa"></ol></details>
+    </div>
+  </section>
+
+  <!-- 3. Gobierno central -->
+  <section class="paso" id="paso-3" aria-labelledby="t3">
+    <div class="paso-texto">
+      <p class="kicker"><b>3</b>El Gobierno central</p>
+      <h2 id="t3">…</h2>
+      <p class="entrada" id="e3"></p>
+      <a class="ver-mas" href="../../estado.html">Ver año a año y por ministerio <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="paso-visual">
+      <p class="grafico-t" id="g3-t"></p>
+      <svg id="g-gobierno" class="grafico" role="img"></svg>
+      <details class="como-tabla"><summary>Ver como lista</summary><ol class="lista-ccaa" id="lista-gob"></ol></details>
+      <p class="fuente" id="f3"></p>
+    </div>
+  </section>
+
+  <!-- 4. Quién cobra más -->
+  <section class="paso paso-inv" id="paso-4" aria-labelledby="t4">
+    <div class="paso-texto">
+      <p class="kicker"><b>4</b>Quién cobra más</p>
+      <h2 id="t4">…</h2>
+      <p class="entrada" id="e4"></p>
+      <a class="ver-mas" href="../../sueldos.html">Ver todos los sueldos <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="paso-visual">
+      <p class="grafico-t" id="g4-t"></p>
+      <svg id="g-sueldos" class="grafico" role="img" aria-labelledby="g4-t"></svg>
+      <details class="como-tabla"><summary id="lista-sueldos-t">Ver la lista</summary><ol class="lista-sueldos" id="lista-sueldos"></ol></details>
+      <div class="poder" id="poder"></div>
+      <p class="fuente" id="f4"></p>
+    </div>
+  </section>
+
+  <!-- 5. Para hacerse una idea -->
+  <section class="paso" id="paso-5" aria-labelledby="t5">
+    <div class="paso-texto">
+      <p class="kicker"><b>5</b>Para hacerse una idea</p>
+      <h2 id="t5">…</h2>
+      <p class="entrada" id="e5"></p>
+      <div class="segmentos" role="group" aria-label="Profesión" id="profesiones"></div>
+      <a class="ver-mas" href="../../calculadora.html">Haz tus propias cuentas <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="paso-visual">
+      <div class="personas" id="personas" role="img"></div>
+      <p class="escala" id="escala"></p>
+      <p class="fuente" id="f5"></p>
+    </div>
+  </section>
+
+  <!-- Cómo leer las cifras -->
+  <section class="leer" aria-labelledby="t-leer">
+    <h2 id="t-leer">Para leer bien estas cifras</h2>
+    <ul class="reglas">
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg>
+        <div><b>Sueldos brutos</b><span>Sin dietas, viajes ni cotizaciones a la Seguridad Social: el coste real es algo mayor.</span></div>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M10 13l2 2 3-4"/></svg>
+        <div><b>Presupuesto o gasto real</b><span>Unas administraciones publican lo que gastaron y otras solo lo que presupuestaron. Cada página lo indica.</span></div>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.5" r="3.5"/><path d="M5 20c.8-3.8 3.6-6 7-6s6.2 2.2 7 6"/></svg>
+        <div><b>Solo cargos políticos y asesores</b><span>Presidentes, ministros, consejeros, parlamentarios, alcaldes, concejales y sus asesores. No funcionarios, médicos ni policías.</span></div>
+      </li>
+    </ul>
+    <div class="prensa">
+      <a class="ver-mas" href="../../periodistas.html#fuentes">Todas las fuentes oficiales <span aria-hidden="true">→</span></a>
+      <a class="ver-mas sec" href="../../periodistas.html">¿Eres periodista? Cifras para citar y descargas <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</main>
+
+<footer class="pie"><p id="pie"></p></footer>
+
+<script src="../../vendor/d3.min.js"></script>
+<script src="../../vendor/topojson-client.min.js"></script>
+<script src="../../vendor/d3-composite-projections.min.js"></script>
+<script src="../../comun.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
