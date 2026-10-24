@@ -45,6 +45,12 @@
   const sumaE = (t) => (est.partes[t] ? est.partes[t].altos + est.partes[t].eventual : 0);
   const ESC = { congreso: 350, senado: 266 };
   let seleccion = null;
+  // En el móvil la ficha queda debajo: al elegir, se baja hasta ella
+  function elegir(id) {
+    seleccion = id;
+    render();
+    if (window.matchMedia("(max-width: 760px)").matches) document.getElementById("ficha").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 
   function componentes(c) {
     const p = c.partes;
@@ -136,7 +142,7 @@
         .classed("sel", (g) => g.id === seleccion)
         .on("mousemove", (ev, g) => porId.get(g.id) && mostrarTip(ev, porId.get(g.id)))
         .on("mouseleave", ocultarTip)
-        .on("click", (ev, g) => { if (porId.has(g.id)) { seleccion = g.id; render(); } });
+        .on("click", (ev, g) => { if (porId.has(g.id)) elegir(g.id); });
     }
     // Leyenda: tramos de la escala de cuantiles
     const cortes = [d3.min(escala.domain()), ...escala.quantiles(), d3.max(escala.domain())];
@@ -147,14 +153,12 @@
 
   // ---- KPIs ----
   function pintarKpis(res) {
-    const primero = res.filas[0], ultimo = res.filas[res.filas.length - 1];
     const e = calcularEstado();
     document.getElementById("kpis").innerHTML = `
-      <div class="kpi"><div class="et">Media de España</div><div class="val">${porHab(res.media)}</div><div class="det">por habitante y año</div></div>
-      <div class="kpi"><div class="et">Coste total</div><div class="val">${millones(res.totalEsp)}</div><div class="det">17 comunidades + Ceuta y Melilla</div></div>
-      <div class="kpi"><div class="et">Más cara · más barata</div><div class="val">${primero.c.nombre}</div><div class="det">${porHab(primero.porHab)} · ${ultimo.c.nombre} ${porHab(ultimo.porHab)}</div></div>
-      <button class="kpi clic${seleccion === "ES" ? " sel" : ""}" id="kpi-estado"><div class="et">Estado ${filtros.estado ? "(incluido)" : "(aparte)"}</div><div class="val">${porHab(e.porHab)}</div><div class="det">${millones(e.total)} · Gobierno central y Cortes</div></button>`;
-    document.getElementById("kpi-estado").addEventListener("click", () => { seleccion = "ES"; render(); });
+      <div class="kpi"><div class="et">Media de España</div><div class="val">${porHab(res.media)}</div><div class="det">por habitante</div></div>
+      <div class="kpi"><div class="et">Total al año</div><div class="val">${fmtEnt.format(Math.round(res.totalEsp / 1e6))} M€</div><div class="det">19 territorios</div></div>
+      <button class="kpi clic${seleccion === "ES" ? " sel" : ""}" id="kpi-estado"><div class="et">Estado ›</div><div class="val">${porHab(e.porHab)}</div><div class="det">${filtros.estado ? "incluido" : "aparte"}</div></button>`;
+    document.getElementById("kpi-estado").addEventListener("click", () => elegir("ES"));
   }
 
   // ---- Ranking ----
@@ -171,7 +175,7 @@
         <span class="v">${porHab(f.porHab)}</span>`;
       b.addEventListener("mousemove", (ev) => mostrarTip(ev, f));
       b.addEventListener("mouseleave", ocultarTip);
-      b.addEventListener("click", () => { seleccion = f.c.id; render(); });
+      b.addEventListener("click", () => elegir(f.c.id));
       cuerpo.appendChild(b);
     });
     // Línea de la media, alineada con la pista de las barras

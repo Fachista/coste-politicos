@@ -119,10 +119,16 @@ html, body {
 }
 .chip:hover { background: var(--hover); }
 .chip.fijo { cursor: default; color: var(--tinta-2); }
-.chip input { accent-color: var(--acento); margin: 0; }
+/* Pastilla seleccionable: sin casilla visible, marcada con fondo de acento y ✓ */
+.chip { position: relative; white-space: nowrap; }
+.chip input { position: absolute; opacity: 0; pointer-events: none; }
+.chip:has(input:checked) { background: var(--acento); border-color: var(--acento); color: #fff; }
+.chip:has(input:checked)::before { content: "✓"; font-size: 0.8rem; }
+.chip.fijo:has(input:checked) { background: var(--hover); border-color: var(--borde); color: var(--tinta-2); }
+.chip:has(input:focus-visible) { outline: 2px solid var(--acento); outline-offset: 2px; }
 
-.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-bottom: 12px; }
-.kpi.clic { font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.kpis { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 12px; margin-bottom: 12px; }
+.kpi.clic { font: inherit; color: inherit; text-align: left; cursor: pointer; display: flex; flex-direction: column; justify-content: flex-start; }
 .kpi.clic:hover { background: var(--hover); }
 .kpi.clic.sel { border-color: var(--tinta-2); }
 .kpi { background: var(--superficie); border: 1px solid var(--borde); border-radius: 12px; padding: 12px 14px; }
@@ -216,9 +222,21 @@ details li span:last-child { font-variant-numeric: tabular-nums; white-space: no
 .tip b { display: block; margin-bottom: 2px; }
 .tip .t2 { color: var(--tinta-2); }
 
+.pie summary { color: var(--tinta-2); font-size: 0.8rem; cursor: pointer; }
+
 @media (max-width: 760px) {
   .rejilla { grid-template-columns: 1fr; }
-  .kpis { grid-template-columns: 1fr 1fr; }
+  /* Filtros en una fila deslizable que llega a los bordes */
+  .filtros { flex-wrap: nowrap; overflow-x: auto; margin: 12px -16px; padding: 0 16px 2px; scrollbar-width: none; }
+  .filtros::-webkit-scrollbar { display: none; }
+  .chip { padding: 5px 11px; font-size: 0.85rem; }
+  .kpis { gap: 8px; }
+  /* Con cuatro cifras, dos filas de dos */
+  .kpis:has(> :nth-child(4)) { grid-auto-flow: row; grid-template-columns: 1fr 1fr; }
+  .kpi { padding: 10px; }
+  .kpi .et { font-size: 0.75rem; }
+  .kpi .val { font-size: 1.15rem; }
+  .kpi .det { font-size: 0.72rem; }
   .fila { grid-template-columns: 7.2rem minmax(0, 1fr) 3.8rem; gap: 8px; }
   .heroe { font-size: 2rem; }
 }
