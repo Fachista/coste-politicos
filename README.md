@@ -1,13 +1,15 @@
 # Coste de los políticos
 
-Web para entender cuánto cuestan los cargos políticos en España, pensada para cualquier lector y con una sección para periodistas (cifras para citar, descargas, método y fuentes).
+Web para entender de un vistazo cuánto cuestan los cargos políticos en España. Las páginas muestran cifras y gráficos; las explicaciones, el método y lo necesario para periodistas están en «Fuentes de datos».
 
 Páginas (`docs/`), con barra de navegación inferior en el móvil:
-- **Inicio** (`index.html`): la cifra por persona y el reparto entre comunidades, ayuntamientos y Gobierno central.
+- **Inicio** (`index.html`): la cifra por persona, el reparto entre comunidades, municipios y Gobierno central, y lo que ha cambiado con el Gobierno actual.
 - **Comunidades** (`comunidades.html`): mapa por comunidad autónoma y por qué cada una cuesta más o menos.
-- **Ayuntamientos** (`ayuntamientos.html`): buscador de municipios comparados con los de su tamaño.
-- **Gobierno central** (`gobierno.html`), con pestañas: resumen, ministerios, evolución 2007-2025, sueldos fijados por ley desde 1986, y Congreso y Senado. `estado.html` y `sueldos.html` redirigen aquí.
-- **¿Qué se podría pagar?** (`calculadora.html`) y **Periodistas y datos** (`periodistas.html`), en «Más».
+- **Municipios** (`ayuntamientos.html`): buscador de municipios comparados con los de su tamaño.
+- **Gobierno central** (`gobierno.html`), con pestañas: resumen, «Este Gobierno» (presupuestos del Gobierno actual frente al anterior, sin inflación), ministerios, sueldos fijados por ley y Congreso y Senado. La calculadora (`calculadora.html`) cuelga de aquí.
+- **Fuentes de datos** (`fuentes.html`): cómo se calcula cada cifra, límites, cifras para citar, descargas CSV, cita y fuentes oficiales.
+
+`estado.html`, `sueldos.html` y `periodistas.html` son redirecciones a las páginas nuevas.
 
 Por comunidad autónoma se cuentan:
 - altos cargos y asesores de los gobiernos autonómicos;

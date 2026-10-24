@@ -33,11 +33,8 @@
     fetch("datos.json").then((r) => r.json()),
     fetch("vendor/autonomous_regions.json").then((r) => r.json()),
   ]);
-  const [pa, pm, pd] = datos.poblacion.fecha.split("-");
-  const MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
   document.querySelectorAll(".anyo").forEach((e) => (e.textContent = datos.anyo));
-  document.getElementById("pie-fuentes").innerHTML =
-    `Población: <a href="${datos.poblacion.url}" target="_blank" rel="noopener">${datos.poblacion.fuente}</a>, ${+pd} de ${MESES[+pm - 1]} de ${pa}. Fuentes de cada comunidad en su ficha.`;
+  document.getElementById("pie-fuentes").innerHTML = C.masInfo("comunidades");
 
   const filtros = { parlamento: true, local: true, estado: false, otros: false };
   const est = datos.estado;
@@ -219,20 +216,20 @@
   // ---- Por qué cuesta más o menos: cada componente por habitante frente a la mediana de las comunidades ----
   const mediana = (v) => { const o = [...v].sort((a, b) => a - b), m = o.length >> 1; return o.length % 2 ? o[m] : (o[m - 1] + o[m]) / 2; };
   const TEXTO_ALTO = {
-    gob_altos: "Su gobierno tiene más altos cargos (consejeros, viceconsejeros, directores generales) o mejor pagados que la mayoría.",
-    gob_eventual: "Su gobierno presupuesta más asesores de confianza (personal eventual) que la mayoría.",
-    parlamento: "Su parlamento sale caro por habitante: el coste de diputados y asesores se reparte entre menos población o es más alto.",
-    local_electos: "Los sueldos de alcaldes y concejales pesan más que en otras comunidades.",
-    local_diput: "Tiene varias diputaciones provinciales, cabildos o consejos insulares, cada uno con sus propios cargos.",
-    local_eventual: "Sus ayuntamientos contratan más asesores que la media.",
+    gob_altos: "Más altos cargos, o mejor pagados",
+    gob_eventual: "Más asesores de confianza",
+    parlamento: "Parlamento caro para su población",
+    local_electos: "Alcaldes y concejales cobran más",
+    local_diput: "Varias diputaciones, cabildos o consejos",
+    local_eventual: "Ayuntamientos con más asesores",
   };
   const TEXTO_BAJO = {
-    gob_altos: "Su gobierno gasta menos que la mayoría en altos cargos.",
-    gob_eventual: "Su gobierno tiene pocos asesores de confianza.",
-    parlamento: "Su parlamento cuesta poco por habitante.",
-    local_electos: "Sus alcaldes y concejales cobran, en conjunto, menos que en otras comunidades.",
-    local_diput: "Tiene poco o ningún gasto en diputaciones (las comunidades de una sola provincia no tienen diputación).",
-    local_eventual: "Sus ayuntamientos contratan pocos asesores.",
+    gob_altos: "Gasta poco en altos cargos",
+    gob_eventual: "Pocos asesores de confianza",
+    parlamento: "Parlamento barato para su población",
+    local_electos: "Alcaldes y concejales cobran menos",
+    local_diput: "Poco o nada en diputaciones",
+    local_eventual: "Ayuntamientos con pocos asesores",
   };
   function explicar(f, res) {
     const ids = Object.keys(TEXTO_ALTO).filter((id) => f.activos.some((k) => k.id === id));
@@ -244,15 +241,15 @@
     const altos = filas.filter((x) => x.ratio > 1.25 && x.dif > 0.3).sort((a, b) => b.dif - a.dif).slice(0, 3);
     const bajos = filas.filter((x) => x.ratio < 0.8 && x.dif < -0.3).sort((a, b) => a.dif - b.dif).slice(0, 2);
     const nombre = (id) => COMPONENTES.find((k) => k.id === id).nombre.toLowerCase();
-    const linea = (x, t) => `<li>${t} <span class="t2">(${nombre(x.id)}: ${porHab(x.v)} por habitante; la comunidad típica, ${porHab(x.med)})</span></li>`;
+    const linea = (x, t, sube) => `<li class="${sube ? "sube" : "baja"}"><span>${sube ? "▲" : "▼"} ${t}</span><span class="t2">${porHab(x.v)} · típica ${porHab(x.med)}</span></li>`;
     // Tamaño: comunidades pequeñas frente a grandes, solo si los propios datos lo confirman
     const pequenas = res.filas.filter((x) => x.c.poblacion < 1.5e6), grandes = res.filas.filter((x) => x.c.poblacion >= 1.5e6);
     const mP = mediana(pequenas.map((x) => x.porHab)), mG = mediana(grandes.map((x) => x.porHab));
     const tam = f.c.poblacion < 1.5e6 && mP > mG * 1.15 && f.dif > 0
-      ? `<li>Es una comunidad pequeña (${fmtEnt.format(f.c.poblacion)} habitantes). Gobierno y parlamento tienen un mínimo de cargos que no depende de la población, y ese coste se reparte entre pocos: la comunidad pequeña típica paga ${porHab(mP)} por habitante y la grande, ${porHab(mG)}.</li>` : "";
-    if (!altos.length && !bajos.length && !tam) return `<div class="porque"><h3>¿Por qué?</h3><p>Ninguna parte destaca: todas están cerca de lo habitual.</p></div>`;
-    return `<div class="porque"><h3>¿Por qué ${f.dif >= 0 ? "cuesta más" : "cuesta menos"} que la media?</h3><ul>
-      ${tam}${altos.map((x) => linea(x, TEXTO_ALTO[x.id])).join("")}${bajos.map((x) => linea(x, TEXTO_BAJO[x.id])).join("")}
+      ? `<li class="sube"><span>▲ Comunidad pequeña: el coste fijo se reparte entre pocos</span><span class="t2">pequeñas ${porHab(mP)} · grandes ${porHab(mG)}</span></li>` : "";
+    if (!altos.length && !bajos.length && !tam) return `<div class="porque"><h3>¿Por qué?</h3><p class="t2">Ninguna parte destaca: todo está cerca de lo habitual.</p></div>`;
+    return `<div class="porque"><h3>¿Por qué ${f.dif >= 0 ? "cuesta más" : "cuesta menos"}?</h3><ul>
+      ${tam}${altos.map((x) => linea(x, TEXTO_ALTO[x.id], true)).join("")}${bajos.map((x) => linea(x, TEXTO_BAJO[x.id], false)).join("")}
       </ul></div>`;
   }
 
@@ -277,10 +274,10 @@
           <td class="num">${millones(f.comp[k.id])}</td><td class="num pct">${fmtPct.format((f.comp[k.id] / f.total) * 100)} %</td></tr>`).join("")}
       </tbody></table>
       ${explicar(f, res)}
-      ${c.faltan.length || c.notas.length || (filtros.local && c.avisos.length) ? `<ul class="avisos">
-        ${c.faltan.map((t) => `<li class="falta">Sin datos. ${t}</li>`).join("")}
+      ${c.faltan.length ? `<ul class="avisos">${c.faltan.map((t) => `<li class="falta">Sin datos. ${t}</li>`).join("")}</ul>` : ""}
+      ${c.notas.length || (filtros.local && c.avisos.length) ? `<details><summary>Notas sobre los datos</summary><ul class="avisos">
         ${filtros.local ? c.avisos.map((t) => `<li class="aviso">${t}</li>`).join("") : ""}
-        ${c.notas.map((t) => `<li class="nota">${t}</li>`).join("")}</ul>` : ""}
+        ${c.notas.map((t) => `<li class="nota">${t}</li>`).join("")}</ul></details>` : ""}
       ${filtros.estado && est.escanos[c.nombre] ? `<p class="datos-linea">Incluye ${est.escanos[c.nombre].congreso} diputados y ${est.escanos[c.nombre].senado} senadores de la comunidad y su parte del Gobierno central por habitante.</p>` : ""}
       <details><summary>Gobierno y parlamento por unidad (${unidades.length})</summary><ul>
         ${unidades.map((u) => `<li><span>${u.nombre}</span><span>${millones(u.altos + u.eventual)}</span></li>`).join("")}

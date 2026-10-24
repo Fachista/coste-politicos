@@ -1,7 +1,7 @@
 (async function () {
   "use strict";
   const [datos, hist] = await Promise.all([C.json("datos.json"), C.json("historico.json")]);
-  const est = datos.estado, ref = hist.sueldos.detalle.referencias, D = hist.sueldos.detalle;
+  const est = datos.estado, ref = hist.sueldos.detalle.referencias;
   const ultimo = [...hist.estado].reverse().find((r) => !r.prorrogado);
 
   // Partidas que se pueden recortar (importes anuales en euros)
@@ -67,5 +67,5 @@
   ["partida", "destino", "pct", "propio", "sueldo"].forEach((id) => $(id).addEventListener("input", calcular));
   $("copiar").addEventListener("click", () => C.copiar($("copiar"), texto + " " + location.href));
   calcular();
-  $("pie-fuentes").innerHTML = `Sueldos de referencia: <a href="${D.url}" target="_blank" rel="noopener">${D.ley}, de Presupuestos Generales del Estado para ${D.anyo}</a> (BOE). ${ref.nota}`;
+  $("pie-fuentes").innerHTML = C.masInfo("calculadora", "Cómo se calcula");
 })();

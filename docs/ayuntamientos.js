@@ -4,8 +4,7 @@
   const datos = await C.json("datos.json");
   let munis = null;
   try { munis = await C.json("municipios.json"); } catch (e) { munis = null; }
-  const fuentes = (munis ? munis.fuentes : datos.fuentes_local);
-  $("pie-fuentes").innerHTML = "Fuentes: " + fuentes.map((f) => `<a href="${f.url}" target="_blank" rel="noopener">${f.texto}</a>`).join(" · ") + ".";
+  $("pie-fuentes").innerHTML = C.masInfo("municipios");
 
   // Sin lista completa: los 15 ayuntamientos con más gasto de cada comunidad (están en datos.json)
   if (!munis) {

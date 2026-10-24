@@ -1,3 +1,4 @@
+// Fuentes de datos: cifras para citar, descargas, cita y tabla de fuentes
 (async function () {
   "use strict";
   const $ = (id) => document.getElementById(id);
@@ -5,13 +6,15 @@
   let munis = null;
   try { munis = await C.json("municipios.json"); } catch (e) { munis = null; }
   const est = datos.estado, D = hist.sueldos.detalle;
-  const url = location.href.replace(/periodistas\.html.*$/, "");
+  const url = location.href.replace(/(fuentes|periodistas)\.html.*$/, "").replace(/#.*$/, "");
   const hoy = new Date().toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" });
 
   // ---- Cifras citables ----
   const total = datos.comunidades.reduce((s, c) => s + C.nucleoComunidad(c), 0) + C.nucleoEstado(est);
   const ranking = datos.comunidades.map((c) => ({ c, v: C.nucleoComunidad(c) / c.poblacion })).sort((a, b) => b.v - a.v);
   const ultimo = [...hist.estado].reverse().find((r) => !r.prorrogado);
+  const nucleo = (r) => r.gobierno_altos + r.gobierno_asesores + r.congreso + r.senado;
+  const a18 = hist.estado.find((r) => r.anyo === 2018);
   const ini = hist.estado[0];
   const presi = D.cargos.find((c) => c.cargo === "Presidente del Gobierno");
   const cifras = [
@@ -19,16 +22,18 @@
       s: `Coste de los políticos, a partir de presupuestos y cuentas autonómicas, ISPA, CONPREL y PGE (${datos.anyo})` },
     { f: `${ranking[0].c.nombre} (${C.eur2(ranking[0].v)}), ${ranking[1].c.nombre} (${C.eur2(ranking[1].v)}) y ${ranking[2].c.nombre} (${C.eur2(ranking[2].v)}) son las comunidades donde los políticos cuestan más por habitante.`,
       s: `Coste de los políticos (${datos.anyo})` },
-    { f: `El Gobierno central presupuestó ${C.millones(ultimo.total)} para altos cargos, asesores y Cortes en ${ultimo.anyo}, frente a ${C.millones(ini.total)} en ${ini.anyo} (${C.millones(ini.total * ini.factor_ipc)} en euros de ${hist.base_ipc}).`,
+    { f: `El Gobierno central presupuestó ${C.millones(nucleo(ultimo))} para altos cargos, asesores y Cortes en ${ultimo.anyo}, frente a ${C.millones(nucleo(ini))} en ${ini.anyo} (${C.millones(nucleo(ini) * ini.factor_ipc)} en euros de ${hist.base_ipc}).`,
       s: "Presupuestos Generales del Estado (Fundación Civio, a partir de la SEPG) e IPC del INE" },
     { f: `Los ministerios pasaron de ${ini.ministerios} en el presupuesto de ${ini.anyo} a ${ultimo.ministerios} en el de ${ultimo.anyo}, y las secretarías de Estado, de ${ini.secretarias_estado} a ${ultimo.secretarias_estado}.`,
       s: `Presupuestos Generales del Estado ${ini.anyo} y ${ultimo.anyo}` },
+    { f: `El presupuesto para asesores de los ministerios pasó de ${C.millones(a18.gobierno_asesores)} en 2018 a ${C.millones(ultimo.gobierno_asesores)} en ${ultimo.anyo} (+${C.pct(ultimo.gobierno_asesores / a18.gobierno_asesores - 1)}; +${C.pct((ultimo.gobierno_asesores * ultimo.factor_ipc) / (a18.gobierno_asesores * a18.factor_ipc) - 1)} descontada la inflación).`,
+      s: `Presupuestos Generales del Estado 2018 y ${ultimo.anyo} (créditos iniciales) e IPC del INE` },
     { f: `El presidente del Gobierno tiene fijado un sueldo de ${C.eur(presi.anual)} brutos anuales (${D.anyo}), menos que un magistrado del Tribunal Constitucional (${C.eur(D.cargos.find((c) => c.cargo === "Magistrado del Tribunal Constitucional").anual)}).`,
       s: `${D.ley}, de Presupuestos Generales del Estado para ${D.anyo} (BOE)` },
   ];
-  $("cifras").innerHTML = cifras.map((k, i) => `<li><div class="frase">${k.f}</div><div class="fuente-frase">Fuente: ${k.s}
+  $("lista-cifras").innerHTML = cifras.map((k, i) => `<li><div class="frase">${k.f}</div><div class="fuente-frase">Fuente: ${k.s}
     <button class="boton" data-i="${i}">Copiar con fuente</button></div></li>`).join("");
-  $("cifras").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
+  $("lista-cifras").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
     const k = cifras[+b.dataset.i];
     C.copiar(b, `${k.f} (Fuente: ${k.s}. ${url})`);
   }));
@@ -72,8 +77,8 @@
 
   // ---- Cita e inserción ----
   const cita = `Fuente: Coste de los políticos (${url}), con datos oficiales de presupuestos y cuentas públicas. Consultado el ${hoy}.`;
-  const iframe = `<iframe src="${url}gobierno.html#evolucion" width="100%" height="900" style="border:0" title="Gasto del Gobierno central en altos cargos y asesores" loading="lazy"></iframe>`;
-  $("cita").textContent = cita;
+  const iframe = `<iframe src="${url}gobierno.html#este" width="100%" height="900" style="border:0" title="Gasto del Gobierno central en altos cargos y asesores" loading="lazy"></iframe>`;
+  $("texto-cita").textContent = cita;
   $("iframe").textContent = iframe;
   $("copiar-cita").addEventListener("click", (e) => C.copiar(e.target, cita));
   $("copiar-iframe").addEventListener("click", (e) => C.copiar(e.target, iframe));
@@ -96,5 +101,6 @@
     fila("Población", `${a(datos.poblacion.url, "INE, tabla 56940")} (comunidades); INE vía Banco Mundial (serie)`, "Descarga directa; copia de datahub.io del Banco Mundial"),
     fila("Inflación", "IPC, media anual (INE)", `Banco Mundial, indicador FP.CPI.TOTL.ZG, copia de ${a("https://github.com/datasets/cpi", "datahub.io")}`),
   ].join("");
+  $("ref-sueldos").innerHTML = `Sueldos de referencia: <a href="${D.url}" target="_blank" rel="noopener">${D.ley}, de Presupuestos Generales del Estado para ${D.anyo}</a> (BOE). ${D.referencias.nota}`;
   $("pie").textContent = `Datos generados el ${datos.generado} (comunidades) y el ${hist.generado} (serie histórica).`;
 })();

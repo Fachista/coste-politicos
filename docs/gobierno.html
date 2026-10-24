@@ -4,162 +4,100 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gobierno central</title>
-<meta name="description" content="Lo que cuestan los altos cargos y asesores de los ministerios, el Congreso y el Senado, cuánto cobra cada cargo del Estado y cómo ha cambiado desde 2007.">
+<meta name="description" content="Lo que cuestan los altos cargos y asesores de los ministerios, el Congreso y el Senado, y lo que ha cambiado con el Gobierno actual.">
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 <nav class="menu" id="menu" aria-label="Secciones"></nav>
 <div class="app">
-  <header class="cabecera-seccion">
-    <h1>Gobierno central</h1>
-    <p class="entradilla">Ministerios, Congreso y Senado: lo que cuestan sus cargos y asesores.</p>
-  </header>
+  <h1>Gobierno central</h1>
 
   <div class="pestanas" role="tablist" aria-label="Apartados del Gobierno central">
-    <button role="tab" id="t-resumen" aria-controls="p-resumen" data-tab="resumen">Resumen</button>
-    <button role="tab" id="t-ministerios" aria-controls="p-ministerios" data-tab="ministerios">Ministerios</button>
-    <button role="tab" id="t-evolucion" aria-controls="p-evolucion" data-tab="evolucion">Evolución</button>
-    <button role="tab" id="t-sueldos" aria-controls="p-sueldos" data-tab="sueldos">Sueldos</button>
-    <button role="tab" id="t-cortes" aria-controls="p-cortes" data-tab="cortes">Congreso y Senado</button>
+    <button role="tab" aria-controls="p-resumen" data-tab="resumen">Resumen</button>
+    <button role="tab" aria-controls="p-este" data-tab="este">Este Gobierno</button>
+    <button role="tab" aria-controls="p-ministerios" data-tab="ministerios">Ministerios</button>
+    <button role="tab" aria-controls="p-sueldos" data-tab="sueldos">Sueldos</button>
+    <button role="tab" aria-controls="p-cortes" data-tab="cortes">Congreso y Senado</button>
   </div>
 
   <!-- Resumen -->
-  <section class="panel" id="p-resumen" role="tabpanel" aria-labelledby="t-resumen">
+  <section class="panel" id="p-resumen" role="tabpanel" hidden>
     <div class="destacado">
-      <div class="det" id="r-etiqueta"></div>
+      <div class="det">Cada persona paga al año</div>
       <div class="gran-cifra" id="r-cifra"></div>
       <div class="det" id="r-total"></div>
       <div class="pila grande" id="r-pila" role="img" aria-label="Reparto del coste del Gobierno central"></div>
-      <table class="desglose" id="r-desglose"></table>
+      <div class="partes" id="r-partes"></div>
     </div>
-    <h2 class="titulo-bloque">En pocas palabras</h2>
-    <div class="datos-clave" id="r-datos"></div>
-    <details class="explicacion">
-      <summary>Qué se cuenta aquí</summary>
-      <p>Sueldos brutos de ministros, secretarios de Estado, subsecretarios y directores generales, de los asesores que nombran (personal eventual) y de diputados y senadores. Sin dietas, indemnizaciones ni cotizaciones sociales.</p>
-      <p>La cúpula judicial y fiscal, los órganos constitucionales (Tribunal Constitucional, CGPJ, Tribunal de Cuentas, Consejo de Estado) y los organismos públicos no son cargos del Gobierno: se muestran aparte en «Evolución».</p>
-    </details>
+    <h2 class="titulo-bloque">Lo que más ha cambiado</h2>
+    <div class="alertas" id="r-alertas"></div>
+    <a class="enlace-grande" href="calculadora.html"><span class="icono-caja" id="r-calc"></span><span><b>¿Qué se podría pagar con ese dinero?</b><span>Calcúlalo en maestros, enfermeros o médicos</span></span><i aria-hidden="true">›</i></a>
+    <p class="pie-panel" id="r-info"></p>
+  </section>
+
+  <!-- Este Gobierno -->
+  <section class="panel" id="p-este" role="tabpanel" hidden>
+    <div class="cabecera-panel">
+      <h2 id="e-titulo"></h2>
+      <p class="det" id="e-sub"></p>
+    </div>
+    <div class="comparaciones" id="e-comparaciones"></div>
+    <div class="destacado alerta seccion" id="e-extra"></div>
+    <section class="tarjeta seccion">
+      <h2>Gasto medio al año de cada Gobierno</h2>
+      <p class="det" id="e-medias-sub"></p>
+      <div class="barras-gob" id="e-medias"></div>
+    </section>
+    <section class="tarjeta seccion">
+      <h2>Año a año</h2>
+      <div class="leyenda-cat" id="e-leyenda"></div>
+      <svg class="grafico" id="e-serie" role="img" aria-label="Gasto del Gobierno central en cargos, asesores y Cortes cada año, sin inflación"></svg>
+    </section>
+    <p class="pie-panel" id="e-info"></p>
   </section>
 
   <!-- Ministerios -->
-  <section class="panel" id="p-ministerios" role="tabpanel" aria-labelledby="t-ministerios" hidden>
+  <section class="panel" id="p-ministerios" role="tabpanel" hidden>
     <section class="tarjeta">
       <div class="ficha-cab">
-        <h2 id="m-titulo">Lo que cuesta cada ministerio</h2>
-        <label class="selector">Presupuesto <select id="m-anyo"></select></label>
+        <h2>¿Cuánto cuesta cada ministerio?</h2>
+        <select id="m-anyo" aria-label="Año del presupuesto"></select>
       </div>
-      <p class="datos-linea" id="m-sub"></p>
       <div class="leyenda-cat"><span><i class="mu" style="background:var(--c-1)"></i>Altos cargos</span><span><i class="mu" style="background:var(--c-2)"></i>Asesores</span></div>
       <div class="barras-dobles" id="m-lista"></div>
     </section>
+    <p class="pie-panel" id="m-info"></p>
+  </section>
+
+  <!-- Sueldos -->
+  <section class="panel" id="p-sueldos" role="tabpanel" hidden>
+    <section class="tarjeta">
+      <h2 id="s-titulo"></h2>
+      <p class="det" id="s-resumen"></p>
+      <div class="leyenda-cat"><span><i class="linea-ref"></i>Sueldo del presidente del Gobierno</span></div>
+      <div class="barras" id="s-ranking"></div>
+    </section>
     <section class="tarjeta seccion">
-      <h2>¿Cuántos ministerios hay?</h2>
-      <svg class="grafico" id="grafico-n" role="img" aria-label="Número de ministerios y de secretarías de Estado en cada presupuesto"></svg>
-      <p class="nota-pie">Según la estructura de cada presupuesto. Un presupuesto prorrogado mantiene la estructura antigua aunque el Gobierno ya tenga otros ministerios.</p>
+      <h2>El sueldo del presidente, desde 1986</h2>
+      <p class="det">Sin efecto de la inflación</p>
+      <svg class="grafico" id="s-serie" role="img" aria-label="Sueldo del presidente del Gobierno desde 1986, sin inflación"></svg>
     </section>
-  </section>
-
-  <!-- Evolución (estado.js) -->
-  <section class="panel" id="p-evolucion" role="tabpanel" aria-labelledby="t-evolucion" hidden>
-    <section class="kpis" id="kpis" aria-live="polite"></section>
-    <section class="tarjeta">
-      <div class="controles">
-        <div class="segmentos" role="group" aria-label="Euros">
-          <button data-ipc="no" aria-pressed="false">Euros de cada año</button>
-          <button data-ipc="si" aria-pressed="true">Sin inflación</button>
-        </div>
-        <div class="segmentos" role="group" aria-label="Medida">
-          <button data-medida="total" aria-pressed="true">Total</button>
-          <button data-medida="hab" aria-pressed="false">Por habitante</button>
-        </div>
-      </div>
-      <h2 id="titulo-grafico"></h2>
-      <div class="leyenda-cat" id="leyenda"></div>
-      <svg class="grafico" id="grafico" role="img" aria-labelledby="titulo-grafico"></svg>
-      <p class="nota-pie">Fondo gris: presidente que gobernó la mayor parte del año. Rayado: presupuesto prorrogado. Toca una barra para ver sus ministerios.</p>
-      <details><summary>Ver los datos en una tabla</summary><div class="tabla-scroll" id="tabla"></div></details>
-      <p><button class="boton" id="descargar">Descargar CSV</button></p>
-    </section>
-    <section class="seccion tarjeta">
-      <h2>Por presidente del Gobierno</h2>
-      <p class="nota-pie">Media anual de los presupuestos que elaboró cada Gobierno, sin inflación (euros de <span class="base-ipc"></span>).</p>
-      <div class="tabla-scroll" id="por-gobierno"></div>
-    </section>
-    <details class="explicacion">
-      <summary>Antes de comparar años</summary>
-      <ul>
-        <li><b>Es lo presupuestado, no lo gastado:</b> créditos iniciales de cada ley de presupuestos.</li>
-        <li><b>Años prorrogados</b> (2019, 2020, 2024 y 2025): siguió vigente el presupuesto anterior, así que la cifra se repite. El de 2018 lo preparó el Gobierno de Mariano Rajoy y lo aplicó el de Pedro Sánchez.</li>
-        <li><b>«Sin inflación»</b> pasa cada cifra a euros de <span class="base-ipc"></span> con el IPC.</li>
-        <li><b>Cúpula judicial y fiscal:</b> el Ministerio de Justicia paga como «altos cargos» a la presidencia de tribunales y a la Fiscalía; va aparte porque no son cargos políticos.</li>
-        <li><b>Antes de 2007</b> no hay presupuestos abiertos partida a partida; sí los sueldos, en la pestaña «Sueldos».</li>
-      </ul>
-    </details>
-    <p class="pie-panel" id="pie-fuentes"></p>
-  </section>
-
-  <!-- Sueldos (sueldos.js) -->
-  <section class="panel" id="p-sueldos" role="tabpanel" aria-labelledby="t-sueldos" hidden>
-    <section class="tarjeta">
-      <h2 id="titulo-ranking"></h2>
-      <div class="controles">
-        <label>Comparar con
-          <select id="comparar">
-            <option value="presi">el presidente del Gobierno</option>
-            <option value="smi">el salario mínimo</option>
-            <option value="maestro">un maestro o enfermero</option>
-          </select>
-        </label>
-      </div>
-      <div class="barras" id="ranking"></div>
-      <p class="nota-pie" id="nota-ranking"></p>
-    </section>
-    <p class="resumen-caja" id="resumen-justo"></p>
-    <section class="seccion tarjeta">
-      <h2>El sueldo del presidente y de los ministros desde 1986</h2>
-      <div class="controles">
-        <div class="segmentos" role="group" aria-label="Euros">
-          <button data-ipc-s="no" aria-pressed="false">Euros de cada año</button>
-          <button data-ipc-s="si" aria-pressed="true">Sin inflación</button>
-        </div>
-      </div>
-      <div class="leyenda-cat" id="leyenda-serie"></div>
-      <svg class="grafico" id="serie" role="img" aria-label="Evolución del sueldo del presidente, vicepresidente y ministros"></svg>
-      <p class="nota-pie" id="nota-serie"></p>
-      <details><summary>Ver los datos en una tabla</summary><div class="tabla-scroll" id="tabla-serie"></div></details>
-      <p><button class="boton" id="descargar-s">Descargar CSV</button></p>
-    </section>
-    <details class="explicacion">
-      <summary>Cómo juzgar si es mucho</summary>
-      <ul>
-        <li><b>El presidente del Gobierno</b> es el cargo de mayor responsabilidad política; se marcan los que cobran más que él.</li>
-        <li><b>El salario mínimo</b> (<span id="smi"></span> en <span class="anyo-ley"></span>) mide a cuántos sueldos mínimos equivale cada cargo.</li>
-        <li><b>Un maestro o un enfermero:</b> retribución básica estatal de un funcionario A2 (<span id="maestro"></span>). Su sueldo real es mayor por los complementos de cada comunidad.</li>
-        <li><b>Diputados y senadores</b> no aparecen aquí: su sueldo lo fijan las Mesas de cada cámara. Su coste está en «Congreso y Senado».</li>
-      </ul>
-    </details>
-    <p class="pie-panel" id="pie-sueldos"></p>
+    <p class="pie-panel" id="s-info"></p>
   </section>
 
   <!-- Congreso y Senado -->
-  <section class="panel" id="p-cortes" role="tabpanel" aria-labelledby="t-cortes" hidden>
+  <section class="panel" id="p-cortes" role="tabpanel" hidden>
     <div class="dos-col" id="c-camaras"></div>
     <section class="tarjeta seccion">
       <h2>Desde 2007, sin inflación</h2>
       <div class="leyenda-cat"><span><i class="mu" style="background:var(--c-3)"></i>Congreso</span><span><i class="mu" style="background:var(--c-4)"></i>Senado</span></div>
-      <svg class="grafico" id="c-serie" role="img" aria-label="Presupuesto del Congreso y del Senado para sueldos de parlamentarios y asesores desde 2007"></svg>
-      <p class="nota-pie" id="c-nota"></p>
+      <svg class="grafico" id="c-serie" role="img" aria-label="Presupuesto del Congreso y del Senado para parlamentarios y asesores desde 2007"></svg>
     </section>
-    <details class="explicacion">
-      <summary>Qué incluye</summary>
-      <p>Sueldos de diputados y senadores (asignación y complementos por cargo) y del personal eventual de cada cámara. No incluye las indemnizaciones por desplazamiento y alojamiento, las subvenciones a los grupos parlamentarios ni a los funcionarios de las Cortes.</p>
-    </details>
+    <p class="pie-panel" id="c-info"></p>
   </section>
 </div>
 <script src="vendor/d3.min.js"></script>
 <script src="comun.js"></script>
 <script src="gobierno.js"></script>
-<script src="estado.js"></script>
-<script src="sueldos.js"></script>
 </body>
 </html>
