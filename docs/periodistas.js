@@ -72,7 +72,7 @@
 
   // ---- Cita e inserción ----
   const cita = `Fuente: Coste de los políticos (${url}), con datos oficiales de presupuestos y cuentas públicas. Consultado el ${hoy}.`;
-  const iframe = `<iframe src="${url}estado.html" width="100%" height="900" style="border:0" title="Gasto del Gobierno central en altos cargos y asesores" loading="lazy"></iframe>`;
+  const iframe = `<iframe src="${url}gobierno.html#evolucion" width="100%" height="900" style="border:0" title="Gasto del Gobierno central en altos cargos y asesores" loading="lazy"></iframe>`;
   $("cita").textContent = cita;
   $("iframe").textContent = iframe;
   $("copiar-cita").addEventListener("click", (e) => C.copiar(e.target, cita));

@@ -93,11 +93,11 @@
       `En 2010 se recortó un 15 % y se congeló hasta 2015. Faltan los años sin ley de presupuestos propia (1996, 2019, 2020) y 1983-1985, cuya ley no trae el cuadro. Hasta 2001 las leyes están en pesetas (1 € = 166,386 pta).`;
     document.getElementById("tabla-serie").innerHTML = `<table class="tabla"><thead><tr><th>Año</th>${SERIES.map(([, n]) => `<th class="num">${n}</th>`).join("")}<th>Ley</th></tr></thead><tbody>
       ${d.map((r) => `<tr><td>${r.anyo}</td>${SERIES.map(([k]) => `<td class="num">${val(r, k) != null ? C.eur(val(r, k)) : "—"}</td>`).join("")}<td><a href="${r.url}" target="_blank" rel="noopener">${r.ley}</a></td></tr>`).join("")}</tbody></table>`;
-    document.querySelectorAll("[data-ipc]").forEach((b) => b.setAttribute("aria-pressed", String((b.dataset.ipc === "si") === ipc)));
+    document.querySelectorAll("[data-ipc-s]").forEach((b) => b.setAttribute("aria-pressed", String((b.dataset.ipcS === "si") === ipc)));
   }
-  document.querySelectorAll("[data-ipc]").forEach((b) => b.addEventListener("click", () => { ipc = b.dataset.ipc === "si"; serie(); }));
+  document.querySelectorAll("[data-ipc-s]").forEach((b) => b.addEventListener("click", () => { ipc = b.dataset.ipcS === "si"; serie(); }));
   document.getElementById("comparar").addEventListener("change", ranking);
-  document.getElementById("descargar").addEventListener("click", () => {
+  document.getElementById("descargar-s").addEventListener("click", () => {
     C.descargarCSV("sueldos_altos_cargos.csv", ["cargo", "grupo", "anyo", "sueldo_bruto_anual_eur", "calculo", "ley"],
       [...D.cargos.map((c) => [c.cargo, c.grupo, D.anyo, c.anual, c.calculo, D.ley]),
        ...S.serie.flatMap((r) => SERIES.filter(([k]) => r[k] != null).map(([k, n]) => [n + " del Gobierno", "Gobierno", r.anyo, r[k], "12 mensualidades, sin pagas extra", r.ley]))]);
@@ -105,6 +105,6 @@
   window.addEventListener("resize", serie);
   ranking();
   serie();
-  document.getElementById("pie-fuentes").innerHTML =
+  document.getElementById("pie-sueldos").innerHTML =
     `Fuentes: Leyes de Presupuestos Generales del Estado (BOE), leídas del texto consolidado que reproduce <a href="https://github.com/legalize-dev/legalize-es" target="_blank" rel="noopener">legalize-es</a>; salario mínimo: <a href="${SMI.url}" target="_blank" rel="noopener">${SMI.fuente}</a>; inflación: IPC del INE vía Banco Mundial. ${D.referencias.nota}`;
 })();

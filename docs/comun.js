@@ -81,29 +81,54 @@
   };
   C.ocultarTip = () => tip && (tip.hidden = true);
 
-  // Menú común: se marca la página actual
-  const PAGINAS = [
-    ["index.html", "Inicio"],
-    ["comunidades.html", "Tu comunidad"],
-    ["ayuntamientos.html", "Tu ayuntamiento"],
-    ["estado.html", "Gobierno de España"],
-    ["sueldos.html", "Cuánto cobran"],
-    ["calculadora.html", "¿Qué se podría pagar?"],
-    ["periodistas.html", "Periodistas y datos"],
+  // Iconos de trazo (24×24) para la navegación
+  const ICONO = {
+    inicio: '<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>',
+    comunidades: '<path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2z"/><path d="M9 4v14M15 6v14"/>',
+    ayuntamientos: '<path d="M4 20h16"/><path d="M6 20V9h12v11"/><path d="M12 4l7 5H5z"/><path d="M10 20v-5h4v5"/>',
+    gobierno: '<path d="M3 20h18"/><path d="M4 9h16"/><path d="M12 3l8 4H4z"/><path d="M6 9v8M10 9v8M14 9v8M18 9v8"/><path d="M4 17h16"/>',
+    mas: '<circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/>',
+    calculadora: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h2M14 12h2M8 16h2M14 16h2"/>',
+    periodistas: '<path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8M8 18h5"/>',
+  };
+  C.icono = (n) => `<svg class="icono" viewBox="0 0 24 24" aria-hidden="true">${ICONO[n]}</svg>`;
+
+  // Navegación común: arriba en escritorio; en el móvil, barra inferior con iconos y «Más» en una hoja
+  const PRINCIPALES = [
+    ["index.html", "Inicio", "inicio"],
+    ["comunidades.html", "Comunidades", "comunidades"],
+    ["ayuntamientos.html", "Ayuntamientos", "ayuntamientos", "Municipios"],
+    ["gobierno.html", "Gobierno central", "gobierno", "Gobierno"],
+  ];
+  const SECUNDARIAS = [
+    ["calculadora.html", "¿Qué se podría pagar?", "calculadora"],
+    ["periodistas.html", "Periodistas y datos", "periodistas"],
   ];
   document.addEventListener("DOMContentLoaded", () => {
     const nav = document.getElementById("menu");
     if (!nav) return;
     const actual = location.pathname.split("/").pop() || "index.html";
+    const enlace = ([h, t, i]) => `<a href="${h}"${h === actual ? ' aria-current="page"' : ""}>${C.icono(i)}<span>${t}</span></a>`;
+    const enlaceCorto = ([h, t, i, c]) => enlace([h, c || t, i]);
+    const enMas = SECUNDARIAS.some(([h]) => h === actual);
     nav.innerHTML = `<a class="marca" href="index.html">Coste de los políticos</a>
-      <button class="menu-boton" aria-expanded="false" aria-controls="menu-enlaces">Menú</button>
-      <div class="menu-enlaces" id="menu-enlaces">${PAGINAS.map(([h, t]) =>
-        `<a href="${h}"${h === actual ? ' aria-current="page"' : ""}>${t}</a>`).join("")}</div>`;
-    const boton = nav.querySelector(".menu-boton");
-    boton.addEventListener("click", () => {
-      const abierto = nav.classList.toggle("abierto");
-      boton.setAttribute("aria-expanded", abierto);
-    });
+      <div class="menu-enlaces">${[...PRINCIPALES, ...SECUNDARIAS].map((x) => enlace(x)).join("")}</div>`;
+    const barra = document.createElement("nav");
+    barra.className = "barra-inferior";
+    barra.setAttribute("aria-label", "Secciones");
+    barra.innerHTML = PRINCIPALES.map(enlaceCorto).join("") +
+      `<button class="mas"${enMas ? ' aria-current="page"' : ""} aria-expanded="false" aria-controls="hoja-mas">${C.icono("mas")}<span>Más</span></button>`;
+    const hoja = document.createElement("div");
+    hoja.className = "hoja";
+    hoja.id = "hoja-mas";
+    hoja.hidden = true;
+    hoja.innerHTML = `<div class="hoja-panel" role="dialog" aria-label="Más secciones">${SECUNDARIAS.map((x) => enlace(x)).join("")}</div>`;
+    document.body.append(barra, hoja);
+    const mas = barra.querySelector(".mas");
+    const cerrar = () => { hoja.hidden = true; mas.setAttribute("aria-expanded", "false"); };
+    mas.addEventListener("click", () => { hoja.hidden = !hoja.hidden; mas.setAttribute("aria-expanded", String(!hoja.hidden)); });
+    hoja.addEventListener("click", (e) => { if (e.target === hoja) cerrar(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") cerrar(); });
   });
 
   window.C = C;

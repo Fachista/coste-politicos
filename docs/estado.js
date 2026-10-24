@@ -108,7 +108,7 @@
         .attr("y", m.t).attr("height", alto - m.b - m.t)
         .on("mousemove", (ev) => C.tip(ev, tipAnyo(r)))
         .on("mouseleave", C.ocultarTip)
-        .on("click", () => { estado.anyo = r.anyo; C.ocultarTip(); grafico(); detalle(); });
+        .on("click", () => { estado.anyo = r.anyo; C.ocultarTip(); grafico(); window.dispatchEvent(new CustomEvent("anyo-elegido", { detail: r.anyo })); });
     });
 
     // Etiqueta directa: el último año propio y el primero
@@ -162,6 +162,7 @@
 
   // ---- Detalle del año elegido ----
   function detalle() {
+    if (!document.getElementById("detalle")) return;   // en gobierno.html el detalle está en la pestaña «Ministerios»
     const r = serieCompleta.find((x) => x.anyo === estado.anyo) || [...serieCompleta].reverse().find((x) => !x.prorrogado);
     const ipc = estado.ipc && r.factor_ipc ? r.factor_ipc : 1;
     const f = (v) => C.millones(v * ipc);

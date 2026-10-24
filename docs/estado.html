@@ -2,69 +2,10 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gobierno de España</title>
-<meta name="description" content="Evolución del gasto del Gobierno central en altos cargos y asesores desde 2007, con y sin inflación, por Gobierno y por ministerio.">
-<link rel="stylesheet" href="estilo.css">
+<title>Gobierno central</title>
+<meta http-equiv="refresh" content="0; url=gobierno.html#evolucion">
+<link rel="canonical" href="gobierno.html#evolucion">
+<script>location.replace("gobierno.html#evolucion" + "");</script>
 </head>
-<body>
-<nav class="menu" id="menu" aria-label="Secciones"></nav>
-<div class="app">
-  <h1>¿Cuánto gasta el Gobierno de España en altos cargos y asesores?</h1>
-  <p class="entradilla">Lo que cada presupuesto del Estado reserva para sueldos de ministros, secretarios de Estado, directores generales, asesores, diputados y senadores, año a año desde 2007.</p>
-
-  <section class="kpis" id="kpis" aria-live="polite"></section>
-
-  <section class="tarjeta">
-    <div class="controles">
-      <div class="segmentos" role="group" aria-label="Euros">
-        <button data-ipc="no" aria-pressed="false">Euros de cada año</button>
-        <button data-ipc="si" aria-pressed="true">Sin efecto de la inflación</button>
-      </div>
-      <div class="segmentos" role="group" aria-label="Medida">
-        <button data-medida="total" aria-pressed="true">Total</button>
-        <button data-medida="hab" aria-pressed="false">Por habitante</button>
-      </div>
-    </div>
-    <h2 id="titulo-grafico"></h2>
-    <div class="leyenda-cat" id="leyenda"></div>
-    <svg class="grafico" id="grafico" role="img" aria-labelledby="titulo-grafico"></svg>
-    <p class="nota-pie">Fondo gris: presidente del Gobierno que gobernó la mayor parte de cada año. Rayado: año sin presupuesto nuevo (se prorrogó el anterior, así que la cifra se repite aunque el gasto real cambiara). Toca una barra para ver su detalle por ministerio.</p>
-    <details><summary>Ver los datos en una tabla</summary><div class="tabla-scroll" id="tabla"></div></details>
-    <p><button class="boton" id="descargar">Descargar CSV</button></p>
-  </section>
-
-  <div class="rejilla seccion">
-    <section class="tarjeta">
-      <h2>Ministerios y secretarías de Estado</h2>
-      <svg class="grafico" id="grafico-n" role="img" aria-label="Número de ministerios y de secretarías de Estado en cada presupuesto"></svg>
-      <p class="nota-pie">Según la estructura de cada presupuesto. Un presupuesto prorrogado mantiene la estructura antigua aunque el Gobierno ya tenga otros ministerios.</p>
-    </section>
-    <section class="tarjeta" id="detalle" aria-live="polite"></section>
-  </div>
-
-  <section class="seccion tarjeta">
-    <h2>Por presidente del Gobierno</h2>
-    <p class="nota-pie">Media anual de los presupuestos que elaboró cada Gobierno, sin efecto de la inflación (euros de <span class="base-ipc"></span>).</p>
-    <div class="tabla-scroll" id="por-gobierno"></div>
-  </section>
-
-  <section class="seccion texto">
-    <h2>Lo que hay que saber antes de comparar</h2>
-    <ul>
-      <li><b>Es lo presupuestado, no lo gastado.</b> Son los créditos iniciales de cada ley de presupuestos. El gasto real puede ser algo menor (puestos vacantes) o mayor (modificaciones durante el año).</li>
-      <li><b>Años prorrogados.</b> En 2019, 2020, 2024 y 2025 no hubo presupuesto nuevo y siguió vigente el anterior: la cifra se repite aunque el Gobierno y sus ministerios cambiaran. El presupuesto de 2018 lo preparó el Gobierno de Mariano Rajoy y lo aplicó el de Pedro Sánchez.</li>
-      <li><b>«Sin efecto de la inflación»</b> convierte cada cifra a euros de <span class="base-ipc"></span> con el IPC, para que un euro de 2007 y uno de hoy valgan lo mismo.</li>
-      <li><b>Cúpula judicial y fiscal.</b> El Ministerio de Justicia paga como «altos cargos» a la presidencia de tribunales y a la Fiscalía. Se muestra aparte porque no son cargos políticos del Gobierno.</li>
-      <li><b>Sin dietas ni cotizaciones sociales</b>, como en el resto de la web.</li>
-      <li><b>¿Y antes de 2007?</b> Los presupuestos anteriores no están publicados en formato abierto partida a partida. Sí están los sueldos que fijaba la ley desde 1986: <a href="sueldos.html">cuánto cobraban el presidente y los ministros</a>.</li>
-    </ul>
-  </section>
-
-  <footer class="pie"><p id="pie-fuentes"></p></footer>
-</div>
-<script src="vendor/d3.min.js"></script>
-<script src="comun.js"></script>
-<script src="estado.js"></script>
-</body>
+<body><p>Esta página se ha movido a <a href="gobierno.html#evolucion">Gobierno central</a>.</p></body>
 </html>

@@ -11,36 +11,30 @@
 <nav class="menu" id="menu" aria-label="Secciones"></nav>
 <div class="app">
   <section class="portada" aria-live="polite">
-    <div class="det">Lo que paga cada persona en España, al año, en sueldos de políticos y sus asesores</div>
+    <div class="det">Sueldos de políticos y asesores, por persona y año</div>
     <div class="gran-cifra" id="cifra">…</div>
-    <p id="explica"></p>
+    <p class="det" id="explica"></p>
+    <div class="pila grande" id="reparto" role="img" aria-label="Reparto del coste entre niveles de gobierno"></div>
     <p class="det" id="equivale"></p>
   </section>
 
-  <section class="seccion">
-    <h2>Lo más importante</h2>
-    <ul class="claves" id="claves"></ul>
-  </section>
+  <h2 class="titulo-bloque">¿Qué quieres ver?</h2>
+  <div class="niveles" id="niveles"></div>
+  <div class="enlaces-extra">
+    <a href="calculadora.html"><span class="icono-caja"></span>¿Qué se podría pagar con ese dinero?</a>
+    <a href="periodistas.html"><span class="icono-caja"></span>Periodistas: datos, descargas y fuentes</a>
+  </div>
 
-  <section class="seccion">
-    <h2>Explora</h2>
-    <div class="tarjetas">
-      <a class="tarjeta-enlace" href="comunidades.html"><b>Tu comunidad</b><span>Mapa de lo que cuesta cada comunidad por habitante y por qué.</span></a>
-      <a class="tarjeta-enlace" href="ayuntamientos.html"><b>Tu ayuntamiento</b><span>Busca tu municipio y compáralo con otros de su tamaño.</span></a>
-      <a class="tarjeta-enlace" href="estado.html"><b>Gobierno de España</b><span>Cómo ha cambiado el gasto en altos cargos y asesores con cada Gobierno.</span></a>
-      <a class="tarjeta-enlace" href="sueldos.html"><b>Cuánto cobran</b><span>Los sueldos que fija la ley: del presidente a los magistrados del Constitucional.</span></a>
-      <a class="tarjeta-enlace" href="calculadora.html"><b>¿Qué se podría pagar?</b><span>Si se recortara una parte, ¿a cuántos maestros o enfermeros equivaldría?</span></a>
-      <a class="tarjeta-enlace" href="periodistas.html"><b>Periodistas y datos</b><span>Cifras listas para citar, descargas, método y fuentes.</span></a>
-    </div>
-  </section>
+  <h2 class="titulo-bloque">Lo más importante</h2>
+  <ul class="claves" id="claves"></ul>
 
-  <section class="seccion texto">
-    <h2>Cómo leer estas cifras</h2>
-    <p><b>Solo sueldos de cargos políticos y de sus asesores.</b> Se cuentan presidentes, consejeros, ministros, secretarios de Estado, directores generales, parlamentarios, alcaldes, concejales y diputados provinciales, y el personal eventual (los asesores de confianza que nombra cada cargo). No se cuentan funcionarios, médicos, profesores ni policías.</p>
-    <p><b>Sin dietas ni cotizaciones sociales.</b> Son sueldos brutos. Las dietas, los gastos de viaje y las cuotas a la Seguridad Social van aparte, así que el coste total para las arcas públicas es algo mayor.</p>
-    <p><b>Presupuesto o gasto real.</b> Algunas administraciones publican lo que gastaron de verdad y otras solo lo que presupuestaron. Cada cifra indica cuál es.</p>
-    <p>Todas las fuentes son oficiales (BOE, Ministerio de Hacienda, INE, parlamentos y gobiernos autonómicos) y se enlazan en <a href="periodistas.html#fuentes">la página de fuentes</a>.</p>
-  </section>
+  <details class="explicacion">
+    <summary>Cómo leer estas cifras</summary>
+    <p><b>Solo sueldos de cargos políticos y de sus asesores:</b> presidentes, consejeros, ministros, secretarios de Estado, directores generales, parlamentarios, alcaldes, concejales y diputados provinciales, y el personal eventual que nombran. No se cuentan funcionarios, médicos, profesores ni policías.</p>
+    <p><b>Sin dietas ni cotizaciones sociales.</b> Son sueldos brutos, así que el coste total para las arcas públicas es algo mayor.</p>
+    <p><b>Presupuesto o gasto real.</b> Algunas administraciones publican lo que gastaron y otras solo lo que presupuestaron. Cada cifra indica cuál es.</p>
+    <p>Todas las fuentes son oficiales y se enlazan en <a href="periodistas.html#fuentes">la página de fuentes</a>.</p>
+  </details>
 
   <footer class="pie"><p id="pie"></p></footer>
 </div>

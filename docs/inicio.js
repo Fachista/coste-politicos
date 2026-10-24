@@ -11,13 +11,31 @@
   const ref = hist.sueldos.detalle.referencias;
   const enfermeros = Math.round(total / ref.funcionario_A2_22.anual);
 
-  document.getElementById("cifra").innerHTML = `${C.eur2(porPersona)} <small>por persona y año</small>`;
-  document.getElementById("explica").innerHTML =
-    `En ${datos.anyo}, los sueldos de los cargos políticos y de sus asesores costaron <b>${C.millones(total)}</b>: ` +
-    `${C.millones(comunidades)} en comunidades autónomas y ayuntamientos y ${C.millones(estado)} en el Gobierno central, el Congreso y el Senado.`;
+  document.getElementById("cifra").textContent = C.eur2(porPersona);
+  document.getElementById("explica").innerHTML = `<b>${C.millones(total)}</b> en total en ${datos.anyo}`;
   document.getElementById("equivale").innerHTML =
-    `Con ese dinero se pagaría la retribución básica estatal de unos <b>${C.fmtEnt.format(enfermeros)} enfermeros o maestros</b> durante un año. ` +
-    `<a href="calculadora.html">Haz tus propias cuentas</a>.`;
+    `Equivale al sueldo básico de unos <b>${C.fmtEnt.format(enfermeros)} maestros o enfermeros</b>.`;
+
+  // Reparto entre los tres niveles y tarjetas de entrada a cada sección
+  const sumaC = (f) => datos.comunidades.reduce((s, c) => s + f(c.partes), 0);
+  const parte = (p, t) => (p[t] ? p[t].altos + p[t].eventual : 0);
+  const autonomico = sumaC((p) => parte(p, "gobierno") + parte(p, "parlamento"));
+  const local = sumaC((p) => (p.local ? p.local.electos + p.local.diputaciones + p.local.eventual : 0));
+  const NIVELES = [
+    { href: "comunidades.html", icono: "comunidades", titulo: "Comunidades autónomas", txt: "Gobiernos y parlamentos autonómicos", v: autonomico, col: "--c-1" },
+    { href: "ayuntamientos.html", icono: "ayuntamientos", titulo: "Ayuntamientos", txt: "Alcaldes, concejales y diputaciones", v: local, col: "--c-4" },
+    { href: "gobierno.html", icono: "gobierno", titulo: "Gobierno central", txt: "Ministerios, Congreso y Senado", v: estado, col: "--c-7" },
+  ];
+  document.getElementById("reparto").innerHTML = NIVELES.map((n) => `<span style="flex:${n.v};background:var(${n.col})" title="${n.titulo}"></span>`).join("");
+  document.getElementById("niveles").innerHTML = NIVELES.map((n) => `
+    <a class="nivel" href="${n.href}">
+      <span class="icono-caja" style="color:var(${n.col})">${C.icono(n.icono)}</span>
+      <span class="nivel-txt"><b>${n.titulo}</b><span>${n.txt}</span></span>
+      <span class="nivel-v"><b>${C.eur2(n.v / pob)}</b><span>${C.pct(n.v / total)} del total</span></span>
+    </a>`).join("");
+  const extra = document.querySelectorAll(".enlaces-extra .icono-caja");
+  extra[0].innerHTML = C.icono("calculadora");
+  extra[1].innerHTML = C.icono("periodistas");
 
   // Frases clave, cada una con su fuente
   const claves = [];
@@ -31,14 +49,14 @@
   const a18 = porAnyo(2018), a23 = porAnyo(2023);
   claves.push({
     frase: `El presupuesto para asesores de los ministerios pasó de ${C.millones(a18.gobierno_asesores)} en 2018 a ${C.millones(a23.gobierno_asesores)} en 2023 (+${C.pct(a23.gobierno_asesores / a18.gobierno_asesores - 1)}). En ese tiempo el número de ministerios pasó de ${a18.ministerios} a ${a23.ministerios}.`,
-    fuente: "Presupuestos Generales del Estado 2018 y 2023 (créditos iniciales)", enlace: "estado.html",
+    fuente: "Presupuestos Generales del Estado 2018 y 2023 (créditos iniciales)", enlace: "gobierno.html#evolucion",
   });
   const cargos = hist.sueldos.detalle.cargos;
   const presi = cargos.find((c) => c.cargo === "Presidente del Gobierno");
   const masQuePresi = cargos.filter((c) => c.anual > presi.anual);
   claves.push({
     frase: `${masQuePresi.length} cargos del Estado tienen fijado por ley un sueldo mayor que el del presidente del Gobierno (${C.eur(presi.anual)} brutos al año en ${hist.sueldos.detalle.anyo}). El que más, el ${masQuePresi[0].cargo.charAt(0).toLowerCase() + masQuePresi[0].cargo.slice(1)}, con ${C.eur(masQuePresi[0].anual)}.`,
-    fuente: `${hist.sueldos.detalle.ley}, de Presupuestos Generales del Estado (BOE)`, enlace: "sueldos.html",
+    fuente: `${hist.sueldos.detalle.ley}, de Presupuestos Generales del Estado (BOE)`, enlace: "gobierno.html#sueldos",
   });
   const ini = e[0], fin = [...e].reverse().find((x) => x.factor_ipc && !x.prorrogado);
   const realIni = ini.total * ini.factor_ipc, realFin = fin.total * fin.factor_ipc;
@@ -48,7 +66,7 @@
   claves.push({
     frase: `Descontada la inflación, el Gobierno central presupuesta para altos cargos, asesores y Cortes ${Math.abs(cambio) < 0.015 ? "casi lo mismo que" : (cambio > 0 ? "un " + C.pct(cambio) + " más que" : "un " + C.pct(-cambio) + " menos que")} en ${ini.anyo} (${C.millones(realIni)} entonces, ${C.millones(realFin)} en ${fin.anyo}, en euros de ${hist.base_ipc}). ` +
       `Entre medias bajó hasta ${C.millones(real(minimo))} en ${minimo.anyo}.`,
-    fuente: "Presupuestos Generales del Estado (vía Fundación Civio) e IPC del INE (vía Banco Mundial)", enlace: "estado.html",
+    fuente: "Presupuestos Generales del Estado (vía Fundación Civio) e IPC del INE (vía Banco Mundial)", enlace: "gobierno.html#evolucion",
   });
 
   const ul = document.getElementById("claves");

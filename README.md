@@ -2,14 +2,12 @@
 
 Web para entender cuánto cuestan los cargos políticos en España, pensada para cualquier lector y con una sección para periodistas (cifras para citar, descargas, método y fuentes).
 
-Páginas (`docs/`):
-- **Inicio** (`index.html`): la cifra por persona y lo más importante.
-- **Tu comunidad** (`comunidades.html`): mapa por comunidad autónoma y por qué cada una cuesta más o menos.
-- **Tu ayuntamiento** (`ayuntamientos.html`): buscador de municipios comparados con los de su tamaño.
-- **Gobierno de España** (`estado.html`): serie 2007-2025 de altos cargos y asesores, con y sin inflación, por presidente y por ministerio.
-- **Cuánto cobran** (`sueldos.html`): sueldos fijados por ley y su evolución desde 1986.
-- **¿Qué se podría pagar?** (`calculadora.html`): equivalencia en maestros, enfermeros o médicos.
-- **Periodistas y datos** (`periodistas.html`).
+Páginas (`docs/`), con barra de navegación inferior en el móvil:
+- **Inicio** (`index.html`): la cifra por persona y el reparto entre comunidades, ayuntamientos y Gobierno central.
+- **Comunidades** (`comunidades.html`): mapa por comunidad autónoma y por qué cada una cuesta más o menos.
+- **Ayuntamientos** (`ayuntamientos.html`): buscador de municipios comparados con los de su tamaño.
+- **Gobierno central** (`gobierno.html`), con pestañas: resumen, ministerios, evolución 2007-2025, sueldos fijados por ley desde 1986, y Congreso y Senado. `estado.html` y `sueldos.html` redirigen aquí.
+- **¿Qué se podría pagar?** (`calculadora.html`) y **Periodistas y datos** (`periodistas.html`), en «Más».
 
 Por comunidad autónoma se cuentan:
 - altos cargos y asesores de los gobiernos autonómicos;
